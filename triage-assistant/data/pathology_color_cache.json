@@ -8,7 +8,7 @@
  "common cold": {
   "codice": "verde",
   "fonte": "cache",
-  "note": "Mal di gola e febbre da 2 giorni, nessuna red flag. Codice provvisorio, da confermare con follow-up.",
+  "note": "Febbre da 2 giorni, brividi alle mani, nessuna red flag. Codice provvisorio.",
   "data": "2026-09-10"
  },
  "laceration": {
@@ -27,6 +27,12 @@
   "codice": "azzurro",
   "fonte": "ricerca web senza estratti attendibili; fallback prudenziale su febbre persistente >3 settimane",
   "note": "Febbre da 23 giorni: urgenza differibile, da valutare con esami. Confidence bassa, codice provvisorio.",
+  "data": "2026-09-10"
+ },
+ "urinary tract infection": {
+  "codice": "bianco",
+  "fonte": "MSD Manuals - infezione non complicata confinata alla vescica, afebbrile",
+  "note": "Cistite non complicata senza segni sistemici: non urgenza. Da rivalutare se febbre, dolore lombare, vomito.",
   "data": "2026-09-10"
  }
 }

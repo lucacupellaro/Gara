@@ -18,7 +18,8 @@ WEIGHTS = {
     "bilanciato": (0.5, 0.5),
 }
 
-CODE_KEY = {"giallo": "yellow", "verde": "green", "bianco": "white"}
+CODE_KEY = {"giallo": "yellow", "arancione": "yellow", "verde": "green",
+            "azzurro": "green", "bianco": "white"}
 
 
 def travel_minutes(lat: float, lon: float, dest_lat: float, dest_lon: float) -> tuple[int, str]:
@@ -66,6 +67,48 @@ def find_pharmacies_nearby(lat: float, lon: float, limit: int = 5,
     if radius_km is not None:
         pharmacies = [p for p in pharmacies if p["distance_km"] <= radius_km]
     return pharmacies[:limit]
+
+
+def list_hospitals(lat: float | None = None, lon: float | None = None,
+                   name_query: str | None = None, max_wait_minutes: int | None = None,
+                   triage_code: str = "verde", limit: int = 10) -> dict:
+    """Elenco dei PS del Lazio con filtri.
+
+    - lat/lon presenti  -> ordina per distanza in linea d'aria (haversine, km)
+    - name_query         -> tiene solo i nomi che contengono tutte le parole date
+    - max_wait_minutes   -> tiene solo chi ha attesa stimata <= soglia (per triage_code)
+    Senza posizione l'ordinamento e' per attesa stimata crescente.
+    """
+    code_key = CODE_KEY.get((triage_code or "verde").lower().strip(), "green")
+    tokens = [t for t in (name_query or "").lower().split() if t]
+
+    rows = []
+    for h in state.get_all_status():
+        if tokens and not all(t in h["name"].lower() for t in tokens):
+            continue
+        wait = predict_hospital_state(h["code"], 0, h)["est_wait_minutes"].get(code_key, 60)
+        row = {
+            "code": h["code"], "name": h["name"], "type": h["type"],
+            "comune": h["comune"], "asl": h["asl"],
+            "waiting_by_code": h["waiting_by_code"],
+            "saturation": h["saturation"], "saturation_band": h["saturation_band"],
+            "est_wait_minutes": wait,
+        }
+        if lat is not None and lon is not None:
+            row["distance_km"] = round(state.haversine_km(lat, lon, h["lat"], h["lon"]), 1)
+        rows.append(row)
+
+    if max_wait_minutes is not None:
+        rows = [r for r in rows if r["est_wait_minutes"] <= max_wait_minutes]
+    rows.sort(key=lambda r: r["distance_km"] if "distance_km" in r else r["est_wait_minutes"])
+
+    return {
+        "hospitals": rows[: max(1, int(limit))],
+        "count_total": len(rows),
+        "sorted_by": "distanza in linea d'aria" if lat is not None else "attesa stimata",
+        "filters": {"name_query": name_query, "max_wait_minutes": max_wait_minutes,
+                    "triage_code": triage_code},
+    }
 
 
 def rank_facilities(lat: float, lon: float, triage_code: str, preference: str = "bilanciato") -> dict:

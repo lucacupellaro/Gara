@@ -15,7 +15,7 @@ from . import mocks, state
 from .color_cache import lookup_pathology_severity, save_pathology_color
 from .predictor import predict_hospital_state
 from ml.pathology_classifier import classify_pathology
-from .scoring import find_pharmacies_nearby, rank_facilities, travel_minutes
+from .scoring import find_pharmacies_nearby, list_hospitals, rank_facilities, travel_minutes
 
 load_dotenv()
 MAX_TURNS = 8
@@ -65,6 +65,7 @@ ALTRE REGOLE VINCOLANTI:
 9. Prima di raccomandare strutture ti serve la posizione: usa quella condivisa dal browser (nel contesto) o chiedila.
 10. Per codice bianco o sintomi lievi suggerisci prima la farmacia più vicina.
 11. Chiedi la preferenza tra "meno_attesa", "meno_viaggio" o "bilanciato" se non è chiara.
+11bis. Se l'utente dice quanto tempo massimo è disposto ad aspettare, chiama list_hospitals con max_wait_minutes (e la sua posizione, così ordina per distanza in linea d'aria). Se l'utente nomina un ospedale specifico ("il Gemelli", "Tor Vergata"), usa list_hospitals con name_query per trovarlo e mostrarne stato e attesa.
 12. Quando raccomandi strutture chiama sempre show_on_map per evidenziarle sulla mappa.
 13. Ricorda quando serve che questo è un prototipo dimostrativo basato su open data, non un servizio sanitario.
 
@@ -101,6 +102,21 @@ TOOLS = [
         "name": "get_hospitals_status",
         "description": "Stato attuale di tutti i pronto soccorso del Lazio: coda per codice colore e indice di saturazione.",
         "parameters": {"type": "object", "properties": {}}}},
+    {"type": "function", "function": {
+        "name": "list_hospitals",
+        "description": ("Elenco filtrabile dei pronto soccorso del Lazio. Con lat/lon li ordina "
+                        "per distanza in LINEA D'ARIA (km). name_query filtra per nome (es. "
+                        "'gemelli', 'tor vergata'). max_wait_minutes tiene solo le strutture con "
+                        "attesa stimata entro il tempo che l'utente e' disposto ad aspettare "
+                        "(riferita a triage_code). Senza posizione ordina per attesa crescente."),
+        "parameters": {"type": "object", "properties": {
+            "lat": {"type": "number"}, "lon": {"type": "number"},
+            "name_query": {"type": "string"},
+            "max_wait_minutes": {"type": "integer"},
+            "triage_code": {"type": "string",
+                            "enum": ["giallo", "arancione", "verde", "azzurro", "bianco"]},
+            "limit": {"type": "integer", "default": 10},
+        }}}},
     {"type": "function", "function": {
         "name": "predict_hospital_state",
         "description": "Prevede coda e attesa stimata di un ospedale tra N minuti (es. dopo il viaggio).",
@@ -160,6 +176,12 @@ def _summarize(name: str, result) -> str:
         return f"web: {n} risultati ({ok})"
     if name == "save_pathology_color":
         return f"salvato: {result.get('codice', result.get('error', '?'))}"
+    if name == "list_hospitals":
+        hs = result.get("hospitals", [])
+        top = " · ".join(
+            f"{h['name']}" + (f" {h['distance_km']}km" if "distance_km" in h else "")
+            + f" ~{h['est_wait_minutes']}min" for h in hs[:3])
+        return f"{result.get('count_total', len(hs))} risultati ({result.get('sorted_by','')}): {top}"
     return json.dumps(result, ensure_ascii=False)[:120]
 
 
@@ -192,6 +214,13 @@ def _dispatch(name: str, args: dict, ctx: dict) -> dict | list:
         return [{k: h[k] for k in ("code", "name", "type", "comune", "waiting_by_code",
                                    "total_waiting", "saturation", "saturation_band")}
                 for h in state.get_all_status()]
+    if name == "list_hospitals":
+        return list_hospitals(
+            lat=args.get("lat"), lon=args.get("lon"),
+            name_query=args.get("name_query"),
+            max_wait_minutes=args.get("max_wait_minutes"),
+            triage_code=args.get("triage_code", "verde"),
+            limit=int(args.get("limit", 10)))
     if name == "predict_hospital_state":
         current = state.get_status(args["hospital_code"])
         if not current:
