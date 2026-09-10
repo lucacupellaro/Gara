@@ -1,0 +1,2192 @@
+DATA;SEDE;TIPO PS;NUMERO ACCESSI
+01/01/2022;Cantù;PS Generale;57
+01/01/2022;Cantù;PS Pediatrico;10
+01/01/2022;Menaggio;PS Generale;16
+01/01/2022;S. Fermo;PS Generale;122
+01/01/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+01/01/2022;S. Fermo;PS Pediatrico;39
+02/01/2022;Cantù;PS Generale;45
+02/01/2022;Cantù;PS Pediatrico;3
+02/01/2022;Menaggio;PS Generale;15
+02/01/2022;S. Fermo;PS Generale;97
+02/01/2022;S. Fermo;PS Ostetrico-Ginecologico;24
+02/01/2022;S. Fermo;PS Pediatrico;30
+03/01/2022;Cantù;PS Generale;56
+03/01/2022;Cantù;PS Pediatrico;10
+03/01/2022;Menaggio;PS Generale;24
+03/01/2022;S. Fermo;PS Generale;107
+03/01/2022;S. Fermo;PS Ostetrico-Ginecologico;29
+03/01/2022;S. Fermo;PS Pediatrico;30
+04/01/2022;Cantù;PS Generale;50
+04/01/2022;Cantù;PS Pediatrico;7
+04/01/2022;Menaggio;PS Generale;21
+04/01/2022;S. Fermo;PS Generale;101
+04/01/2022;S. Fermo;PS Ostetrico-Ginecologico;23
+04/01/2022;S. Fermo;PS Pediatrico;19
+05/01/2022;Cantù;PS Generale;57
+05/01/2022;Cantù;PS Pediatrico;7
+05/01/2022;Menaggio;PS Generale;15
+05/01/2022;S. Fermo;PS Generale;91
+05/01/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+05/01/2022;S. Fermo;PS Pediatrico;23
+06/01/2022;Cantù;PS Generale;35
+06/01/2022;Cantù;PS Pediatrico;2
+06/01/2022;Menaggio;PS Generale;18
+06/01/2022;S. Fermo;PS Generale;78
+06/01/2022;S. Fermo;PS Ostetrico-Ginecologico;10
+06/01/2022;S. Fermo;PS Pediatrico;20
+07/01/2022;Cantù;PS Generale;42
+07/01/2022;Cantù;PS Pediatrico;4
+07/01/2022;Menaggio;PS Generale;19
+07/01/2022;S. Fermo;PS Generale;101
+07/01/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+07/01/2022;S. Fermo;PS Pediatrico;26
+08/01/2022;Cantù;PS Generale;30
+08/01/2022;Cantù;PS Pediatrico;3
+08/01/2022;Menaggio;PS Generale;8
+08/01/2022;S. Fermo;PS Generale;82
+08/01/2022;S. Fermo;PS Ostetrico-Ginecologico;14
+08/01/2022;S. Fermo;PS Pediatrico;25
+09/01/2022;Cantù;PS Generale;44
+09/01/2022;Cantù;PS Pediatrico;5
+09/01/2022;Menaggio;PS Generale;11
+09/01/2022;S. Fermo;PS Generale;66
+09/01/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+09/01/2022;S. Fermo;PS Pediatrico;20
+10/01/2022;Cantù;PS Generale;56
+10/01/2022;Cantù;PS Pediatrico;1
+10/01/2022;Menaggio;PS Generale;28
+10/01/2022;S. Fermo;PS Generale;92
+10/01/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+10/01/2022;S. Fermo;PS Pediatrico;15
+11/01/2022;Cantù;PS Generale;52
+11/01/2022;Cantù;PS Pediatrico;7
+11/01/2022;Menaggio;PS Generale;15
+11/01/2022;S. Fermo;PS Generale;73
+11/01/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+11/01/2022;S. Fermo;PS Pediatrico;29
+12/01/2022;Cantù;PS Generale;50
+12/01/2022;Cantù;PS Pediatrico;6
+12/01/2022;Menaggio;PS Generale;8
+12/01/2022;S. Fermo;PS Generale;77
+12/01/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+12/01/2022;S. Fermo;PS Pediatrico;25
+13/01/2022;Cantù;PS Generale;45
+13/01/2022;Cantù;PS Pediatrico;6
+13/01/2022;Menaggio;PS Generale;10
+13/01/2022;S. Fermo;PS Generale;88
+13/01/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+13/01/2022;S. Fermo;PS Pediatrico;34
+14/01/2022;Cantù;PS Generale;43
+14/01/2022;Cantù;PS Pediatrico;4
+14/01/2022;Menaggio;PS Generale;26
+14/01/2022;S. Fermo;PS Generale;77
+14/01/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+14/01/2022;S. Fermo;PS Pediatrico;20
+15/01/2022;Cantù;PS Generale;58
+15/01/2022;Cantù;PS Pediatrico;4
+15/01/2022;Menaggio;PS Generale;12
+15/01/2022;S. Fermo;PS Generale;93
+15/01/2022;S. Fermo;PS Ostetrico-Ginecologico;14
+15/01/2022;S. Fermo;PS Pediatrico;23
+16/01/2022;Cantù;PS Generale;34
+16/01/2022;Cantù;PS Pediatrico;6
+16/01/2022;Menaggio;PS Generale;11
+16/01/2022;S. Fermo;PS Generale;54
+16/01/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+16/01/2022;S. Fermo;PS Pediatrico;45
+17/01/2022;Cantù;PS Generale;47
+17/01/2022;Cantù;PS Pediatrico;4
+17/01/2022;Menaggio;PS Generale;12
+17/01/2022;S. Fermo;PS Generale;96
+17/01/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+17/01/2022;S. Fermo;PS Pediatrico;37
+18/01/2022;Cantù;PS Generale;36
+18/01/2022;Cantù;PS Pediatrico;9
+18/01/2022;Menaggio;PS Generale;23
+18/01/2022;S. Fermo;PS Generale;105
+18/01/2022;S. Fermo;PS Ostetrico-Ginecologico;14
+18/01/2022;S. Fermo;PS Pediatrico;30
+19/01/2022;Cantù;PS Generale;38
+19/01/2022;Cantù;PS Pediatrico;8
+19/01/2022;Menaggio;PS Generale;17
+19/01/2022;S. Fermo;PS Generale;95
+19/01/2022;S. Fermo;PS Ostetrico-Ginecologico;16
+19/01/2022;S. Fermo;PS Pediatrico;33
+20/01/2022;Cantù;PS Generale;43
+20/01/2022;Cantù;PS Pediatrico;5
+20/01/2022;Menaggio;PS Generale;18
+20/01/2022;S. Fermo;PS Generale;84
+20/01/2022;S. Fermo;PS Ostetrico-Ginecologico;25
+20/01/2022;S. Fermo;PS Pediatrico;40
+21/01/2022;Cantù;PS Generale;39
+21/01/2022;Cantù;PS Pediatrico;7
+21/01/2022;Menaggio;PS Generale;17
+21/01/2022;S. Fermo;PS Generale;88
+21/01/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+21/01/2022;S. Fermo;PS Pediatrico;29
+22/01/2022;Cantù;PS Generale;34
+22/01/2022;Cantù;PS Pediatrico;11
+22/01/2022;Menaggio;PS Generale;14
+22/01/2022;S. Fermo;PS Generale;91
+22/01/2022;S. Fermo;PS Ostetrico-Ginecologico;12
+22/01/2022;S. Fermo;PS Pediatrico;24
+23/01/2022;Cantù;PS Generale;46
+23/01/2022;Cantù;PS Pediatrico;11
+23/01/2022;Menaggio;PS Generale;7
+23/01/2022;S. Fermo;PS Generale;95
+23/01/2022;S. Fermo;PS Ostetrico-Ginecologico;9
+23/01/2022;S. Fermo;PS Pediatrico;28
+24/01/2022;Cantù;PS Generale;49
+24/01/2022;Cantù;PS Pediatrico;4
+24/01/2022;Menaggio;PS Generale;19
+24/01/2022;S. Fermo;PS Generale;93
+24/01/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+24/01/2022;S. Fermo;PS Pediatrico;28
+25/01/2022;Cantù;PS Generale;53
+25/01/2022;Cantù;PS Pediatrico;7
+25/01/2022;Menaggio;PS Generale;11
+25/01/2022;S. Fermo;PS Generale;91
+25/01/2022;S. Fermo;PS Ostetrico-Ginecologico;25
+25/01/2022;S. Fermo;PS Pediatrico;24
+26/01/2022;Cantù;PS Generale;37
+26/01/2022;Cantù;PS Pediatrico;6
+26/01/2022;Menaggio;PS Generale;19
+26/01/2022;S. Fermo;PS Generale;88
+26/01/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+26/01/2022;S. Fermo;PS Pediatrico;26
+27/01/2022;Cantù;PS Generale;44
+27/01/2022;Cantù;PS Pediatrico;7
+27/01/2022;Menaggio;PS Generale;12
+27/01/2022;S. Fermo;PS Generale;76
+27/01/2022;S. Fermo;PS Ostetrico-Ginecologico;14
+27/01/2022;S. Fermo;PS Pediatrico;28
+28/01/2022;Cantù;PS Generale;43
+28/01/2022;Cantù;PS Pediatrico;5
+28/01/2022;Menaggio;PS Generale;14
+28/01/2022;S. Fermo;PS Generale;98
+28/01/2022;S. Fermo;PS Ostetrico-Ginecologico;12
+28/01/2022;S. Fermo;PS Pediatrico;39
+29/01/2022;Cantù;PS Generale;52
+29/01/2022;Cantù;PS Pediatrico;10
+29/01/2022;Menaggio;PS Generale;21
+29/01/2022;S. Fermo;PS Generale;80
+29/01/2022;S. Fermo;PS Ostetrico-Ginecologico;12
+29/01/2022;S. Fermo;PS Pediatrico;33
+30/01/2022;Cantù;PS Generale;49
+30/01/2022;Cantù;PS Pediatrico;8
+30/01/2022;Menaggio;PS Generale;22
+30/01/2022;S. Fermo;PS Generale;85
+30/01/2022;S. Fermo;PS Ostetrico-Ginecologico;10
+30/01/2022;S. Fermo;PS Pediatrico;30
+31/01/2022;Cantù;PS Generale;53
+31/01/2022;Cantù;PS Pediatrico;12
+31/01/2022;Menaggio;PS Generale;26
+31/01/2022;S. Fermo;PS Generale;90
+31/01/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+31/01/2022;S. Fermo;PS Pediatrico;35
+01/02/2022;Cantù;PS Generale;40
+01/02/2022;Cantù;PS Pediatrico;8
+01/02/2022;Menaggio;PS Generale;24
+01/02/2022;S. Fermo;PS Generale;98
+01/02/2022;S. Fermo;PS Ostetrico-Ginecologico;22
+01/02/2022;S. Fermo;PS Pediatrico;27
+02/02/2022;Cantù;PS Generale;37
+02/02/2022;Cantù;PS Pediatrico;8
+02/02/2022;Menaggio;PS Generale;18
+02/02/2022;S. Fermo;PS Generale;95
+02/02/2022;S. Fermo;PS Ostetrico-Ginecologico;20
+02/02/2022;S. Fermo;PS Pediatrico;34
+03/02/2022;Cantù;PS Generale;50
+03/02/2022;Cantù;PS Pediatrico;6
+03/02/2022;Menaggio;PS Generale;17
+03/02/2022;S. Fermo;PS Generale;96
+03/02/2022;S. Fermo;PS Ostetrico-Ginecologico;28
+03/02/2022;S. Fermo;PS Pediatrico;36
+04/02/2022;Cantù;PS Generale;42
+04/02/2022;Cantù;PS Pediatrico;12
+04/02/2022;Menaggio;PS Generale;17
+04/02/2022;S. Fermo;PS Generale;94
+04/02/2022;S. Fermo;PS Ostetrico-Ginecologico;15
+04/02/2022;S. Fermo;PS Pediatrico;35
+05/02/2022;Cantù;PS Generale;46
+05/02/2022;Cantù;PS Pediatrico;10
+05/02/2022;Menaggio;PS Generale;21
+05/02/2022;S. Fermo;PS Generale;85
+05/02/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+05/02/2022;S. Fermo;PS Pediatrico;29
+06/02/2022;Cantù;PS Generale;46
+06/02/2022;Cantù;PS Pediatrico;2
+06/02/2022;Menaggio;PS Generale;15
+06/02/2022;S. Fermo;PS Generale;71
+06/02/2022;S. Fermo;PS Ostetrico-Ginecologico;12
+06/02/2022;S. Fermo;PS Pediatrico;32
+07/02/2022;Cantù;PS Generale;55
+07/02/2022;Cantù;PS Pediatrico;9
+07/02/2022;Menaggio;PS Generale;25
+07/02/2022;S. Fermo;PS Generale;99
+07/02/2022;S. Fermo;PS Ostetrico-Ginecologico;14
+07/02/2022;S. Fermo;PS Pediatrico;33
+08/02/2022;Cantù;PS Generale;36
+08/02/2022;Cantù;PS Pediatrico;5
+08/02/2022;Menaggio;PS Generale;22
+08/02/2022;S. Fermo;PS Generale;76
+08/02/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+08/02/2022;S. Fermo;PS Pediatrico;22
+09/02/2022;Cantù;PS Generale;44
+09/02/2022;Cantù;PS Pediatrico;3
+09/02/2022;Menaggio;PS Generale;24
+09/02/2022;S. Fermo;PS Generale;93
+09/02/2022;S. Fermo;PS Ostetrico-Ginecologico;16
+09/02/2022;S. Fermo;PS Pediatrico;28
+10/02/2022;Cantù;PS Generale;43
+10/02/2022;Cantù;PS Pediatrico;12
+10/02/2022;Menaggio;PS Generale;14
+10/02/2022;S. Fermo;PS Generale;107
+10/02/2022;S. Fermo;PS Ostetrico-Ginecologico;24
+10/02/2022;S. Fermo;PS Pediatrico;30
+11/02/2022;Cantù;PS Generale;39
+11/02/2022;Cantù;PS Pediatrico;8
+11/02/2022;Menaggio;PS Generale;16
+11/02/2022;S. Fermo;PS Generale;92
+11/02/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+11/02/2022;S. Fermo;PS Pediatrico;31
+12/02/2022;Cantù;PS Generale;54
+12/02/2022;Cantù;PS Pediatrico;9
+12/02/2022;Menaggio;PS Generale;12
+12/02/2022;S. Fermo;PS Generale;82
+12/02/2022;S. Fermo;PS Ostetrico-Ginecologico;14
+12/02/2022;S. Fermo;PS Pediatrico;28
+13/02/2022;Cantù;PS Generale;56
+13/02/2022;Cantù;PS Pediatrico;12
+13/02/2022;Menaggio;PS Generale;17
+13/02/2022;S. Fermo;PS Generale;89
+13/02/2022;S. Fermo;PS Ostetrico-Ginecologico;8
+13/02/2022;S. Fermo;PS Pediatrico;20
+14/02/2022;Cantù;PS Generale;59
+14/02/2022;Cantù;PS Pediatrico;10
+14/02/2022;Menaggio;PS Generale;25
+14/02/2022;S. Fermo;PS Generale;109
+14/02/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+14/02/2022;S. Fermo;PS Pediatrico;29
+15/02/2022;Cantù;PS Generale;42
+15/02/2022;Cantù;PS Pediatrico;11
+15/02/2022;Menaggio;PS Generale;13
+15/02/2022;S. Fermo;PS Generale;93
+15/02/2022;S. Fermo;PS Ostetrico-Ginecologico;25
+15/02/2022;S. Fermo;PS Pediatrico;31
+16/02/2022;Cantù;PS Generale;58
+16/02/2022;Cantù;PS Pediatrico;5
+16/02/2022;Menaggio;PS Generale;17
+16/02/2022;S. Fermo;PS Generale;114
+16/02/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+16/02/2022;S. Fermo;PS Pediatrico;19
+17/02/2022;Cantù;PS Generale;43
+17/02/2022;Cantù;PS Pediatrico;6
+17/02/2022;Menaggio;PS Generale;20
+17/02/2022;S. Fermo;PS Generale;93
+17/02/2022;S. Fermo;PS Ostetrico-Ginecologico;15
+17/02/2022;S. Fermo;PS Pediatrico;36
+18/02/2022;Cantù;PS Generale;49
+18/02/2022;Cantù;PS Pediatrico;10
+18/02/2022;Menaggio;PS Generale;9
+18/02/2022;S. Fermo;PS Generale;107
+18/02/2022;S. Fermo;PS Ostetrico-Ginecologico;15
+18/02/2022;S. Fermo;PS Pediatrico;24
+19/02/2022;Cantù;PS Generale;50
+19/02/2022;Cantù;PS Pediatrico;11
+19/02/2022;Menaggio;PS Generale;11
+19/02/2022;S. Fermo;PS Generale;89
+19/02/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+19/02/2022;S. Fermo;PS Pediatrico;37
+20/02/2022;Cantù;PS Generale;50
+20/02/2022;Cantù;PS Pediatrico;15
+20/02/2022;Menaggio;PS Generale;12
+20/02/2022;S. Fermo;PS Generale;91
+20/02/2022;S. Fermo;PS Ostetrico-Ginecologico;11
+20/02/2022;S. Fermo;PS Pediatrico;40
+21/02/2022;Cantù;PS Generale;50
+21/02/2022;Cantù;PS Pediatrico;14
+21/02/2022;Menaggio;PS Generale;30
+21/02/2022;S. Fermo;PS Generale;103
+21/02/2022;S. Fermo;PS Ostetrico-Ginecologico;13
+21/02/2022;S. Fermo;PS Pediatrico;44
+22/02/2022;Cantù;PS Generale;54
+22/02/2022;Cantù;PS Pediatrico;11
+22/02/2022;Menaggio;PS Generale;30
+22/02/2022;S. Fermo;PS Generale;100
+22/02/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+22/02/2022;S. Fermo;PS Pediatrico;24
+23/02/2022;Cantù;PS Generale;57
+23/02/2022;Cantù;PS Pediatrico;6
+23/02/2022;Menaggio;PS Generale;9
+23/02/2022;S. Fermo;PS Generale;110
+23/02/2022;S. Fermo;PS Ostetrico-Ginecologico;16
+23/02/2022;S. Fermo;PS Pediatrico;36
+24/02/2022;Cantù;PS Generale;45
+24/02/2022;Cantù;PS Pediatrico;8
+24/02/2022;Menaggio;PS Generale;20
+24/02/2022;S. Fermo;PS Generale;103
+24/02/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+24/02/2022;S. Fermo;PS Pediatrico;42
+25/02/2022;Cantù;PS Generale;55
+25/02/2022;Cantù;PS Pediatrico;10
+25/02/2022;Menaggio;PS Generale;25
+25/02/2022;S. Fermo;PS Generale;96
+25/02/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+25/02/2022;S. Fermo;PS Pediatrico;33
+26/02/2022;Cantù;PS Generale;55
+26/02/2022;Cantù;PS Pediatrico;15
+26/02/2022;Menaggio;PS Generale;16
+26/02/2022;S. Fermo;PS Generale;101
+26/02/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+26/02/2022;S. Fermo;PS Pediatrico;31
+27/02/2022;Cantù;PS Generale;46
+27/02/2022;Cantù;PS Pediatrico;9
+27/02/2022;Menaggio;PS Generale;16
+27/02/2022;S. Fermo;PS Generale;94
+27/02/2022;S. Fermo;PS Ostetrico-Ginecologico;14
+27/02/2022;S. Fermo;PS Pediatrico;30
+28/02/2022;Cantù;PS Generale;59
+28/02/2022;Cantù;PS Pediatrico;9
+28/02/2022;Menaggio;PS Generale;14
+28/02/2022;S. Fermo;PS Generale;108
+28/02/2022;S. Fermo;PS Ostetrico-Ginecologico;29
+28/02/2022;S. Fermo;PS Pediatrico;27
+01/03/2022;Cantù;PS Generale;49
+01/03/2022;Cantù;PS Pediatrico;15
+01/03/2022;Menaggio;PS Generale;27
+01/03/2022;S. Fermo;PS Generale;105
+01/03/2022;S. Fermo;PS Ostetrico-Ginecologico;22
+01/03/2022;S. Fermo;PS Pediatrico;26
+02/03/2022;Cantù;PS Generale;54
+02/03/2022;Cantù;PS Pediatrico;9
+02/03/2022;Menaggio;PS Generale;21
+02/03/2022;S. Fermo;PS Generale;96
+02/03/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+02/03/2022;S. Fermo;PS Pediatrico;36
+03/03/2022;Cantù;PS Generale;47
+03/03/2022;Cantù;PS Pediatrico;10
+03/03/2022;Menaggio;PS Generale;25
+03/03/2022;S. Fermo;PS Generale;103
+03/03/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+03/03/2022;S. Fermo;PS Pediatrico;24
+04/03/2022;Cantù;PS Generale;46
+04/03/2022;Cantù;PS Pediatrico;8
+04/03/2022;Menaggio;PS Generale;16
+04/03/2022;S. Fermo;PS Generale;98
+04/03/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+04/03/2022;S. Fermo;PS Pediatrico;31
+05/03/2022;Cantù;PS Generale;46
+05/03/2022;Cantù;PS Pediatrico;7
+05/03/2022;Menaggio;PS Generale;20
+05/03/2022;S. Fermo;PS Generale;103
+05/03/2022;S. Fermo;PS Ostetrico-Ginecologico;20
+05/03/2022;S. Fermo;PS Pediatrico;30
+06/03/2022;Cantù;PS Generale;46
+06/03/2022;Cantù;PS Pediatrico;12
+06/03/2022;Menaggio;PS Generale;17
+06/03/2022;S. Fermo;PS Generale;91
+06/03/2022;S. Fermo;PS Ostetrico-Ginecologico;11
+06/03/2022;S. Fermo;PS Pediatrico;31
+07/03/2022;Cantù;PS Generale;50
+07/03/2022;Cantù;PS Pediatrico;8
+07/03/2022;Menaggio;PS Generale;21
+07/03/2022;S. Fermo;PS Generale;105
+07/03/2022;S. Fermo;PS Ostetrico-Ginecologico;29
+07/03/2022;S. Fermo;PS Pediatrico;38
+08/03/2022;Cantù;PS Generale;53
+08/03/2022;Cantù;PS Pediatrico;9
+08/03/2022;Menaggio;PS Generale;20
+08/03/2022;S. Fermo;PS Generale;89
+08/03/2022;S. Fermo;PS Ostetrico-Ginecologico;22
+08/03/2022;S. Fermo;PS Pediatrico;31
+09/03/2022;Cantù;PS Generale;58
+09/03/2022;Cantù;PS Pediatrico;6
+09/03/2022;Menaggio;PS Generale;14
+09/03/2022;S. Fermo;PS Generale;110
+09/03/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+09/03/2022;S. Fermo;PS Pediatrico;36
+10/03/2022;Cantù;PS Generale;48
+10/03/2022;Cantù;PS Pediatrico;20
+10/03/2022;Menaggio;PS Generale;21
+10/03/2022;S. Fermo;PS Generale;102
+10/03/2022;S. Fermo;PS Ostetrico-Ginecologico;9
+10/03/2022;S. Fermo;PS Pediatrico;42
+11/03/2022;Cantù;PS Generale;46
+11/03/2022;Cantù;PS Pediatrico;7
+11/03/2022;Menaggio;PS Generale;21
+11/03/2022;S. Fermo;PS Generale;106
+11/03/2022;S. Fermo;PS Ostetrico-Ginecologico;16
+11/03/2022;S. Fermo;PS Pediatrico;37
+12/03/2022;Cantù;PS Generale;46
+12/03/2022;Cantù;PS Pediatrico;17
+12/03/2022;Menaggio;PS Generale;19
+12/03/2022;S. Fermo;PS Generale;104
+12/03/2022;S. Fermo;PS Ostetrico-Ginecologico;9
+12/03/2022;S. Fermo;PS Pediatrico;37
+13/03/2022;Cantù;PS Generale;58
+13/03/2022;Cantù;PS Pediatrico;15
+13/03/2022;Menaggio;PS Generale;16
+13/03/2022;S. Fermo;PS Generale;97
+13/03/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+13/03/2022;S. Fermo;PS Pediatrico;37
+14/03/2022;Cantù;PS Generale;49
+14/03/2022;Cantù;PS Pediatrico;9
+14/03/2022;Menaggio;PS Generale;30
+14/03/2022;S. Fermo;PS Generale;95
+14/03/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+14/03/2022;S. Fermo;PS Pediatrico;50
+15/03/2022;Cantù;PS Generale;55
+15/03/2022;Cantù;PS Pediatrico;11
+15/03/2022;Menaggio;PS Generale;29
+15/03/2022;S. Fermo;PS Generale;102
+15/03/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+15/03/2022;S. Fermo;PS Pediatrico;42
+16/03/2022;Cantù;PS Generale;60
+16/03/2022;Cantù;PS Pediatrico;17
+16/03/2022;Menaggio;PS Generale;14
+16/03/2022;S. Fermo;PS Generale;107
+16/03/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+16/03/2022;S. Fermo;PS Pediatrico;26
+17/03/2022;Cantù;PS Generale;48
+17/03/2022;Cantù;PS Pediatrico;15
+17/03/2022;Menaggio;PS Generale;20
+17/03/2022;S. Fermo;PS Generale;99
+17/03/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+17/03/2022;S. Fermo;PS Pediatrico;30
+18/03/2022;Cantù;PS Generale;49
+18/03/2022;Cantù;PS Pediatrico;11
+18/03/2022;Menaggio;PS Generale;23
+18/03/2022;S. Fermo;PS Generale;103
+18/03/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+18/03/2022;S. Fermo;PS Pediatrico;39
+19/03/2022;Cantù;PS Generale;50
+19/03/2022;Cantù;PS Pediatrico;15
+19/03/2022;Menaggio;PS Generale;18
+19/03/2022;S. Fermo;PS Generale;95
+19/03/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+19/03/2022;S. Fermo;PS Pediatrico;42
+20/03/2022;Cantù;PS Generale;39
+20/03/2022;Cantù;PS Pediatrico;21
+20/03/2022;Menaggio;PS Generale;10
+20/03/2022;S. Fermo;PS Generale;91
+20/03/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+20/03/2022;S. Fermo;PS Pediatrico;50
+21/03/2022;Cantù;PS Generale;68
+21/03/2022;Cantù;PS Pediatrico;16
+21/03/2022;Menaggio;PS Generale;27
+21/03/2022;S. Fermo;PS Generale;103
+21/03/2022;S. Fermo;PS Ostetrico-Ginecologico;23
+21/03/2022;S. Fermo;PS Pediatrico;50
+22/03/2022;Cantù;PS Generale;65
+22/03/2022;Cantù;PS Pediatrico;12
+22/03/2022;Menaggio;PS Generale;17
+22/03/2022;S. Fermo;PS Generale;100
+22/03/2022;S. Fermo;PS Ostetrico-Ginecologico;16
+22/03/2022;S. Fermo;PS Pediatrico;42
+23/03/2022;Cantù;PS Generale;59
+23/03/2022;Cantù;PS Pediatrico;8
+23/03/2022;Menaggio;PS Generale;22
+23/03/2022;S. Fermo;PS Generale;99
+23/03/2022;S. Fermo;PS Ostetrico-Ginecologico;30
+23/03/2022;S. Fermo;PS Pediatrico;44
+24/03/2022;Cantù;PS Generale;54
+24/03/2022;Cantù;PS Pediatrico;8
+24/03/2022;Menaggio;PS Generale;20
+24/03/2022;S. Fermo;PS Generale;104
+24/03/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+24/03/2022;S. Fermo;PS Pediatrico;39
+25/03/2022;Cantù;PS Generale;54
+25/03/2022;Cantù;PS Pediatrico;11
+25/03/2022;Menaggio;PS Generale;26
+25/03/2022;S. Fermo;PS Generale;103
+25/03/2022;S. Fermo;PS Ostetrico-Ginecologico;22
+25/03/2022;S. Fermo;PS Pediatrico;43
+26/03/2022;Cantù;PS Generale;46
+26/03/2022;Cantù;PS Pediatrico;11
+26/03/2022;Menaggio;PS Generale;28
+26/03/2022;S. Fermo;PS Generale;111
+26/03/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+26/03/2022;S. Fermo;PS Pediatrico;62
+27/03/2022;Cantù;PS Generale;54
+27/03/2022;Cantù;PS Pediatrico;22
+27/03/2022;Menaggio;PS Generale;23
+27/03/2022;S. Fermo;PS Generale;93
+27/03/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+27/03/2022;S. Fermo;PS Pediatrico;66
+28/03/2022;Cantù;PS Generale;72
+28/03/2022;Cantù;PS Pediatrico;15
+28/03/2022;Menaggio;PS Generale;27
+28/03/2022;S. Fermo;PS Generale;112
+28/03/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+28/03/2022;S. Fermo;PS Pediatrico;40
+29/03/2022;Cantù;PS Generale;49
+29/03/2022;Cantù;PS Pediatrico;11
+29/03/2022;Menaggio;PS Generale;27
+29/03/2022;S. Fermo;PS Generale;101
+29/03/2022;S. Fermo;PS Ostetrico-Ginecologico;15
+29/03/2022;S. Fermo;PS Pediatrico;42
+30/03/2022;Cantù;PS Generale;53
+30/03/2022;Cantù;PS Pediatrico;13
+30/03/2022;Menaggio;PS Generale;15
+30/03/2022;S. Fermo;PS Generale;110
+30/03/2022;S. Fermo;PS Ostetrico-Ginecologico;14
+30/03/2022;S. Fermo;PS Pediatrico;36
+31/03/2022;Cantù;PS Generale;50
+31/03/2022;Cantù;PS Pediatrico;14
+31/03/2022;Menaggio;PS Generale;19
+31/03/2022;S. Fermo;PS Generale;117
+31/03/2022;S. Fermo;PS Ostetrico-Ginecologico;20
+31/03/2022;S. Fermo;PS Pediatrico;33
+01/04/2022;Cantù;PS Generale;43
+01/04/2022;Cantù;PS Pediatrico;2
+01/04/2022;Menaggio;PS Generale;24
+01/04/2022;S. Fermo;PS Generale;92
+01/04/2022;S. Fermo;PS Ostetrico-Ginecologico;20
+01/04/2022;S. Fermo;PS Pediatrico;42
+02/04/2022;Cantù;PS Generale;45
+02/04/2022;Cantù;PS Pediatrico;13
+02/04/2022;Menaggio;PS Generale;27
+02/04/2022;S. Fermo;PS Generale;90
+02/04/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+02/04/2022;S. Fermo;PS Pediatrico;40
+03/04/2022;Cantù;PS Generale;47
+03/04/2022;Cantù;PS Pediatrico;11
+03/04/2022;Menaggio;PS Generale;12
+03/04/2022;S. Fermo;PS Generale;88
+03/04/2022;S. Fermo;PS Ostetrico-Ginecologico;11
+03/04/2022;S. Fermo;PS Pediatrico;57
+04/04/2022;Cantù;PS Generale;40
+04/04/2022;Cantù;PS Pediatrico;10
+04/04/2022;Menaggio;PS Generale;32
+04/04/2022;S. Fermo;PS Generale;115
+04/04/2022;S. Fermo;PS Ostetrico-Ginecologico;14
+04/04/2022;S. Fermo;PS Pediatrico;55
+05/04/2022;Cantù;PS Generale;55
+05/04/2022;Cantù;PS Pediatrico;13
+05/04/2022;Menaggio;PS Generale;30
+05/04/2022;S. Fermo;PS Generale;108
+05/04/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+05/04/2022;S. Fermo;PS Pediatrico;33
+06/04/2022;Cantù;PS Generale;49
+06/04/2022;Cantù;PS Pediatrico;17
+06/04/2022;Menaggio;PS Generale;30
+06/04/2022;S. Fermo;PS Generale;97
+06/04/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+06/04/2022;S. Fermo;PS Pediatrico;42
+07/04/2022;Cantù;PS Generale;45
+07/04/2022;Cantù;PS Pediatrico;11
+07/04/2022;Menaggio;PS Generale;16
+07/04/2022;S. Fermo;PS Generale;98
+07/04/2022;S. Fermo;PS Ostetrico-Ginecologico;16
+07/04/2022;S. Fermo;PS Pediatrico;45
+08/04/2022;Cantù;PS Generale;60
+08/04/2022;Cantù;PS Pediatrico;12
+08/04/2022;Menaggio;PS Generale;19
+08/04/2022;S. Fermo;PS Generale;82
+08/04/2022;S. Fermo;PS Ostetrico-Ginecologico;15
+08/04/2022;S. Fermo;PS Pediatrico;52
+09/04/2022;Cantù;PS Generale;55
+09/04/2022;Cantù;PS Pediatrico;15
+09/04/2022;Menaggio;PS Generale;26
+09/04/2022;S. Fermo;PS Generale;91
+09/04/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+09/04/2022;S. Fermo;PS Pediatrico;47
+10/04/2022;Cantù;PS Generale;52
+10/04/2022;Cantù;PS Pediatrico;14
+10/04/2022;Menaggio;PS Generale;17
+10/04/2022;S. Fermo;PS Generale;115
+10/04/2022;S. Fermo;PS Ostetrico-Ginecologico;22
+10/04/2022;S. Fermo;PS Pediatrico;54
+11/04/2022;Cantù;PS Generale;51
+11/04/2022;Cantù;PS Pediatrico;17
+11/04/2022;Menaggio;PS Generale;40
+11/04/2022;S. Fermo;PS Generale;109
+11/04/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+11/04/2022;S. Fermo;PS Pediatrico;44
+12/04/2022;Cantù;PS Generale;51
+12/04/2022;Cantù;PS Pediatrico;12
+12/04/2022;Menaggio;PS Generale;17
+12/04/2022;S. Fermo;PS Generale;102
+12/04/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+12/04/2022;S. Fermo;PS Pediatrico;47
+13/04/2022;Cantù;PS Generale;50
+13/04/2022;Cantù;PS Pediatrico;13
+13/04/2022;Menaggio;PS Generale;26
+13/04/2022;S. Fermo;PS Generale;102
+13/04/2022;S. Fermo;PS Ostetrico-Ginecologico;13
+13/04/2022;S. Fermo;PS Pediatrico;32
+14/04/2022;Cantù;PS Generale;48
+14/04/2022;Cantù;PS Pediatrico;7
+14/04/2022;Menaggio;PS Generale;33
+14/04/2022;S. Fermo;PS Generale;95
+14/04/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+14/04/2022;S. Fermo;PS Pediatrico;35
+15/04/2022;Cantù;PS Generale;51
+15/04/2022;Cantù;PS Pediatrico;12
+15/04/2022;Menaggio;PS Generale;21
+15/04/2022;S. Fermo;PS Generale;112
+15/04/2022;S. Fermo;PS Ostetrico-Ginecologico;13
+15/04/2022;S. Fermo;PS Pediatrico;39
+16/04/2022;Cantù;PS Generale;49
+16/04/2022;Cantù;PS Pediatrico;13
+16/04/2022;Menaggio;PS Generale;28
+16/04/2022;S. Fermo;PS Generale;102
+16/04/2022;S. Fermo;PS Ostetrico-Ginecologico;11
+16/04/2022;S. Fermo;PS Pediatrico;46
+17/04/2022;Cantù;PS Generale;38
+17/04/2022;Cantù;PS Pediatrico;12
+17/04/2022;Menaggio;PS Generale;16
+17/04/2022;S. Fermo;PS Generale;111
+17/04/2022;S. Fermo;PS Ostetrico-Ginecologico;16
+17/04/2022;S. Fermo;PS Pediatrico;44
+18/04/2022;Cantù;PS Generale;49
+18/04/2022;Cantù;PS Pediatrico;7
+18/04/2022;Menaggio;PS Generale;26
+18/04/2022;S. Fermo;PS Generale;110
+18/04/2022;S. Fermo;PS Ostetrico-Ginecologico;12
+18/04/2022;S. Fermo;PS Pediatrico;51
+19/04/2022;Cantù;PS Generale;59
+19/04/2022;Cantù;PS Pediatrico;10
+19/04/2022;Menaggio;PS Generale;47
+19/04/2022;S. Fermo;PS Generale;138
+19/04/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+19/04/2022;S. Fermo;PS Pediatrico;45
+20/04/2022;Cantù;PS Generale;57
+20/04/2022;Cantù;PS Pediatrico;8
+20/04/2022;Menaggio;PS Generale;30
+20/04/2022;S. Fermo;PS Generale;102
+20/04/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+20/04/2022;S. Fermo;PS Pediatrico;29
+21/04/2022;Cantù;PS Generale;56
+21/04/2022;Cantù;PS Pediatrico;8
+21/04/2022;Menaggio;PS Generale;22
+21/04/2022;S. Fermo;PS Generale;124
+21/04/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+21/04/2022;S. Fermo;PS Pediatrico;35
+22/04/2022;Cantù;PS Generale;64
+22/04/2022;Cantù;PS Pediatrico;10
+22/04/2022;Menaggio;PS Generale;13
+22/04/2022;S. Fermo;PS Generale;112
+22/04/2022;S. Fermo;PS Ostetrico-Ginecologico;23
+22/04/2022;S. Fermo;PS Pediatrico;29
+23/04/2022;Cantù;PS Generale;45
+23/04/2022;Cantù;PS Pediatrico;11
+23/04/2022;Menaggio;PS Generale;21
+23/04/2022;S. Fermo;PS Generale;104
+23/04/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+23/04/2022;S. Fermo;PS Pediatrico;21
+24/04/2022;Cantù;PS Generale;38
+24/04/2022;Cantù;PS Pediatrico;11
+24/04/2022;Menaggio;PS Generale;20
+24/04/2022;S. Fermo;PS Generale;109
+24/04/2022;S. Fermo;PS Ostetrico-Ginecologico;14
+24/04/2022;S. Fermo;PS Pediatrico;39
+25/04/2022;Cantù;PS Generale;50
+25/04/2022;Cantù;PS Pediatrico;17
+25/04/2022;Menaggio;PS Generale;21
+25/04/2022;S. Fermo;PS Generale;114
+25/04/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+25/04/2022;S. Fermo;PS Pediatrico;47
+26/04/2022;Cantù;PS Generale;59
+26/04/2022;Cantù;PS Pediatrico;11
+26/04/2022;Menaggio;PS Generale;30
+26/04/2022;S. Fermo;PS Generale;125
+26/04/2022;S. Fermo;PS Ostetrico-Ginecologico;24
+26/04/2022;S. Fermo;PS Pediatrico;32
+27/04/2022;Cantù;PS Generale;52
+27/04/2022;Cantù;PS Pediatrico;12
+27/04/2022;Menaggio;PS Generale;21
+27/04/2022;S. Fermo;PS Generale;101
+27/04/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+27/04/2022;S. Fermo;PS Pediatrico;28
+28/04/2022;Cantù;PS Generale;40
+28/04/2022;Cantù;PS Pediatrico;12
+28/04/2022;Menaggio;PS Generale;30
+28/04/2022;S. Fermo;PS Generale;113
+28/04/2022;S. Fermo;PS Ostetrico-Ginecologico;16
+28/04/2022;S. Fermo;PS Pediatrico;37
+29/04/2022;Cantù;PS Generale;48
+29/04/2022;Cantù;PS Pediatrico;9
+29/04/2022;Menaggio;PS Generale;23
+29/04/2022;S. Fermo;PS Generale;115
+29/04/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+29/04/2022;S. Fermo;PS Pediatrico;35
+30/04/2022;Cantù;PS Generale;60
+30/04/2022;Cantù;PS Pediatrico;16
+30/04/2022;Menaggio;PS Generale;13
+30/04/2022;S. Fermo;PS Generale;104
+30/04/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+30/04/2022;S. Fermo;PS Pediatrico;34
+01/05/2022;Cantù;PS Generale;44
+01/05/2022;Cantù;PS Pediatrico;14
+01/05/2022;Menaggio;PS Generale;18
+01/05/2022;S. Fermo;PS Generale;105
+01/05/2022;S. Fermo;PS Ostetrico-Ginecologico;11
+01/05/2022;S. Fermo;PS Pediatrico;43
+02/05/2022;Cantù;PS Generale;55
+02/05/2022;Cantù;PS Pediatrico;15
+02/05/2022;Menaggio;PS Generale;23
+02/05/2022;S. Fermo;PS Generale;135
+02/05/2022;S. Fermo;PS Ostetrico-Ginecologico;23
+02/05/2022;S. Fermo;PS Pediatrico;44
+03/05/2022;Cantù;PS Generale;50
+03/05/2022;Cantù;PS Pediatrico;15
+03/05/2022;Menaggio;PS Generale;32
+03/05/2022;S. Fermo;PS Generale;113
+03/05/2022;S. Fermo;PS Ostetrico-Ginecologico;20
+03/05/2022;S. Fermo;PS Pediatrico;44
+04/05/2022;Cantù;PS Generale;39
+04/05/2022;Cantù;PS Pediatrico;5
+04/05/2022;Menaggio;PS Generale;30
+04/05/2022;S. Fermo;PS Generale;94
+04/05/2022;S. Fermo;PS Ostetrico-Ginecologico;16
+04/05/2022;S. Fermo;PS Pediatrico;43
+05/05/2022;Cantù;PS Generale;50
+05/05/2022;Cantù;PS Pediatrico;11
+05/05/2022;Menaggio;PS Generale;21
+05/05/2022;S. Fermo;PS Generale;112
+05/05/2022;S. Fermo;PS Ostetrico-Ginecologico;13
+05/05/2022;S. Fermo;PS Pediatrico;28
+06/05/2022;Cantù;PS Generale;50
+06/05/2022;Cantù;PS Pediatrico;8
+06/05/2022;Menaggio;PS Generale;24
+06/05/2022;S. Fermo;PS Generale;96
+06/05/2022;S. Fermo;PS Ostetrico-Ginecologico;15
+06/05/2022;S. Fermo;PS Pediatrico;24
+07/05/2022;Cantù;PS Generale;47
+07/05/2022;Cantù;PS Pediatrico;14
+07/05/2022;Menaggio;PS Generale;18
+07/05/2022;S. Fermo;PS Generale;108
+07/05/2022;S. Fermo;PS Ostetrico-Ginecologico;23
+07/05/2022;S. Fermo;PS Pediatrico;39
+08/05/2022;Cantù;PS Generale;50
+08/05/2022;Cantù;PS Pediatrico;13
+08/05/2022;Menaggio;PS Generale;22
+08/05/2022;S. Fermo;PS Generale;104
+08/05/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+08/05/2022;S. Fermo;PS Pediatrico;42
+09/05/2022;Cantù;PS Generale;54
+09/05/2022;Cantù;PS Pediatrico;19
+09/05/2022;Menaggio;PS Generale;37
+09/05/2022;S. Fermo;PS Generale;109
+09/05/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+09/05/2022;S. Fermo;PS Pediatrico;35
+10/05/2022;Cantù;PS Generale;55
+10/05/2022;Cantù;PS Pediatrico;13
+10/05/2022;Menaggio;PS Generale;26
+10/05/2022;S. Fermo;PS Generale;106
+10/05/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+10/05/2022;S. Fermo;PS Pediatrico;37
+11/05/2022;Cantù;PS Generale;54
+11/05/2022;Cantù;PS Pediatrico;11
+11/05/2022;Menaggio;PS Generale;30
+11/05/2022;S. Fermo;PS Generale;114
+11/05/2022;S. Fermo;PS Ostetrico-Ginecologico;25
+11/05/2022;S. Fermo;PS Pediatrico;30
+12/05/2022;Cantù;PS Generale;61
+12/05/2022;Cantù;PS Pediatrico;15
+12/05/2022;Menaggio;PS Generale;29
+12/05/2022;S. Fermo;PS Generale;112
+12/05/2022;S. Fermo;PS Ostetrico-Ginecologico;20
+12/05/2022;S. Fermo;PS Pediatrico;44
+13/05/2022;Cantù;PS Generale;64
+13/05/2022;Cantù;PS Pediatrico;13
+13/05/2022;Menaggio;PS Generale;27
+13/05/2022;S. Fermo;PS Generale;109
+13/05/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+13/05/2022;S. Fermo;PS Pediatrico;39
+14/05/2022;Cantù;PS Generale;61
+14/05/2022;Cantù;PS Pediatrico;14
+14/05/2022;Menaggio;PS Generale;31
+14/05/2022;S. Fermo;PS Generale;113
+14/05/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+14/05/2022;S. Fermo;PS Pediatrico;51
+15/05/2022;Cantù;PS Generale;49
+15/05/2022;Cantù;PS Pediatrico;14
+15/05/2022;Menaggio;PS Generale;17
+15/05/2022;S. Fermo;PS Generale;114
+15/05/2022;S. Fermo;PS Ostetrico-Ginecologico;15
+15/05/2022;S. Fermo;PS Pediatrico;41
+16/05/2022;Cantù;PS Generale;62
+16/05/2022;Cantù;PS Pediatrico;19
+16/05/2022;Menaggio;PS Generale;34
+16/05/2022;S. Fermo;PS Generale;123
+16/05/2022;S. Fermo;PS Ostetrico-Ginecologico;14
+16/05/2022;S. Fermo;PS Pediatrico;55
+17/05/2022;Cantù;PS Generale;60
+17/05/2022;Cantù;PS Pediatrico;12
+17/05/2022;Menaggio;PS Generale;24
+17/05/2022;S. Fermo;PS Generale;117
+17/05/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+17/05/2022;S. Fermo;PS Pediatrico;52
+18/05/2022;Cantù;PS Generale;62
+18/05/2022;Cantù;PS Pediatrico;11
+18/05/2022;Menaggio;PS Generale;13
+18/05/2022;S. Fermo;PS Generale;97
+18/05/2022;S. Fermo;PS Ostetrico-Ginecologico;16
+18/05/2022;S. Fermo;PS Pediatrico;47
+19/05/2022;Cantù;PS Generale;44
+19/05/2022;Cantù;PS Pediatrico;9
+19/05/2022;Menaggio;PS Generale;23
+19/05/2022;S. Fermo;PS Generale;110
+19/05/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+19/05/2022;S. Fermo;PS Pediatrico;48
+20/05/2022;Cantù;PS Generale;60
+20/05/2022;Cantù;PS Pediatrico;11
+20/05/2022;Menaggio;PS Generale;25
+20/05/2022;S. Fermo;PS Generale;123
+20/05/2022;S. Fermo;PS Ostetrico-Ginecologico;13
+20/05/2022;S. Fermo;PS Pediatrico;31
+21/05/2022;Cantù;PS Generale;63
+21/05/2022;Cantù;PS Pediatrico;11
+21/05/2022;Menaggio;PS Generale;25
+21/05/2022;S. Fermo;PS Generale;94
+21/05/2022;S. Fermo;PS Ostetrico-Ginecologico;15
+21/05/2022;S. Fermo;PS Pediatrico;37
+22/05/2022;Cantù;PS Generale;57
+22/05/2022;Cantù;PS Pediatrico;14
+22/05/2022;Menaggio;PS Generale;21
+22/05/2022;S. Fermo;PS Generale;89
+22/05/2022;S. Fermo;PS Ostetrico-Ginecologico;16
+22/05/2022;S. Fermo;PS Pediatrico;53
+23/05/2022;Cantù;PS Generale;71
+23/05/2022;Cantù;PS Pediatrico;14
+23/05/2022;Menaggio;PS Generale;30
+23/05/2022;S. Fermo;PS Generale;143
+23/05/2022;S. Fermo;PS Ostetrico-Ginecologico;26
+23/05/2022;S. Fermo;PS Pediatrico;44
+24/05/2022;Cantù;PS Generale;61
+24/05/2022;Cantù;PS Pediatrico;14
+24/05/2022;Menaggio;PS Generale;27
+24/05/2022;S. Fermo;PS Generale;94
+24/05/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+24/05/2022;S. Fermo;PS Pediatrico;49
+25/05/2022;Cantù;PS Generale;57
+25/05/2022;Cantù;PS Pediatrico;14
+25/05/2022;Menaggio;PS Generale;22
+25/05/2022;S. Fermo;PS Generale;108
+25/05/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+25/05/2022;S. Fermo;PS Pediatrico;39
+26/05/2022;Cantù;PS Generale;54
+26/05/2022;Cantù;PS Pediatrico;12
+26/05/2022;Menaggio;PS Generale;21
+26/05/2022;S. Fermo;PS Generale;85
+26/05/2022;S. Fermo;PS Ostetrico-Ginecologico;27
+26/05/2022;S. Fermo;PS Pediatrico;42
+27/05/2022;Cantù;PS Generale;74
+27/05/2022;Cantù;PS Pediatrico;9
+27/05/2022;Menaggio;PS Generale;23
+27/05/2022;S. Fermo;PS Generale;113
+27/05/2022;S. Fermo;PS Ostetrico-Ginecologico;33
+27/05/2022;S. Fermo;PS Pediatrico;29
+28/05/2022;Cantù;PS Generale;58
+28/05/2022;Cantù;PS Pediatrico;15
+28/05/2022;Menaggio;PS Generale;31
+28/05/2022;S. Fermo;PS Generale;103
+28/05/2022;S. Fermo;PS Ostetrico-Ginecologico;13
+28/05/2022;S. Fermo;PS Pediatrico;44
+29/05/2022;Cantù;PS Generale;47
+29/05/2022;Cantù;PS Pediatrico;6
+29/05/2022;Menaggio;PS Generale;27
+29/05/2022;S. Fermo;PS Generale;100
+29/05/2022;S. Fermo;PS Ostetrico-Ginecologico;13
+29/05/2022;S. Fermo;PS Pediatrico;33
+30/05/2022;Cantù;PS Generale;69
+30/05/2022;Cantù;PS Pediatrico;12
+30/05/2022;Menaggio;PS Generale;27
+30/05/2022;S. Fermo;PS Generale;114
+30/05/2022;S. Fermo;PS Ostetrico-Ginecologico;25
+30/05/2022;S. Fermo;PS Pediatrico;44
+31/05/2022;Cantù;PS Generale;55
+31/05/2022;Cantù;PS Pediatrico;18
+31/05/2022;Menaggio;PS Generale;29
+31/05/2022;S. Fermo;PS Generale;117
+31/05/2022;S. Fermo;PS Ostetrico-Ginecologico;23
+31/05/2022;S. Fermo;PS Pediatrico;43
+01/06/2022;Cantù;PS Generale;44
+01/06/2022;Cantù;PS Pediatrico;13
+01/06/2022;Menaggio;PS Generale;25
+01/06/2022;S. Fermo;PS Generale;115
+01/06/2022;S. Fermo;PS Ostetrico-Ginecologico;30
+01/06/2022;S. Fermo;PS Pediatrico;33
+02/06/2022;Cantù;PS Generale;56
+02/06/2022;Cantù;PS Pediatrico;14
+02/06/2022;Menaggio;PS Generale;36
+02/06/2022;S. Fermo;PS Generale;112
+02/06/2022;S. Fermo;PS Ostetrico-Ginecologico;12
+02/06/2022;S. Fermo;PS Pediatrico;33
+03/06/2022;Cantù;PS Generale;63
+03/06/2022;Cantù;PS Pediatrico;12
+03/06/2022;Menaggio;PS Generale;25
+03/06/2022;S. Fermo;PS Generale;123
+03/06/2022;S. Fermo;PS Ostetrico-Ginecologico;22
+03/06/2022;S. Fermo;PS Pediatrico;39
+04/06/2022;Cantù;PS Generale;56
+04/06/2022;Cantù;PS Pediatrico;11
+04/06/2022;Menaggio;PS Generale;28
+04/06/2022;S. Fermo;PS Generale;96
+04/06/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+04/06/2022;S. Fermo;PS Pediatrico;41
+05/06/2022;Cantù;PS Generale;52
+05/06/2022;Cantù;PS Pediatrico;16
+05/06/2022;Menaggio;PS Generale;26
+05/06/2022;S. Fermo;PS Generale;99
+05/06/2022;S. Fermo;PS Ostetrico-Ginecologico;15
+05/06/2022;S. Fermo;PS Pediatrico;44
+06/06/2022;Cantù;PS Generale;49
+06/06/2022;Cantù;PS Pediatrico;10
+06/06/2022;Menaggio;PS Generale;37
+06/06/2022;S. Fermo;PS Generale;110
+06/06/2022;S. Fermo;PS Ostetrico-Ginecologico;27
+06/06/2022;S. Fermo;PS Pediatrico;51
+07/06/2022;Cantù;PS Generale;52
+07/06/2022;Cantù;PS Pediatrico;6
+07/06/2022;Menaggio;PS Generale;20
+07/06/2022;S. Fermo;PS Generale;102
+07/06/2022;S. Fermo;PS Ostetrico-Ginecologico;32
+07/06/2022;S. Fermo;PS Pediatrico;46
+08/06/2022;Cantù;PS Generale;63
+08/06/2022;Cantù;PS Pediatrico;13
+08/06/2022;Menaggio;PS Generale;25
+08/06/2022;S. Fermo;PS Generale;104
+08/06/2022;S. Fermo;PS Ostetrico-Ginecologico;29
+08/06/2022;S. Fermo;PS Pediatrico;49
+09/06/2022;Cantù;PS Generale;67
+09/06/2022;Cantù;PS Pediatrico;11
+09/06/2022;Menaggio;PS Generale;33
+09/06/2022;S. Fermo;PS Generale;107
+09/06/2022;S. Fermo;PS Ostetrico-Ginecologico;15
+09/06/2022;S. Fermo;PS Pediatrico;41
+10/06/2022;Cantù;PS Generale;66
+10/06/2022;Cantù;PS Pediatrico;9
+10/06/2022;Menaggio;PS Generale;32
+10/06/2022;S. Fermo;PS Generale;112
+10/06/2022;S. Fermo;PS Ostetrico-Ginecologico;23
+10/06/2022;S. Fermo;PS Pediatrico;35
+11/06/2022;Cantù;PS Generale;47
+11/06/2022;Cantù;PS Pediatrico;9
+11/06/2022;Menaggio;PS Generale;29
+11/06/2022;S. Fermo;PS Generale;95
+11/06/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+11/06/2022;S. Fermo;PS Pediatrico;45
+12/06/2022;Cantù;PS Generale;55
+12/06/2022;Cantù;PS Pediatrico;18
+12/06/2022;Menaggio;PS Generale;26
+12/06/2022;S. Fermo;PS Generale;108
+12/06/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+12/06/2022;S. Fermo;PS Pediatrico;69
+13/06/2022;Cantù;PS Generale;71
+13/06/2022;Cantù;PS Pediatrico;17
+13/06/2022;Menaggio;PS Generale;19
+13/06/2022;S. Fermo;PS Generale;138
+13/06/2022;S. Fermo;PS Ostetrico-Ginecologico;16
+13/06/2022;S. Fermo;PS Pediatrico;38
+14/06/2022;Cantù;PS Generale;60
+14/06/2022;Cantù;PS Pediatrico;12
+14/06/2022;Menaggio;PS Generale;19
+14/06/2022;S. Fermo;PS Generale;122
+14/06/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+14/06/2022;S. Fermo;PS Pediatrico;36
+15/06/2022;Cantù;PS Generale;64
+15/06/2022;Cantù;PS Pediatrico;8
+15/06/2022;Menaggio;PS Generale;25
+15/06/2022;S. Fermo;PS Generale;118
+15/06/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+15/06/2022;S. Fermo;PS Pediatrico;41
+16/06/2022;Cantù;PS Generale;66
+16/06/2022;Cantù;PS Pediatrico;12
+16/06/2022;Menaggio;PS Generale;21
+16/06/2022;S. Fermo;PS Generale;119
+16/06/2022;S. Fermo;PS Ostetrico-Ginecologico;20
+16/06/2022;S. Fermo;PS Pediatrico;36
+17/06/2022;Cantù;PS Generale;59
+17/06/2022;Cantù;PS Pediatrico;13
+17/06/2022;Menaggio;PS Generale;29
+17/06/2022;S. Fermo;PS Generale;131
+17/06/2022;S. Fermo;PS Ostetrico-Ginecologico;20
+17/06/2022;S. Fermo;PS Pediatrico;25
+18/06/2022;Cantù;PS Generale;55
+18/06/2022;Cantù;PS Pediatrico;18
+18/06/2022;Menaggio;PS Generale;21
+18/06/2022;S. Fermo;PS Generale;104
+18/06/2022;S. Fermo;PS Ostetrico-Ginecologico;16
+18/06/2022;S. Fermo;PS Pediatrico;47
+19/06/2022;Cantù;PS Generale;64
+19/06/2022;Cantù;PS Pediatrico;17
+19/06/2022;Menaggio;PS Generale;25
+19/06/2022;S. Fermo;PS Generale;104
+19/06/2022;S. Fermo;PS Ostetrico-Ginecologico;24
+19/06/2022;S. Fermo;PS Pediatrico;61
+20/06/2022;Cantù;PS Generale;68
+20/06/2022;Cantù;PS Pediatrico;15
+20/06/2022;Menaggio;PS Generale;46
+20/06/2022;S. Fermo;PS Generale;130
+20/06/2022;S. Fermo;PS Ostetrico-Ginecologico;22
+20/06/2022;S. Fermo;PS Pediatrico;49
+21/06/2022;Cantù;PS Generale;65
+21/06/2022;Cantù;PS Pediatrico;9
+21/06/2022;Menaggio;PS Generale;23
+21/06/2022;S. Fermo;PS Generale;123
+21/06/2022;S. Fermo;PS Ostetrico-Ginecologico;24
+21/06/2022;S. Fermo;PS Pediatrico;39
+22/06/2022;Cantù;PS Generale;58
+22/06/2022;Cantù;PS Pediatrico;11
+22/06/2022;Menaggio;PS Generale;29
+22/06/2022;S. Fermo;PS Generale;106
+22/06/2022;S. Fermo;PS Ostetrico-Ginecologico;27
+22/06/2022;S. Fermo;PS Pediatrico;50
+23/06/2022;Cantù;PS Generale;55
+23/06/2022;Cantù;PS Pediatrico;13
+23/06/2022;Menaggio;PS Generale;29
+23/06/2022;S. Fermo;PS Generale;117
+23/06/2022;S. Fermo;PS Ostetrico-Ginecologico;15
+23/06/2022;S. Fermo;PS Pediatrico;39
+24/06/2022;Cantù;PS Generale;56
+24/06/2022;Cantù;PS Pediatrico;14
+24/06/2022;Menaggio;PS Generale;30
+24/06/2022;S. Fermo;PS Generale;98
+24/06/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+24/06/2022;S. Fermo;PS Pediatrico;31
+25/06/2022;Cantù;PS Generale;48
+25/06/2022;Cantù;PS Pediatrico;26
+25/06/2022;Menaggio;PS Generale;30
+25/06/2022;S. Fermo;PS Generale;109
+25/06/2022;S. Fermo;PS Ostetrico-Ginecologico;16
+25/06/2022;S. Fermo;PS Pediatrico;47
+26/06/2022;Cantù;PS Generale;67
+26/06/2022;Cantù;PS Pediatrico;9
+26/06/2022;Menaggio;PS Generale;26
+26/06/2022;S. Fermo;PS Generale;122
+26/06/2022;S. Fermo;PS Ostetrico-Ginecologico;14
+26/06/2022;S. Fermo;PS Pediatrico;44
+27/06/2022;Cantù;PS Generale;68
+27/06/2022;Cantù;PS Pediatrico;4
+27/06/2022;Menaggio;PS Generale;28
+27/06/2022;S. Fermo;PS Generale;122
+27/06/2022;S. Fermo;PS Ostetrico-Ginecologico;24
+27/06/2022;S. Fermo;PS Pediatrico;42
+28/06/2022;Cantù;PS Generale;47
+28/06/2022;Cantù;PS Pediatrico;10
+28/06/2022;Menaggio;PS Generale;17
+28/06/2022;S. Fermo;PS Generale;110
+28/06/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+28/06/2022;S. Fermo;PS Pediatrico;42
+29/06/2022;Cantù;PS Generale;52
+29/06/2022;Cantù;PS Pediatrico;11
+29/06/2022;Menaggio;PS Generale;26
+29/06/2022;S. Fermo;PS Generale;112
+29/06/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+29/06/2022;S. Fermo;PS Pediatrico;30
+30/06/2022;Cantù;PS Generale;54
+30/06/2022;Cantù;PS Pediatrico;13
+30/06/2022;Menaggio;PS Generale;30
+30/06/2022;S. Fermo;PS Generale;106
+30/06/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+30/06/2022;S. Fermo;PS Pediatrico;45
+01/07/2022;Cantù;PS Generale;51
+01/07/2022;Cantù;PS Pediatrico;12
+01/07/2022;Menaggio;PS Generale;35
+01/07/2022;S. Fermo;PS Generale;104
+01/07/2022;S. Fermo;PS Ostetrico-Ginecologico;22
+01/07/2022;S. Fermo;PS Pediatrico;37
+02/07/2022;Cantù;PS Generale;50
+02/07/2022;Cantù;PS Pediatrico;9
+02/07/2022;Menaggio;PS Generale;33
+02/07/2022;S. Fermo;PS Generale;96
+02/07/2022;S. Fermo;PS Ostetrico-Ginecologico;14
+02/07/2022;S. Fermo;PS Pediatrico;44
+03/07/2022;Cantù;PS Generale;44
+03/07/2022;Cantù;PS Pediatrico;12
+03/07/2022;Menaggio;PS Generale;24
+03/07/2022;S. Fermo;PS Generale;81
+03/07/2022;S. Fermo;PS Ostetrico-Ginecologico;14
+03/07/2022;S. Fermo;PS Pediatrico;41
+04/07/2022;Cantù;PS Generale;50
+04/07/2022;Cantù;PS Pediatrico;13
+04/07/2022;Menaggio;PS Generale;31
+04/07/2022;S. Fermo;PS Generale;115
+04/07/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+04/07/2022;S. Fermo;PS Pediatrico;37
+05/07/2022;Cantù;PS Generale;55
+05/07/2022;Cantù;PS Pediatrico;9
+05/07/2022;Menaggio;PS Generale;32
+05/07/2022;S. Fermo;PS Generale;112
+05/07/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+05/07/2022;S. Fermo;PS Pediatrico;26
+06/07/2022;Cantù;PS Generale;58
+06/07/2022;Cantù;PS Pediatrico;11
+06/07/2022;Menaggio;PS Generale;34
+06/07/2022;S. Fermo;PS Generale;110
+06/07/2022;S. Fermo;PS Ostetrico-Ginecologico;15
+06/07/2022;S. Fermo;PS Pediatrico;31
+07/07/2022;Cantù;PS Generale;57
+07/07/2022;Cantù;PS Pediatrico;9
+07/07/2022;Menaggio;PS Generale;32
+07/07/2022;S. Fermo;PS Generale;100
+07/07/2022;S. Fermo;PS Ostetrico-Ginecologico;22
+07/07/2022;S. Fermo;PS Pediatrico;27
+08/07/2022;Cantù;PS Generale;66
+08/07/2022;Cantù;PS Pediatrico;9
+08/07/2022;Menaggio;PS Generale;34
+08/07/2022;S. Fermo;PS Generale;86
+08/07/2022;S. Fermo;PS Ostetrico-Ginecologico;14
+08/07/2022;S. Fermo;PS Pediatrico;37
+09/07/2022;Cantù;PS Generale;60
+09/07/2022;Cantù;PS Pediatrico;16
+09/07/2022;Menaggio;PS Generale;27
+09/07/2022;S. Fermo;PS Generale;99
+09/07/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+09/07/2022;S. Fermo;PS Pediatrico;37
+10/07/2022;Cantù;PS Generale;49
+10/07/2022;Cantù;PS Pediatrico;10
+10/07/2022;Menaggio;PS Generale;29
+10/07/2022;S. Fermo;PS Generale;87
+10/07/2022;S. Fermo;PS Ostetrico-Ginecologico;22
+10/07/2022;S. Fermo;PS Pediatrico;42
+11/07/2022;Cantù;PS Generale;75
+11/07/2022;Cantù;PS Pediatrico;13
+11/07/2022;Menaggio;PS Generale;33
+11/07/2022;S. Fermo;PS Generale;123
+11/07/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+11/07/2022;S. Fermo;PS Pediatrico;37
+12/07/2022;Cantù;PS Generale;61
+12/07/2022;Cantù;PS Pediatrico;9
+12/07/2022;Menaggio;PS Generale;32
+12/07/2022;S. Fermo;PS Generale;97
+12/07/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+12/07/2022;S. Fermo;PS Pediatrico;23
+13/07/2022;Cantù;PS Generale;50
+13/07/2022;Cantù;PS Pediatrico;11
+13/07/2022;Menaggio;PS Generale;34
+13/07/2022;S. Fermo;PS Generale;95
+13/07/2022;S. Fermo;PS Ostetrico-Ginecologico;15
+13/07/2022;S. Fermo;PS Pediatrico;34
+14/07/2022;Cantù;PS Generale;60
+14/07/2022;Cantù;PS Pediatrico;6
+14/07/2022;Menaggio;PS Generale;35
+14/07/2022;S. Fermo;PS Generale;109
+14/07/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+14/07/2022;S. Fermo;PS Pediatrico;28
+15/07/2022;Cantù;PS Generale;63
+15/07/2022;Cantù;PS Pediatrico;10
+15/07/2022;Menaggio;PS Generale;31
+15/07/2022;S. Fermo;PS Generale;91
+15/07/2022;S. Fermo;PS Ostetrico-Ginecologico;22
+15/07/2022;S. Fermo;PS Pediatrico;33
+16/07/2022;Cantù;PS Generale;51
+16/07/2022;Cantù;PS Pediatrico;10
+16/07/2022;Menaggio;PS Generale;38
+16/07/2022;S. Fermo;PS Generale;93
+16/07/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+16/07/2022;S. Fermo;PS Pediatrico;44
+17/07/2022;Cantù;PS Generale;53
+17/07/2022;Cantù;PS Pediatrico;11
+17/07/2022;Menaggio;PS Generale;23
+17/07/2022;S. Fermo;PS Generale;83
+17/07/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+17/07/2022;S. Fermo;PS Pediatrico;41
+18/07/2022;Cantù;PS Generale;72
+18/07/2022;Cantù;PS Pediatrico;8
+18/07/2022;Menaggio;PS Generale;26
+18/07/2022;S. Fermo;PS Generale;118
+18/07/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+18/07/2022;S. Fermo;PS Pediatrico;26
+19/07/2022;Cantù;PS Generale;63
+19/07/2022;Cantù;PS Pediatrico;6
+19/07/2022;Menaggio;PS Generale;32
+19/07/2022;S. Fermo;PS Generale;112
+19/07/2022;S. Fermo;PS Ostetrico-Ginecologico;20
+19/07/2022;S. Fermo;PS Pediatrico;29
+20/07/2022;Cantù;PS Generale;53
+20/07/2022;Cantù;PS Pediatrico;11
+20/07/2022;Menaggio;PS Generale;34
+20/07/2022;S. Fermo;PS Generale;97
+20/07/2022;S. Fermo;PS Ostetrico-Ginecologico;20
+20/07/2022;S. Fermo;PS Pediatrico;30
+21/07/2022;Cantù;PS Generale;58
+21/07/2022;Cantù;PS Pediatrico;6
+21/07/2022;Menaggio;PS Generale;19
+21/07/2022;S. Fermo;PS Generale;105
+21/07/2022;S. Fermo;PS Ostetrico-Ginecologico;32
+21/07/2022;S. Fermo;PS Pediatrico;31
+22/07/2022;Cantù;PS Generale;61
+22/07/2022;Cantù;PS Pediatrico;12
+22/07/2022;Menaggio;PS Generale;34
+22/07/2022;S. Fermo;PS Generale;104
+22/07/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+22/07/2022;S. Fermo;PS Pediatrico;35
+23/07/2022;Cantù;PS Generale;62
+23/07/2022;Cantù;PS Pediatrico;10
+23/07/2022;Menaggio;PS Generale;35
+23/07/2022;S. Fermo;PS Generale;89
+23/07/2022;S. Fermo;PS Ostetrico-Ginecologico;16
+23/07/2022;S. Fermo;PS Pediatrico;46
+24/07/2022;Cantù;PS Generale;62
+24/07/2022;Cantù;PS Pediatrico;11
+24/07/2022;Menaggio;PS Generale;25
+24/07/2022;S. Fermo;PS Generale;113
+24/07/2022;S. Fermo;PS Ostetrico-Ginecologico;12
+24/07/2022;S. Fermo;PS Pediatrico;35
+25/07/2022;Cantù;PS Generale;63
+25/07/2022;Cantù;PS Pediatrico;6
+25/07/2022;Menaggio;PS Generale;43
+25/07/2022;S. Fermo;PS Generale;120
+25/07/2022;S. Fermo;PS Ostetrico-Ginecologico;32
+25/07/2022;S. Fermo;PS Pediatrico;28
+26/07/2022;Cantù;PS Generale;46
+26/07/2022;Cantù;PS Pediatrico;6
+26/07/2022;Menaggio;PS Generale;32
+26/07/2022;S. Fermo;PS Generale;107
+26/07/2022;S. Fermo;PS Ostetrico-Ginecologico;29
+26/07/2022;S. Fermo;PS Pediatrico;42
+27/07/2022;Cantù;PS Generale;43
+27/07/2022;Cantù;PS Pediatrico;5
+27/07/2022;Menaggio;PS Generale;33
+27/07/2022;S. Fermo;PS Generale;102
+27/07/2022;S. Fermo;PS Ostetrico-Ginecologico;23
+27/07/2022;S. Fermo;PS Pediatrico;35
+28/07/2022;Cantù;PS Generale;51
+28/07/2022;Cantù;PS Pediatrico;8
+28/07/2022;Menaggio;PS Generale;23
+28/07/2022;S. Fermo;PS Generale;98
+28/07/2022;S. Fermo;PS Ostetrico-Ginecologico;25
+28/07/2022;S. Fermo;PS Pediatrico;20
+29/07/2022;Cantù;PS Generale;60
+29/07/2022;Cantù;PS Pediatrico;8
+29/07/2022;Menaggio;PS Generale;36
+29/07/2022;S. Fermo;PS Generale;98
+29/07/2022;S. Fermo;PS Ostetrico-Ginecologico;24
+29/07/2022;S. Fermo;PS Pediatrico;19
+30/07/2022;Cantù;PS Generale;48
+30/07/2022;Cantù;PS Pediatrico;13
+30/07/2022;Menaggio;PS Generale;34
+30/07/2022;S. Fermo;PS Generale;97
+30/07/2022;S. Fermo;PS Ostetrico-Ginecologico;26
+30/07/2022;S. Fermo;PS Pediatrico;32
+31/07/2022;Cantù;PS Generale;61
+31/07/2022;Cantù;PS Pediatrico;11
+31/07/2022;Menaggio;PS Generale;38
+31/07/2022;S. Fermo;PS Generale;90
+31/07/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+31/07/2022;S. Fermo;PS Pediatrico;38
+01/08/2022;Cantù;PS Generale;43
+01/08/2022;Cantù;PS Pediatrico;6
+01/08/2022;Menaggio;PS Generale;36
+01/08/2022;S. Fermo;PS Generale;105
+01/08/2022;S. Fermo;PS Ostetrico-Ginecologico;31
+01/08/2022;S. Fermo;PS Pediatrico;28
+02/08/2022;Cantù;PS Generale;52
+02/08/2022;Cantù;PS Pediatrico;10
+02/08/2022;Menaggio;PS Generale;29
+02/08/2022;S. Fermo;PS Generale;112
+02/08/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+02/08/2022;S. Fermo;PS Pediatrico;35
+03/08/2022;Cantù;PS Generale;44
+03/08/2022;Cantù;PS Pediatrico;3
+03/08/2022;Menaggio;PS Generale;28
+03/08/2022;S. Fermo;PS Generale;104
+03/08/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+03/08/2022;S. Fermo;PS Pediatrico;30
+04/08/2022;Cantù;PS Generale;46
+04/08/2022;Cantù;PS Pediatrico;8
+04/08/2022;Menaggio;PS Generale;27
+04/08/2022;S. Fermo;PS Generale;110
+04/08/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+04/08/2022;S. Fermo;PS Pediatrico;31
+05/08/2022;Cantù;PS Generale;66
+05/08/2022;Cantù;PS Pediatrico;10
+05/08/2022;Menaggio;PS Generale;29
+05/08/2022;S. Fermo;PS Generale;100
+05/08/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+05/08/2022;S. Fermo;PS Pediatrico;30
+06/08/2022;Cantù;PS Generale;54
+06/08/2022;Cantù;PS Pediatrico;10
+06/08/2022;Menaggio;PS Generale;26
+06/08/2022;S. Fermo;PS Generale;88
+06/08/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+06/08/2022;S. Fermo;PS Pediatrico;38
+07/08/2022;Cantù;PS Generale;38
+07/08/2022;Cantù;PS Pediatrico;6
+07/08/2022;Menaggio;PS Generale;25
+07/08/2022;S. Fermo;PS Generale;91
+07/08/2022;S. Fermo;PS Ostetrico-Ginecologico;25
+07/08/2022;S. Fermo;PS Pediatrico;40
+08/08/2022;Cantù;PS Generale;52
+08/08/2022;Cantù;PS Pediatrico;9
+08/08/2022;Menaggio;PS Generale;34
+08/08/2022;S. Fermo;PS Generale;92
+08/08/2022;S. Fermo;PS Ostetrico-Ginecologico;16
+08/08/2022;S. Fermo;PS Pediatrico;36
+09/08/2022;Cantù;PS Generale;44
+09/08/2022;Menaggio;PS Generale;29
+09/08/2022;S. Fermo;PS Generale;109
+09/08/2022;S. Fermo;PS Ostetrico-Ginecologico;13
+09/08/2022;S. Fermo;PS Pediatrico;39
+10/08/2022;Cantù;PS Generale;50
+10/08/2022;Cantù;PS Pediatrico;3
+10/08/2022;Menaggio;PS Generale;32
+10/08/2022;S. Fermo;PS Generale;112
+10/08/2022;S. Fermo;PS Ostetrico-Ginecologico;27
+10/08/2022;S. Fermo;PS Pediatrico;31
+11/08/2022;Cantù;PS Generale;63
+11/08/2022;Cantù;PS Pediatrico;1
+11/08/2022;Menaggio;PS Generale;30
+11/08/2022;S. Fermo;PS Generale;109
+11/08/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+11/08/2022;S. Fermo;PS Pediatrico;36
+12/08/2022;Cantù;PS Generale;43
+12/08/2022;Cantù;PS Pediatrico;8
+12/08/2022;Menaggio;PS Generale;36
+12/08/2022;S. Fermo;PS Generale;88
+12/08/2022;S. Fermo;PS Ostetrico-Ginecologico;14
+12/08/2022;S. Fermo;PS Pediatrico;27
+13/08/2022;Cantù;PS Generale;53
+13/08/2022;Cantù;PS Pediatrico;11
+13/08/2022;Menaggio;PS Generale;34
+13/08/2022;S. Fermo;PS Generale;91
+13/08/2022;S. Fermo;PS Ostetrico-Ginecologico;9
+13/08/2022;S. Fermo;PS Pediatrico;27
+14/08/2022;Cantù;PS Generale;46
+14/08/2022;Cantù;PS Pediatrico;8
+14/08/2022;Menaggio;PS Generale;29
+14/08/2022;S. Fermo;PS Generale;117
+14/08/2022;S. Fermo;PS Ostetrico-Ginecologico;11
+14/08/2022;S. Fermo;PS Pediatrico;30
+15/08/2022;Cantù;PS Generale;34
+15/08/2022;Menaggio;PS Generale;35
+15/08/2022;S. Fermo;PS Generale;64
+15/08/2022;S. Fermo;PS Ostetrico-Ginecologico;11
+15/08/2022;S. Fermo;PS Pediatrico;27
+16/08/2022;Cantù;PS Generale;45
+16/08/2022;Cantù;PS Pediatrico;4
+16/08/2022;Menaggio;PS Generale;35
+16/08/2022;S. Fermo;PS Generale;106
+16/08/2022;S. Fermo;PS Ostetrico-Ginecologico;20
+16/08/2022;S. Fermo;PS Pediatrico;27
+17/08/2022;Cantù;PS Generale;48
+17/08/2022;Cantù;PS Pediatrico;2
+17/08/2022;Menaggio;PS Generale;36
+17/08/2022;S. Fermo;PS Generale;97
+17/08/2022;S. Fermo;PS Ostetrico-Ginecologico;15
+17/08/2022;S. Fermo;PS Pediatrico;24
+18/08/2022;Cantù;PS Generale;45
+18/08/2022;Cantù;PS Pediatrico;6
+18/08/2022;Menaggio;PS Generale;33
+18/08/2022;S. Fermo;PS Generale;98
+18/08/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+18/08/2022;S. Fermo;PS Pediatrico;32
+19/08/2022;Cantù;PS Generale;49
+19/08/2022;Cantù;PS Pediatrico;7
+19/08/2022;Menaggio;PS Generale;34
+19/08/2022;S. Fermo;PS Generale;100
+19/08/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+19/08/2022;S. Fermo;PS Pediatrico;26
+20/08/2022;Cantù;PS Generale;55
+20/08/2022;Cantù;PS Pediatrico;5
+20/08/2022;Menaggio;PS Generale;26
+20/08/2022;S. Fermo;PS Generale;99
+20/08/2022;S. Fermo;PS Ostetrico-Ginecologico;12
+20/08/2022;S. Fermo;PS Pediatrico;31
+21/08/2022;Cantù;PS Generale;53
+21/08/2022;Cantù;PS Pediatrico;5
+21/08/2022;Menaggio;PS Generale;23
+21/08/2022;S. Fermo;PS Generale;98
+21/08/2022;S. Fermo;PS Ostetrico-Ginecologico;14
+21/08/2022;S. Fermo;PS Pediatrico;42
+22/08/2022;Cantù;PS Generale;51
+22/08/2022;Cantù;PS Pediatrico;2
+22/08/2022;Menaggio;PS Generale;34
+22/08/2022;S. Fermo;PS Generale;105
+22/08/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+22/08/2022;S. Fermo;PS Pediatrico;22
+23/08/2022;Cantù;PS Generale;42
+23/08/2022;Cantù;PS Pediatrico;5
+23/08/2022;Menaggio;PS Generale;27
+23/08/2022;S. Fermo;PS Generale;90
+23/08/2022;S. Fermo;PS Ostetrico-Ginecologico;12
+23/08/2022;S. Fermo;PS Pediatrico;20
+24/08/2022;Cantù;PS Generale;50
+24/08/2022;Cantù;PS Pediatrico;5
+24/08/2022;Menaggio;PS Generale;41
+24/08/2022;S. Fermo;PS Generale;101
+24/08/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+24/08/2022;S. Fermo;PS Pediatrico;30
+25/08/2022;Cantù;PS Generale;59
+25/08/2022;Cantù;PS Pediatrico;3
+25/08/2022;Menaggio;PS Generale;34
+25/08/2022;S. Fermo;PS Generale;96
+25/08/2022;S. Fermo;PS Ostetrico-Ginecologico;15
+25/08/2022;S. Fermo;PS Pediatrico;24
+26/08/2022;Cantù;PS Generale;51
+26/08/2022;Cantù;PS Pediatrico;5
+26/08/2022;Menaggio;PS Generale;27
+26/08/2022;S. Fermo;PS Generale;111
+26/08/2022;S. Fermo;PS Ostetrico-Ginecologico;22
+26/08/2022;S. Fermo;PS Pediatrico;34
+27/08/2022;Cantù;PS Generale;53
+27/08/2022;Cantù;PS Pediatrico;10
+27/08/2022;Menaggio;PS Generale;29
+27/08/2022;S. Fermo;PS Generale;95
+27/08/2022;S. Fermo;PS Ostetrico-Ginecologico;12
+27/08/2022;S. Fermo;PS Pediatrico;41
+28/08/2022;Cantù;PS Generale;51
+28/08/2022;Cantù;PS Pediatrico;6
+28/08/2022;Menaggio;PS Generale;24
+28/08/2022;S. Fermo;PS Generale;78
+28/08/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+28/08/2022;S. Fermo;PS Pediatrico;26
+29/08/2022;Cantù;PS Generale;59
+29/08/2022;Cantù;PS Pediatrico;12
+29/08/2022;Menaggio;PS Generale;33
+29/08/2022;S. Fermo;PS Generale;109
+29/08/2022;S. Fermo;PS Ostetrico-Ginecologico;22
+29/08/2022;S. Fermo;PS Pediatrico;28
+30/08/2022;Cantù;PS Generale;50
+30/08/2022;Cantù;PS Pediatrico;4
+30/08/2022;Menaggio;PS Generale;29
+30/08/2022;S. Fermo;PS Generale;115
+30/08/2022;S. Fermo;PS Ostetrico-Ginecologico;23
+30/08/2022;S. Fermo;PS Pediatrico;33
+31/08/2022;Cantù;PS Generale;53
+31/08/2022;Cantù;PS Pediatrico;1
+31/08/2022;Menaggio;PS Generale;23
+31/08/2022;S. Fermo;PS Generale;98
+31/08/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+31/08/2022;S. Fermo;PS Pediatrico;31
+01/09/2022;Cantù;PS Generale;60
+01/09/2022;Cantù;PS Pediatrico;9
+01/09/2022;Menaggio;PS Generale;19
+01/09/2022;S. Fermo;PS Generale;113
+01/09/2022;S. Fermo;PS Ostetrico-Ginecologico;16
+01/09/2022;S. Fermo;PS Pediatrico;25
+02/09/2022;Cantù;PS Generale;45
+02/09/2022;Cantù;PS Pediatrico;10
+02/09/2022;Menaggio;PS Generale;20
+02/09/2022;S. Fermo;PS Generale;106
+02/09/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+02/09/2022;S. Fermo;PS Pediatrico;28
+03/09/2022;Cantù;PS Generale;44
+03/09/2022;Cantù;PS Pediatrico;4
+03/09/2022;Menaggio;PS Generale;29
+03/09/2022;S. Fermo;PS Generale;88
+03/09/2022;S. Fermo;PS Ostetrico-Ginecologico;14
+03/09/2022;S. Fermo;PS Pediatrico;31
+04/09/2022;Cantù;PS Generale;51
+04/09/2022;Cantù;PS Pediatrico;11
+04/09/2022;Menaggio;PS Generale;18
+04/09/2022;S. Fermo;PS Generale;88
+04/09/2022;S. Fermo;PS Ostetrico-Ginecologico;9
+04/09/2022;S. Fermo;PS Pediatrico;36
+05/09/2022;Cantù;PS Generale;60
+05/09/2022;Cantù;PS Pediatrico;7
+05/09/2022;Menaggio;PS Generale;28
+05/09/2022;S. Fermo;PS Generale;100
+05/09/2022;S. Fermo;PS Ostetrico-Ginecologico;26
+05/09/2022;S. Fermo;PS Pediatrico;35
+06/09/2022;Cantù;PS Generale;57
+06/09/2022;Cantù;PS Pediatrico;5
+06/09/2022;Menaggio;PS Generale;16
+06/09/2022;S. Fermo;PS Generale;105
+06/09/2022;S. Fermo;PS Ostetrico-Ginecologico;15
+06/09/2022;S. Fermo;PS Pediatrico;31
+07/09/2022;Cantù;PS Generale;39
+07/09/2022;Cantù;PS Pediatrico;8
+07/09/2022;Menaggio;PS Generale;26
+07/09/2022;S. Fermo;PS Generale;88
+07/09/2022;S. Fermo;PS Ostetrico-Ginecologico;27
+07/09/2022;S. Fermo;PS Pediatrico;17
+08/09/2022;Cantù;PS Generale;46
+08/09/2022;Cantù;PS Pediatrico;5
+08/09/2022;Menaggio;PS Generale;21
+08/09/2022;S. Fermo;PS Generale;100
+08/09/2022;S. Fermo;PS Ostetrico-Ginecologico;20
+08/09/2022;S. Fermo;PS Pediatrico;28
+09/09/2022;Cantù;PS Generale;60
+09/09/2022;Cantù;PS Pediatrico;8
+09/09/2022;Menaggio;PS Generale;22
+09/09/2022;S. Fermo;PS Generale;93
+09/09/2022;S. Fermo;PS Ostetrico-Ginecologico;15
+09/09/2022;S. Fermo;PS Pediatrico;26
+10/09/2022;Cantù;PS Generale;54
+10/09/2022;Cantù;PS Pediatrico;17
+10/09/2022;Menaggio;PS Generale;22
+10/09/2022;S. Fermo;PS Generale;115
+10/09/2022;S. Fermo;PS Ostetrico-Ginecologico;12
+10/09/2022;S. Fermo;PS Pediatrico;48
+11/09/2022;Cantù;PS Generale;47
+11/09/2022;Cantù;PS Pediatrico;11
+11/09/2022;Menaggio;PS Generale;20
+11/09/2022;S. Fermo;PS Generale;97
+11/09/2022;S. Fermo;PS Ostetrico-Ginecologico;14
+11/09/2022;S. Fermo;PS Pediatrico;38
+12/09/2022;Cantù;PS Generale;60
+12/09/2022;Cantù;PS Pediatrico;7
+12/09/2022;Menaggio;PS Generale;33
+12/09/2022;S. Fermo;PS Generale;111
+12/09/2022;S. Fermo;PS Ostetrico-Ginecologico;27
+12/09/2022;S. Fermo;PS Pediatrico;39
+13/09/2022;Cantù;PS Generale;51
+13/09/2022;Cantù;PS Pediatrico;10
+13/09/2022;Menaggio;PS Generale;15
+13/09/2022;S. Fermo;PS Generale;94
+13/09/2022;S. Fermo;PS Ostetrico-Ginecologico;20
+13/09/2022;S. Fermo;PS Pediatrico;32
+14/09/2022;Cantù;PS Generale;44
+14/09/2022;Cantù;PS Pediatrico;4
+14/09/2022;Menaggio;PS Generale;26
+14/09/2022;S. Fermo;PS Generale;106
+14/09/2022;S. Fermo;PS Ostetrico-Ginecologico;26
+14/09/2022;S. Fermo;PS Pediatrico;33
+15/09/2022;Cantù;PS Generale;51
+15/09/2022;Cantù;PS Pediatrico;7
+15/09/2022;Menaggio;PS Generale;26
+15/09/2022;S. Fermo;PS Generale;93
+15/09/2022;S. Fermo;PS Ostetrico-Ginecologico;24
+15/09/2022;S. Fermo;PS Pediatrico;42
+16/09/2022;Cantù;PS Generale;56
+16/09/2022;Cantù;PS Pediatrico;6
+16/09/2022;Menaggio;PS Generale;34
+16/09/2022;S. Fermo;PS Generale;93
+16/09/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+16/09/2022;S. Fermo;PS Pediatrico;33
+17/09/2022;Cantù;PS Generale;62
+17/09/2022;Cantù;PS Pediatrico;12
+17/09/2022;Menaggio;PS Generale;31
+17/09/2022;S. Fermo;PS Generale;105
+17/09/2022;S. Fermo;PS Ostetrico-Ginecologico;20
+17/09/2022;S. Fermo;PS Pediatrico;40
+18/09/2022;Cantù;PS Generale;41
+18/09/2022;Cantù;PS Pediatrico;14
+18/09/2022;Menaggio;PS Generale;18
+18/09/2022;S. Fermo;PS Generale;97
+18/09/2022;S. Fermo;PS Ostetrico-Ginecologico;11
+18/09/2022;S. Fermo;PS Pediatrico;54
+19/09/2022;Cantù;PS Generale;59
+19/09/2022;Cantù;PS Pediatrico;12
+19/09/2022;Menaggio;PS Generale;26
+19/09/2022;S. Fermo;PS Generale;106
+19/09/2022;S. Fermo;PS Ostetrico-Ginecologico;23
+19/09/2022;S. Fermo;PS Pediatrico;48
+20/09/2022;Cantù;PS Generale;56
+20/09/2022;Cantù;PS Pediatrico;11
+20/09/2022;Menaggio;PS Generale;23
+20/09/2022;S. Fermo;PS Generale;104
+20/09/2022;S. Fermo;PS Ostetrico-Ginecologico;22
+20/09/2022;S. Fermo;PS Pediatrico;37
+21/09/2022;Cantù;PS Generale;47
+21/09/2022;Cantù;PS Pediatrico;11
+21/09/2022;Menaggio;PS Generale;28
+21/09/2022;S. Fermo;PS Generale;107
+21/09/2022;S. Fermo;PS Ostetrico-Ginecologico;22
+21/09/2022;S. Fermo;PS Pediatrico;24
+22/09/2022;Cantù;PS Generale;47
+22/09/2022;Cantù;PS Pediatrico;6
+22/09/2022;Menaggio;PS Generale;32
+22/09/2022;S. Fermo;PS Generale;95
+22/09/2022;S. Fermo;PS Ostetrico-Ginecologico;14
+22/09/2022;S. Fermo;PS Pediatrico;41
+23/09/2022;Cantù;PS Generale;52
+23/09/2022;Cantù;PS Pediatrico;6
+23/09/2022;Menaggio;PS Generale;26
+23/09/2022;S. Fermo;PS Generale;104
+23/09/2022;S. Fermo;PS Ostetrico-Ginecologico;25
+23/09/2022;S. Fermo;PS Pediatrico;30
+24/09/2022;Cantù;PS Generale;45
+24/09/2022;Cantù;PS Pediatrico;14
+24/09/2022;Menaggio;PS Generale;20
+24/09/2022;S. Fermo;PS Generale;85
+24/09/2022;S. Fermo;PS Ostetrico-Ginecologico;20
+24/09/2022;S. Fermo;PS Pediatrico;34
+25/09/2022;Cantù;PS Generale;58
+25/09/2022;Cantù;PS Pediatrico;8
+25/09/2022;Menaggio;PS Generale;24
+25/09/2022;S. Fermo;PS Generale;72
+25/09/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+25/09/2022;S. Fermo;PS Pediatrico;39
+26/09/2022;Cantù;PS Generale;54
+26/09/2022;Cantù;PS Pediatrico;15
+26/09/2022;Menaggio;PS Generale;25
+26/09/2022;S. Fermo;PS Generale;110
+26/09/2022;S. Fermo;PS Ostetrico-Ginecologico;20
+26/09/2022;S. Fermo;PS Pediatrico;45
+27/09/2022;Cantù;PS Generale;63
+27/09/2022;Cantù;PS Pediatrico;13
+27/09/2022;Menaggio;PS Generale;22
+27/09/2022;S. Fermo;PS Generale;98
+27/09/2022;S. Fermo;PS Ostetrico-Ginecologico;20
+27/09/2022;S. Fermo;PS Pediatrico;33
+28/09/2022;Cantù;PS Generale;63
+28/09/2022;Cantù;PS Pediatrico;9
+28/09/2022;Menaggio;PS Generale;21
+28/09/2022;S. Fermo;PS Generale;124
+28/09/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+28/09/2022;S. Fermo;PS Pediatrico;44
+29/09/2022;Cantù;PS Generale;42
+29/09/2022;Cantù;PS Pediatrico;11
+29/09/2022;Menaggio;PS Generale;23
+29/09/2022;S. Fermo;PS Generale;114
+29/09/2022;S. Fermo;PS Ostetrico-Ginecologico;27
+29/09/2022;S. Fermo;PS Pediatrico;43
+30/09/2022;Cantù;PS Generale;48
+30/09/2022;Cantù;PS Pediatrico;10
+30/09/2022;Menaggio;PS Generale;25
+30/09/2022;S. Fermo;PS Generale;95
+30/09/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+30/09/2022;S. Fermo;PS Pediatrico;40
+01/10/2022;Cantù;PS Generale;57
+01/10/2022;Cantù;PS Pediatrico;17
+01/10/2022;Menaggio;PS Generale;23
+01/10/2022;S. Fermo;PS Generale;94
+01/10/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+01/10/2022;S. Fermo;PS Pediatrico;44
+02/10/2022;Cantù;PS Generale;57
+02/10/2022;Cantù;PS Pediatrico;20
+02/10/2022;Menaggio;PS Generale;25
+02/10/2022;Menaggio;PS Pediatrico;1
+02/10/2022;S. Fermo;PS Generale;97
+02/10/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+02/10/2022;S. Fermo;PS Pediatrico;64
+03/10/2022;Cantù;PS Generale;68
+03/10/2022;Cantù;PS Pediatrico;12
+03/10/2022;Menaggio;PS Generale;26
+03/10/2022;S. Fermo;PS Generale;106
+03/10/2022;S. Fermo;PS Ostetrico-Ginecologico;26
+03/10/2022;S. Fermo;PS Pediatrico;46
+04/10/2022;Cantù;PS Generale;58
+04/10/2022;Cantù;PS Pediatrico;14
+04/10/2022;Menaggio;PS Generale;20
+04/10/2022;S. Fermo;PS Generale;96
+04/10/2022;S. Fermo;PS Ostetrico-Ginecologico;20
+04/10/2022;S. Fermo;PS Pediatrico;46
+05/10/2022;Cantù;PS Generale;50
+05/10/2022;Cantù;PS Pediatrico;16
+05/10/2022;Menaggio;PS Generale;19
+05/10/2022;S. Fermo;PS Generale;101
+05/10/2022;S. Fermo;PS Ostetrico-Ginecologico;20
+05/10/2022;S. Fermo;PS Pediatrico;40
+06/10/2022;Cantù;PS Generale;48
+06/10/2022;Cantù;PS Pediatrico;21
+06/10/2022;Menaggio;PS Generale;16
+06/10/2022;S. Fermo;PS Generale;97
+06/10/2022;S. Fermo;PS Ostetrico-Ginecologico;30
+06/10/2022;S. Fermo;PS Pediatrico;44
+07/10/2022;Cantù;PS Generale;62
+07/10/2022;Cantù;PS Pediatrico;13
+07/10/2022;Menaggio;PS Generale;30
+07/10/2022;S. Fermo;PS Generale;86
+07/10/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+07/10/2022;S. Fermo;PS Pediatrico;52
+08/10/2022;Cantù;PS Generale;41
+08/10/2022;Cantù;PS Pediatrico;25
+08/10/2022;Menaggio;PS Generale;25
+08/10/2022;S. Fermo;PS Generale;90
+08/10/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+08/10/2022;S. Fermo;PS Pediatrico;43
+09/10/2022;Cantù;PS Generale;49
+09/10/2022;Cantù;PS Pediatrico;9
+09/10/2022;Menaggio;PS Generale;19
+09/10/2022;S. Fermo;PS Generale;69
+09/10/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+09/10/2022;S. Fermo;PS Pediatrico;49
+10/10/2022;Cantù;PS Generale;63
+10/10/2022;Cantù;PS Pediatrico;12
+10/10/2022;Menaggio;PS Generale;27
+10/10/2022;S. Fermo;PS Generale;116
+10/10/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+10/10/2022;S. Fermo;PS Pediatrico;51
+11/10/2022;Cantù;PS Generale;58
+11/10/2022;Cantù;PS Pediatrico;11
+11/10/2022;Menaggio;PS Generale;25
+11/10/2022;S. Fermo;PS Generale;104
+11/10/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+11/10/2022;S. Fermo;PS Pediatrico;51
+12/10/2022;Cantù;PS Generale;58
+12/10/2022;Cantù;PS Pediatrico;7
+12/10/2022;Menaggio;PS Generale;28
+12/10/2022;S. Fermo;PS Generale;107
+12/10/2022;S. Fermo;PS Ostetrico-Ginecologico;20
+12/10/2022;S. Fermo;PS Pediatrico;44
+13/10/2022;Cantù;PS Generale;56
+13/10/2022;Cantù;PS Pediatrico;7
+13/10/2022;Menaggio;PS Generale;25
+13/10/2022;S. Fermo;PS Generale;90
+13/10/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+13/10/2022;S. Fermo;PS Pediatrico;46
+14/10/2022;Cantù;PS Generale;59
+14/10/2022;Cantù;PS Pediatrico;13
+14/10/2022;Menaggio;PS Generale;16
+14/10/2022;S. Fermo;PS Generale;95
+14/10/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+14/10/2022;S. Fermo;PS Pediatrico;48
+15/10/2022;Cantù;PS Generale;44
+15/10/2022;Cantù;PS Pediatrico;18
+15/10/2022;Menaggio;PS Generale;23
+15/10/2022;S. Fermo;PS Generale;94
+15/10/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+15/10/2022;S. Fermo;PS Pediatrico;55
+16/10/2022;Cantù;PS Generale;51
+16/10/2022;Cantù;PS Pediatrico;25
+16/10/2022;Menaggio;PS Generale;16
+16/10/2022;S. Fermo;PS Generale;99
+16/10/2022;S. Fermo;PS Ostetrico-Ginecologico;20
+16/10/2022;S. Fermo;PS Pediatrico;56
+17/10/2022;Cantù;PS Generale;51
+17/10/2022;Cantù;PS Pediatrico;9
+17/10/2022;Menaggio;PS Generale;25
+17/10/2022;S. Fermo;PS Generale;114
+17/10/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+17/10/2022;S. Fermo;PS Pediatrico;47
+18/10/2022;Cantù;PS Generale;60
+18/10/2022;Cantù;PS Pediatrico;10
+18/10/2022;Menaggio;PS Generale;18
+18/10/2022;S. Fermo;PS Generale;99
+18/10/2022;S. Fermo;PS Ostetrico-Ginecologico;14
+18/10/2022;S. Fermo;PS Pediatrico;53
+19/10/2022;Cantù;PS Generale;61
+19/10/2022;Cantù;PS Pediatrico;12
+19/10/2022;Menaggio;PS Generale;19
+19/10/2022;S. Fermo;PS Generale;95
+19/10/2022;S. Fermo;PS Ostetrico-Ginecologico;16
+19/10/2022;S. Fermo;PS Pediatrico;42
+20/10/2022;Cantù;PS Generale;60
+20/10/2022;Cantù;PS Pediatrico;16
+20/10/2022;Menaggio;PS Generale;26
+20/10/2022;S. Fermo;PS Generale;117
+20/10/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+20/10/2022;S. Fermo;PS Pediatrico;53
+21/10/2022;Cantù;PS Generale;54
+21/10/2022;Cantù;PS Pediatrico;18
+21/10/2022;Menaggio;PS Generale;18
+21/10/2022;S. Fermo;PS Generale;102
+21/10/2022;S. Fermo;PS Ostetrico-Ginecologico;23
+21/10/2022;S. Fermo;PS Pediatrico;38
+22/10/2022;Cantù;PS Generale;57
+22/10/2022;Cantù;PS Pediatrico;15
+22/10/2022;Menaggio;PS Generale;19
+22/10/2022;S. Fermo;PS Generale;107
+22/10/2022;S. Fermo;PS Ostetrico-Ginecologico;22
+22/10/2022;S. Fermo;PS Pediatrico;55
+23/10/2022;Cantù;PS Generale;44
+23/10/2022;Cantù;PS Pediatrico;22
+23/10/2022;Menaggio;PS Generale;15
+23/10/2022;S. Fermo;PS Generale;84
+23/10/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+23/10/2022;S. Fermo;PS Pediatrico;45
+24/10/2022;Cantù;PS Generale;60
+24/10/2022;Cantù;PS Pediatrico;14
+24/10/2022;Menaggio;PS Generale;29
+24/10/2022;S. Fermo;PS Generale;109
+24/10/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+24/10/2022;S. Fermo;PS Pediatrico;56
+25/10/2022;Cantù;PS Generale;60
+25/10/2022;Cantù;PS Pediatrico;12
+25/10/2022;Menaggio;PS Generale;22
+25/10/2022;S. Fermo;PS Generale;88
+25/10/2022;S. Fermo;PS Ostetrico-Ginecologico;20
+25/10/2022;S. Fermo;PS Pediatrico;53
+26/10/2022;Cantù;PS Generale;53
+26/10/2022;Cantù;PS Pediatrico;13
+26/10/2022;Menaggio;PS Generale;30
+26/10/2022;Menaggio;PS Pediatrico;2
+26/10/2022;S. Fermo;PS Generale;89
+26/10/2022;S. Fermo;PS Ostetrico-Ginecologico;22
+26/10/2022;S. Fermo;PS Pediatrico;55
+27/10/2022;Cantù;PS Generale;62
+27/10/2022;Cantù;PS Pediatrico;11
+27/10/2022;Menaggio;PS Generale;17
+27/10/2022;S. Fermo;PS Generale;94
+27/10/2022;S. Fermo;PS Ostetrico-Ginecologico;24
+27/10/2022;S. Fermo;PS Pediatrico;53
+28/10/2022;Cantù;PS Generale;53
+28/10/2022;Cantù;PS Pediatrico;11
+28/10/2022;Menaggio;PS Generale;24
+28/10/2022;S. Fermo;PS Generale;107
+28/10/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+28/10/2022;S. Fermo;PS Pediatrico;43
+29/10/2022;Cantù;PS Generale;53
+29/10/2022;Cantù;PS Pediatrico;15
+29/10/2022;Menaggio;PS Generale;20
+29/10/2022;S. Fermo;PS Generale;95
+29/10/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+29/10/2022;S. Fermo;PS Pediatrico;60
+30/10/2022;Cantù;PS Generale;55
+30/10/2022;Cantù;PS Pediatrico;8
+30/10/2022;Menaggio;PS Generale;15
+30/10/2022;S. Fermo;PS Generale;96
+30/10/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+30/10/2022;S. Fermo;PS Pediatrico;72
+31/10/2022;Cantù;PS Generale;56
+31/10/2022;Cantù;PS Pediatrico;11
+31/10/2022;Menaggio;PS Generale;21
+31/10/2022;S. Fermo;PS Generale;107
+31/10/2022;S. Fermo;PS Ostetrico-Ginecologico;13
+31/10/2022;S. Fermo;PS Pediatrico;41
+01/11/2022;Cantù;PS Generale;47
+01/11/2022;Cantù;PS Pediatrico;12
+01/11/2022;Menaggio;PS Generale;13
+01/11/2022;S. Fermo;PS Generale;85
+01/11/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+01/11/2022;S. Fermo;PS Pediatrico;71
+02/11/2022;Cantù;PS Generale;65
+02/11/2022;Cantù;PS Pediatrico;9
+02/11/2022;Menaggio;PS Generale;19
+02/11/2022;Menaggio;PS Pediatrico;1
+02/11/2022;S. Fermo;PS Generale;112
+02/11/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+02/11/2022;S. Fermo;PS Pediatrico;37
+03/11/2022;Cantù;PS Generale;54
+03/11/2022;Cantù;PS Pediatrico;10
+03/11/2022;Menaggio;PS Generale;14
+03/11/2022;S. Fermo;PS Generale;83
+03/11/2022;S. Fermo;PS Ostetrico-Ginecologico;22
+03/11/2022;S. Fermo;PS Pediatrico;43
+04/11/2022;Cantù;PS Generale;51
+04/11/2022;Cantù;PS Pediatrico;11
+04/11/2022;Menaggio;PS Generale;22
+04/11/2022;S. Fermo;PS Generale;84
+04/11/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+04/11/2022;S. Fermo;PS Pediatrico;46
+05/11/2022;Cantù;PS Generale;62
+05/11/2022;Cantù;PS Pediatrico;19
+05/11/2022;Menaggio;PS Generale;20
+05/11/2022;S. Fermo;PS Generale;93
+05/11/2022;S. Fermo;PS Ostetrico-Ginecologico;15
+05/11/2022;S. Fermo;PS Pediatrico;60
+06/11/2022;Cantù;PS Generale;51
+06/11/2022;Cantù;PS Pediatrico;15
+06/11/2022;Menaggio;PS Generale;18
+06/11/2022;S. Fermo;PS Generale;89
+06/11/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+06/11/2022;S. Fermo;PS Pediatrico;64
+07/11/2022;Cantù;PS Generale;54
+07/11/2022;Cantù;PS Pediatrico;17
+07/11/2022;Menaggio;PS Generale;25
+07/11/2022;S. Fermo;PS Generale;109
+07/11/2022;S. Fermo;PS Ostetrico-Ginecologico;23
+07/11/2022;S. Fermo;PS Pediatrico;49
+08/11/2022;Cantù;PS Generale;51
+08/11/2022;Cantù;PS Pediatrico;16
+08/11/2022;Menaggio;PS Generale;25
+08/11/2022;S. Fermo;PS Generale;103
+08/11/2022;S. Fermo;PS Ostetrico-Ginecologico;13
+08/11/2022;S. Fermo;PS Pediatrico;49
+09/11/2022;Cantù;PS Generale;40
+09/11/2022;Cantù;PS Pediatrico;11
+09/11/2022;Menaggio;PS Generale;20
+09/11/2022;S. Fermo;PS Generale;89
+09/11/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+09/11/2022;S. Fermo;PS Pediatrico;39
+10/11/2022;Cantù;PS Generale;61
+10/11/2022;Cantù;PS Pediatrico;13
+10/11/2022;Menaggio;PS Generale;20
+10/11/2022;S. Fermo;PS Generale;90
+10/11/2022;S. Fermo;PS Ostetrico-Ginecologico;22
+10/11/2022;S. Fermo;PS Pediatrico;46
+11/11/2022;Cantù;PS Generale;53
+11/11/2022;Cantù;PS Pediatrico;11
+11/11/2022;Menaggio;PS Generale;13
+11/11/2022;S. Fermo;PS Generale;113
+11/11/2022;S. Fermo;PS Ostetrico-Ginecologico;15
+11/11/2022;S. Fermo;PS Pediatrico;60
+12/11/2022;Cantù;PS Generale;42
+12/11/2022;Cantù;PS Pediatrico;17
+12/11/2022;Menaggio;PS Generale;12
+12/11/2022;S. Fermo;PS Generale;92
+12/11/2022;S. Fermo;PS Ostetrico-Ginecologico;16
+12/11/2022;S. Fermo;PS Pediatrico;66
+13/11/2022;Cantù;PS Generale;50
+13/11/2022;Cantù;PS Pediatrico;34
+13/11/2022;Menaggio;PS Generale;10
+13/11/2022;S. Fermo;PS Generale;91
+13/11/2022;S. Fermo;PS Ostetrico-Ginecologico;13
+13/11/2022;S. Fermo;PS Pediatrico;68
+14/11/2022;Cantù;PS Generale;51
+14/11/2022;Cantù;PS Pediatrico;20
+14/11/2022;Menaggio;PS Generale;24
+14/11/2022;S. Fermo;PS Generale;104
+14/11/2022;S. Fermo;PS Ostetrico-Ginecologico;20
+14/11/2022;S. Fermo;PS Pediatrico;54
+15/11/2022;Cantù;PS Generale;55
+15/11/2022;Cantù;PS Pediatrico;15
+15/11/2022;Menaggio;PS Generale;20
+15/11/2022;S. Fermo;PS Generale;109
+15/11/2022;S. Fermo;PS Ostetrico-Ginecologico;26
+15/11/2022;S. Fermo;PS Pediatrico;54
+16/11/2022;Cantù;PS Generale;55
+16/11/2022;Cantù;PS Pediatrico;23
+16/11/2022;Menaggio;PS Generale;23
+16/11/2022;S. Fermo;PS Generale;104
+16/11/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+16/11/2022;S. Fermo;PS Pediatrico;50
+17/11/2022;Cantù;PS Generale;44
+17/11/2022;Cantù;PS Pediatrico;13
+17/11/2022;Menaggio;PS Generale;23
+17/11/2022;S. Fermo;PS Generale;131
+17/11/2022;S. Fermo;PS Ostetrico-Ginecologico;16
+17/11/2022;S. Fermo;PS Pediatrico;49
+18/11/2022;Cantù;PS Generale;46
+18/11/2022;Cantù;PS Pediatrico;10
+18/11/2022;Menaggio;PS Generale;19
+18/11/2022;S. Fermo;PS Generale;103
+18/11/2022;S. Fermo;PS Ostetrico-Ginecologico;24
+18/11/2022;S. Fermo;PS Pediatrico;48
+19/11/2022;Cantù;PS Generale;58
+19/11/2022;Cantù;PS Pediatrico;36
+19/11/2022;Menaggio;PS Generale;13
+19/11/2022;S. Fermo;PS Generale;111
+19/11/2022;S. Fermo;PS Ostetrico-Ginecologico;25
+19/11/2022;S. Fermo;PS Pediatrico;55
+20/11/2022;Cantù;PS Generale;50
+20/11/2022;Cantù;PS Pediatrico;29
+20/11/2022;Menaggio;PS Generale;14
+20/11/2022;S. Fermo;PS Generale;83
+20/11/2022;S. Fermo;PS Ostetrico-Ginecologico;12
+20/11/2022;S. Fermo;PS Pediatrico;66
+21/11/2022;Cantù;PS Generale;63
+21/11/2022;Cantù;PS Pediatrico;20
+21/11/2022;Menaggio;PS Generale;23
+21/11/2022;S. Fermo;PS Generale;117
+21/11/2022;S. Fermo;PS Ostetrico-Ginecologico;12
+21/11/2022;S. Fermo;PS Pediatrico;61
+22/11/2022;Cantù;PS Generale;45
+22/11/2022;Cantù;PS Pediatrico;22
+22/11/2022;Menaggio;PS Generale;15
+22/11/2022;S. Fermo;PS Generale;86
+22/11/2022;S. Fermo;PS Ostetrico-Ginecologico;15
+22/11/2022;S. Fermo;PS Pediatrico;56
+23/11/2022;Cantù;PS Generale;61
+23/11/2022;Cantù;PS Pediatrico;13
+23/11/2022;Menaggio;PS Generale;27
+23/11/2022;S. Fermo;PS Generale;94
+23/11/2022;S. Fermo;PS Ostetrico-Ginecologico;13
+23/11/2022;S. Fermo;PS Pediatrico;52
+24/11/2022;Cantù;PS Generale;60
+24/11/2022;Cantù;PS Pediatrico;19
+24/11/2022;Menaggio;PS Generale;21
+24/11/2022;S. Fermo;PS Generale;89
+24/11/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+24/11/2022;S. Fermo;PS Pediatrico;50
+25/11/2022;Cantù;PS Generale;44
+25/11/2022;Cantù;PS Pediatrico;14
+25/11/2022;Menaggio;PS Generale;16
+25/11/2022;S. Fermo;PS Generale;96
+25/11/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+25/11/2022;S. Fermo;PS Pediatrico;40
+26/11/2022;Cantù;PS Generale;49
+26/11/2022;Cantù;PS Pediatrico;17
+26/11/2022;Menaggio;PS Generale;19
+26/11/2022;S. Fermo;PS Generale;99
+26/11/2022;S. Fermo;PS Ostetrico-Ginecologico;16
+26/11/2022;S. Fermo;PS Pediatrico;74
+27/11/2022;Cantù;PS Generale;42
+27/11/2022;Cantù;PS Pediatrico;23
+27/11/2022;Menaggio;PS Generale;11
+27/11/2022;S. Fermo;PS Generale;82
+27/11/2022;S. Fermo;PS Ostetrico-Ginecologico;14
+27/11/2022;S. Fermo;PS Pediatrico;78
+28/11/2022;Cantù;PS Generale;56
+28/11/2022;Cantù;PS Pediatrico;26
+28/11/2022;Menaggio;PS Generale;30
+28/11/2022;S. Fermo;PS Generale;98
+28/11/2022;S. Fermo;PS Ostetrico-Ginecologico;25
+28/11/2022;S. Fermo;PS Pediatrico;66
+29/11/2022;Cantù;PS Generale;44
+29/11/2022;Cantù;PS Pediatrico;17
+29/11/2022;Menaggio;PS Generale;16
+29/11/2022;S. Fermo;PS Generale;89
+29/11/2022;S. Fermo;PS Ostetrico-Ginecologico;16
+29/11/2022;S. Fermo;PS Pediatrico;46
+30/11/2022;Cantù;PS Generale;55
+30/11/2022;Cantù;PS Pediatrico;19
+30/11/2022;Menaggio;PS Generale;19
+30/11/2022;S. Fermo;PS Generale;111
+30/11/2022;S. Fermo;PS Ostetrico-Ginecologico;13
+30/11/2022;S. Fermo;PS Pediatrico;52
+01/12/2022;Cantù;PS Generale;60
+01/12/2022;Cantù;PS Pediatrico;15
+01/12/2022;Menaggio;PS Generale;23
+01/12/2022;S. Fermo;PS Generale;84
+01/12/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+01/12/2022;S. Fermo;PS Pediatrico;49
+02/12/2022;Cantù;PS Generale;55
+02/12/2022;Cantù;PS Pediatrico;21
+02/12/2022;Menaggio;PS Generale;15
+02/12/2022;S. Fermo;PS Generale;97
+02/12/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+02/12/2022;S. Fermo;PS Pediatrico;41
+03/12/2022;Cantù;PS Generale;52
+03/12/2022;Cantù;PS Pediatrico;18
+03/12/2022;Menaggio;PS Generale;20
+03/12/2022;S. Fermo;PS Generale;81
+03/12/2022;S. Fermo;PS Ostetrico-Ginecologico;10
+03/12/2022;S. Fermo;PS Pediatrico;48
+04/12/2022;Cantù;PS Generale;50
+04/12/2022;Cantù;PS Pediatrico;10
+04/12/2022;Menaggio;PS Generale;12
+04/12/2022;S. Fermo;PS Generale;83
+04/12/2022;S. Fermo;PS Ostetrico-Ginecologico;23
+04/12/2022;S. Fermo;PS Pediatrico;65
+05/12/2022;Cantù;PS Generale;53
+05/12/2022;Cantù;PS Pediatrico;15
+05/12/2022;Menaggio;PS Generale;22
+05/12/2022;S. Fermo;PS Generale;122
+05/12/2022;S. Fermo;PS Ostetrico-Ginecologico;25
+05/12/2022;S. Fermo;PS Pediatrico;44
+06/12/2022;Cantù;PS Generale;49
+06/12/2022;Cantù;PS Pediatrico;21
+06/12/2022;Menaggio;PS Generale;13
+06/12/2022;S. Fermo;PS Generale;93
+06/12/2022;S. Fermo;PS Ostetrico-Ginecologico;20
+06/12/2022;S. Fermo;PS Pediatrico;46
+07/12/2022;Cantù;PS Generale;58
+07/12/2022;Cantù;PS Pediatrico;6
+07/12/2022;Menaggio;PS Generale;27
+07/12/2022;S. Fermo;PS Generale;100
+07/12/2022;S. Fermo;PS Ostetrico-Ginecologico;23
+07/12/2022;S. Fermo;PS Pediatrico;48
+08/12/2022;Cantù;PS Generale;35
+08/12/2022;Cantù;PS Pediatrico;26
+08/12/2022;Menaggio;PS Generale;15
+08/12/2022;S. Fermo;PS Generale;94
+08/12/2022;S. Fermo;PS Ostetrico-Ginecologico;9
+08/12/2022;S. Fermo;PS Pediatrico;55
+09/12/2022;Cantù;PS Generale;42
+09/12/2022;Cantù;PS Pediatrico;14
+09/12/2022;Menaggio;PS Generale;21
+09/12/2022;S. Fermo;PS Generale;109
+09/12/2022;S. Fermo;PS Ostetrico-Ginecologico;26
+09/12/2022;S. Fermo;PS Pediatrico;48
+10/12/2022;Cantù;PS Generale;48
+10/12/2022;Cantù;PS Pediatrico;18
+10/12/2022;Menaggio;PS Generale;23
+10/12/2022;S. Fermo;PS Generale;96
+10/12/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+10/12/2022;S. Fermo;PS Pediatrico;44
+11/12/2022;Cantù;PS Generale;49
+11/12/2022;Cantù;PS Pediatrico;18
+11/12/2022;Menaggio;PS Generale;15
+11/12/2022;S. Fermo;PS Generale;87
+11/12/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+11/12/2022;S. Fermo;PS Pediatrico;67
+12/12/2022;Cantù;PS Generale;60
+12/12/2022;Cantù;PS Pediatrico;15
+12/12/2022;Menaggio;PS Generale;23
+12/12/2022;S. Fermo;PS Generale;98
+12/12/2022;S. Fermo;PS Ostetrico-Ginecologico;21
+12/12/2022;S. Fermo;PS Pediatrico;46
+13/12/2022;Cantù;PS Generale;61
+13/12/2022;Cantù;PS Pediatrico;9
+13/12/2022;Menaggio;PS Generale;15
+13/12/2022;S. Fermo;PS Generale;101
+13/12/2022;S. Fermo;PS Ostetrico-Ginecologico;23
+13/12/2022;S. Fermo;PS Pediatrico;38
+14/12/2022;Cantù;PS Generale;47
+14/12/2022;Cantù;PS Pediatrico;7
+14/12/2022;Menaggio;PS Generale;11
+14/12/2022;S. Fermo;PS Generale;105
+14/12/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+14/12/2022;S. Fermo;PS Pediatrico;39
+15/12/2022;Cantù;PS Generale;49
+15/12/2022;Cantù;PS Pediatrico;10
+15/12/2022;Menaggio;PS Generale;12
+15/12/2022;S. Fermo;PS Generale;91
+15/12/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+15/12/2022;S. Fermo;PS Pediatrico;40
+16/12/2022;Cantù;PS Generale;56
+16/12/2022;Cantù;PS Pediatrico;9
+16/12/2022;Menaggio;PS Generale;24
+16/12/2022;S. Fermo;PS Generale;107
+16/12/2022;S. Fermo;PS Ostetrico-Ginecologico;22
+16/12/2022;S. Fermo;PS Pediatrico;43
+17/12/2022;Cantù;PS Generale;54
+17/12/2022;Cantù;PS Pediatrico;15
+17/12/2022;Menaggio;PS Generale;18
+17/12/2022;S. Fermo;PS Generale;83
+17/12/2022;S. Fermo;PS Ostetrico-Ginecologico;15
+17/12/2022;S. Fermo;PS Pediatrico;58
+18/12/2022;Cantù;PS Generale;44
+18/12/2022;Cantù;PS Pediatrico;20
+18/12/2022;Menaggio;PS Generale;16
+18/12/2022;S. Fermo;PS Generale;88
+18/12/2022;S. Fermo;PS Ostetrico-Ginecologico;22
+18/12/2022;S. Fermo;PS Pediatrico;65
+19/12/2022;Cantù;PS Generale;52
+19/12/2022;Cantù;PS Pediatrico;25
+19/12/2022;Menaggio;PS Generale;25
+19/12/2022;S. Fermo;PS Generale;105
+19/12/2022;S. Fermo;PS Ostetrico-Ginecologico;29
+19/12/2022;S. Fermo;PS Pediatrico;57
+20/12/2022;Cantù;PS Generale;52
+20/12/2022;Cantù;PS Pediatrico;15
+20/12/2022;Menaggio;PS Generale;25
+20/12/2022;S. Fermo;PS Generale;94
+20/12/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+20/12/2022;S. Fermo;PS Pediatrico;56
+21/12/2022;Cantù;PS Generale;50
+21/12/2022;Cantù;PS Pediatrico;9
+21/12/2022;Menaggio;PS Generale;19
+21/12/2022;S. Fermo;PS Generale;101
+21/12/2022;S. Fermo;PS Ostetrico-Ginecologico;24
+21/12/2022;S. Fermo;PS Pediatrico;42
+22/12/2022;Cantù;PS Generale;51
+22/12/2022;Cantù;PS Pediatrico;6
+22/12/2022;Menaggio;PS Generale;16
+22/12/2022;S. Fermo;PS Generale;106
+22/12/2022;S. Fermo;PS Ostetrico-Ginecologico;16
+22/12/2022;S. Fermo;PS Pediatrico;34
+23/12/2022;Cantù;PS Generale;48
+23/12/2022;Cantù;PS Pediatrico;10
+23/12/2022;Menaggio;PS Generale;24
+23/12/2022;S. Fermo;PS Generale;85
+23/12/2022;S. Fermo;PS Ostetrico-Ginecologico;11
+23/12/2022;S. Fermo;PS Pediatrico;47
+24/12/2022;Cantù;PS Generale;32
+24/12/2022;Cantù;PS Pediatrico;11
+24/12/2022;Menaggio;PS Generale;17
+24/12/2022;S. Fermo;PS Generale;89
+24/12/2022;S. Fermo;PS Ostetrico-Ginecologico;13
+24/12/2022;S. Fermo;PS Pediatrico;45
+25/12/2022;Cantù;PS Generale;48
+25/12/2022;Cantù;PS Pediatrico;12
+25/12/2022;Menaggio;PS Generale;12
+25/12/2022;S. Fermo;PS Generale;88
+25/12/2022;S. Fermo;PS Ostetrico-Ginecologico;12
+25/12/2022;S. Fermo;PS Pediatrico;41
+26/12/2022;Cantù;PS Generale;45
+26/12/2022;Cantù;PS Pediatrico;22
+26/12/2022;Menaggio;PS Generale;26
+26/12/2022;S. Fermo;PS Generale;88
+26/12/2022;S. Fermo;PS Ostetrico-Ginecologico;16
+26/12/2022;S. Fermo;PS Pediatrico;65
+27/12/2022;Cantù;PS Generale;68
+27/12/2022;Cantù;PS Pediatrico;8
+27/12/2022;Menaggio;PS Generale;33
+27/12/2022;S. Fermo;PS Generale;110
+27/12/2022;S. Fermo;PS Ostetrico-Ginecologico;19
+27/12/2022;S. Fermo;PS Pediatrico;40
+28/12/2022;Cantù;PS Generale;47
+28/12/2022;Cantù;PS Pediatrico;10
+28/12/2022;Menaggio;PS Generale;18
+28/12/2022;S. Fermo;PS Generale;92
+28/12/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+28/12/2022;S. Fermo;PS Pediatrico;33
+29/12/2022;Cantù;PS Generale;46
+29/12/2022;Cantù;PS Pediatrico;4
+29/12/2022;Menaggio;PS Generale;20
+29/12/2022;S. Fermo;PS Generale;92
+29/12/2022;S. Fermo;PS Ostetrico-Ginecologico;23
+29/12/2022;S. Fermo;PS Pediatrico;31
+30/12/2022;Cantù;PS Generale;48
+30/12/2022;Cantù;PS Pediatrico;11
+30/12/2022;Menaggio;PS Generale;22
+30/12/2022;S. Fermo;PS Generale;91
+30/12/2022;S. Fermo;PS Ostetrico-Ginecologico;18
+30/12/2022;S. Fermo;PS Pediatrico;38
+31/12/2022;Cantù;PS Generale;35
+31/12/2022;Cantù;PS Pediatrico;9
+31/12/2022;Menaggio;PS Generale;19
+31/12/2022;S. Fermo;PS Generale;57
+31/12/2022;S. Fermo;PS Ostetrico-Ginecologico;17
+31/12/2022;S. Fermo;PS Pediatrico;37

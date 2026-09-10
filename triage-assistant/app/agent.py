@@ -64,6 +64,7 @@ ALTRE REGOLE VINCOLANTI:
 8. Fai al massimo 2-3 domande di follow-up prima di proporre il codice.
 9. Prima di raccomandare strutture ti serve la posizione: usa quella condivisa dal browser (nel contesto) o chiedila.
 10. Per codice bianco o sintomi lievi suggerisci prima la farmacia più vicina.
+11bis. Se l'utente chiede quanto si aspettera' in un ospedale fra un po' ("conviene andarci stasera?", "quanto si aspetta al Gemelli fra 2 ore?"), usa forecast_hospital_wait e confronta l'attesa di ADESSO con quella prevista: e' il confronto che rende utile la risposta.
 11. Chiedi la preferenza tra "meno_attesa", "meno_viaggio" o "bilanciato" se non è chiara.
 11bis. Se l'utente dice quanto tempo massimo è disposto ad aspettare, chiama list_hospitals con max_wait_minutes (e la sua posizione, così ordina per distanza in linea d'aria). Se l'utente nomina un ospedale specifico ("il Gemelli", "Tor Vergata"), usa list_hospitals con name_query per trovarlo e mostrarne stato e attesa.
 12. Quando raccomandi strutture chiama sempre show_on_map per evidenziarle sulla mappa.
@@ -125,6 +126,18 @@ TOOLS = [
             "minutes_ahead": {"type": "integer"},
         }, "required": ["hospital_code", "minutes_ahead"]}}},
     {"type": "function", "function": {
+        "name": "forecast_hospital_wait",
+        "description": ("Previsione dell'attesa media in un ospedale fra N minuti. Usa il modello "
+                        "ML addestrato. Serve per domande come 'quanto si aspetta al Gemelli fra "
+                        "2 ore?' o 'conviene andarci stasera?'. Orizzonti utili: 30, 60, 120, "
+                        "240, 360, 720 minuti. Ritorna l'attesa per ogni codice colore."),
+        "parameters": {"type": "object", "properties": {
+            "hospital_code": {"type": "string", "description": "codice struttura, es. 90501"},
+            "hospital_name": {"type": "string", "description": "alternativa al codice: nome anche parziale, es. 'gemelli'"},
+            "minutes_ahead": {"type": "integer", "description": "fra quanti minuti", "default": 60},
+            "triage_code": {"type": "string", "enum": ["rosso", "arancione", "azzurro", "verde", "bianco"]},
+        }, "required": ["minutes_ahead"]}}},
+    {"type": "function", "function": {
         "name": "travel_time",
         "description": "Minuti di viaggio in auto dalla posizione dell'utente a un ospedale.",
         "parameters": {"type": "object", "properties": {
@@ -176,6 +189,12 @@ def _summarize(name: str, result) -> str:
         return f"web: {n} risultati ({ok})"
     if name == "save_pathology_color":
         return f"salvato: {result.get('codice', result.get('error', '?'))}"
+    if name == "forecast_hospital_wait":
+        if result.get("error"):
+            return result["error"]
+        return (f"{result['hospital_name']}: ora ~{result.get('attesa_ora_minuti')} min, "
+                f"fra {result['minutes_ahead']} min ~{result.get('attesa_prevista_minuti')} min "
+                f"({result.get('metodo')})")
     if name == "list_hospitals":
         hs = result.get("hospitals", [])
         top = " · ".join(
@@ -193,7 +212,8 @@ def _exec_tool(name: str, args: dict, ctx: dict) -> dict | list:
         "tool": name,
         "by": {"classify_pathology": "modello locale (MiniLM + red flag)",
                "lookup_pathology_severity": "cache / ricerca web",
-               "save_pathology_color": "cache"}.get(name, "backend"),
+               "save_pathology_color": "cache",
+               "forecast_hospital_wait": "modello ML attese"}.get(name, "backend"),
         "args": {k: (v if not isinstance(v, str) or len(v) < 90 else v[:90] + "…")
                  for k, v in args.items()},
         "result": _summarize(name, result),
@@ -226,6 +246,34 @@ def _dispatch(name: str, args: dict, ctx: dict) -> dict | list:
         if not current:
             return {"error": f"ospedale {args['hospital_code']} non trovato"}
         return predict_hospital_state(args["hospital_code"], int(args["minutes_ahead"]), current)
+    if name == "forecast_hospital_wait":
+        code = args.get("hospital_code")
+        if not code and args.get("hospital_name"):
+            q = args["hospital_name"].lower()
+            hit = next((h for h in state.get_all_status() if q in h["name"].lower()), None)
+            code = hit["code"] if hit else None
+        if not code:
+            return {"error": "struttura non trovata: passa hospital_code o un hospital_name piu' preciso"}
+        cur = state.get_status(code)
+        if not cur:
+            return {"error": f"ospedale {code} non trovato"}
+        mins = max(int(args.get("minutes_ahead", 60)), 0)
+        p = predict_hospital_state(code, mins, cur)
+        key = {"rosso": "red", "arancione": "yellow", "giallo": "yellow",
+               "azzurro": "green", "verde": "green", "bianco": "white"}.get(
+                   args.get("triage_code", "verde"), "green")
+        att = p["est_wait_minutes"]
+        return {
+            "hospital_code": code, "hospital_name": cur["name"], "comune": cur["comune"],
+            "minutes_ahead": mins,
+            "attesa_ora_minuti": mocks.estimate_wait_minutes(
+                cur["waiting_by_code"], max(cur.get("in_treatment", 3) / 3, 1)).get(key),
+            "attesa_prevista_minuti": att.get(key),
+            "attesa_per_codice": att,
+            "coda_prevista": p["waiting_by_code"],
+            "coda_attuale": cur["waiting_by_code"],
+            "metodo": p.get("method", "?"), "confidence": p.get("confidence", "?"),
+        }
     if name == "travel_time":
         h = state.get_status(args["hospital_code"])
         if not h:

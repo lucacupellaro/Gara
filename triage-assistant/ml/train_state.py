@@ -27,7 +27,13 @@ SERIE = ROOT / "data" / "synthetic.csv"
 OUT = ROOT / "ml" / "state_model"
 CODES = ("red", "yellow", "green", "white")
 STEP_MIN = 15
-ORIZZONTI = (15, 30, 45, 60, 90, 120)          # minuti di viaggio plausibili
+# Orizzonti su cui il modello viene addestrato. I primi coprono i tempi di
+# viaggio reali; quelli lunghi servono allo slider della UI ("com'e' fra 6
+# ore?"). Oltre le ~2 ore lo stato attuale conta poco e il modello impara
+# soprattutto il profilo orario: e' corretto cosi', ed e' comunque meglio della
+# persistenza, che a 12 ore e' semplicemente sbagliata.
+ORIZZONTI = (15, 30, 45, 60, 90, 120, 240, 360, 720)
+MAX_COPPIE = 9_000_000            # tetto di memoria: si campiona per orizzonte
 
 
 def build_dataset(df: pd.DataFrame) -> pd.DataFrame:
@@ -41,7 +47,11 @@ def build_dataset(df: pd.DataFrame) -> pd.DataFrame:
         blocco["horizon"] = D
         for c in CODES:
             blocco[f"y_{c}"] = g[f"wait_{c}"].shift(-shift)
-        pezzi.append(blocco.dropna(subset=[f"y_{c}" for c in CODES]))
+        blocco = blocco.dropna(subset=[f"y_{c}" for c in CODES])
+        quota = MAX_COPPIE // len(ORIZZONTI)
+        if len(blocco) > quota:
+            blocco = blocco.sample(n=quota, random_state=42)
+        pezzi.append(blocco)
     return pd.concat(pezzi, ignore_index=True)
 
 

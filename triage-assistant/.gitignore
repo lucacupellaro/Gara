@@ -1,5 +1,10 @@
 .env
 data/raw/
+# ...ma i dati base servono per far partire il sistema senza rete: il portale
+# dati.lazio.it risponde spesso 500/503 e la demo non puo' dipenderne.
+!data/raw/ps_lazio.csv
+!data/raw/farmacie_latlon.csv
+!data/raw/lariana_*.csv
 __pycache__/
 *.pyc
 .venv/

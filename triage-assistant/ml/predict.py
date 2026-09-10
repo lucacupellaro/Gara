@@ -4,23 +4,28 @@ app/predictor.py importa automaticamente `predict_queue` da qui: se questo
 modulo esiste ed e' importabile, il backend smette di usare i mock. Nessun'altra
 modifica necessaria.
 
-STRATEGIA IBRIDA, e il motivo. Misurato su 2,06 milioni di coppie di test
+STRATEGIA IBRIDA, e il motivo. Misurato su 1,8 milioni di coppie di test
 (vedi ml/state_model/meta.json), il modello batte la baseline di persistenza
-"la coda fra D minuti sara' come adesso" SOLO sugli orizzonti lunghi:
+"la coda fra D minuti sara' come adesso" solo dagli orizzonti medi in poi:
 
-    +15 min  -21.8%   la persistenza vince
-    +30 min   -8.1%   la persistenza vince
-    +45 min   -2.3%   sostanzialmente pari
-    +60 min   +1.2%   il modello inizia a vincere
-    +90 min   +5.3%
-   +120 min   +9.8%
+     15 min  -38.2%   la persistenza vince
+     30 min  -14.5%   la persistenza vince
+     45 min   -6.0%   la persistenza vince
+     60 min   -0.9%   sostanzialmente pari
+     90 min   +5.1%   il modello inizia a vincere
+    120 min   +8.4%
+    240 min  +15.2%
+    360 min  +16.5%
+    720 min  +20.7%
 
-Ha senso: a 15 minuti la coda non fa in tempo a cambiare, e la fotografia
+Ha senso: a 15 minuti la coda non fa in tempo a cambiare e la fotografia
 attuale e' gia' la risposta migliore; oltre l'ora contano il profilo orario e
-la stagionalita', che la persistenza ignora. Usare il modello ovunque
-peggiorerebbe le predizioni brevi, che sono le piu' frequenti. Quindi:
+la stagionalita', che la persistenza ignora del tutto (a 12 ore la persistenza
+e' semplicemente sbagliata: predice le code notturne uguali a quelle diurne).
+Usare il modello ovunque peggiorerebbe le predizioni brevi, che nel caso d'uso
+"tempo di viaggio" sono anche le piu' frequenti. Quindi:
 
-    D <  SOGLIA  ->  persistenza (piu' accurata li')
+    D <  SOGLIA  ->  persistenza modulata dal profilo orario
     D >= SOGLIA  ->  modello
 
 Dichiararlo apertamente: un modello che si sceglie dove serve vale piu' di un
@@ -36,7 +41,7 @@ MODEL_DIR = Path(__file__).resolve().parent / "state_model"
 CODES = ("red", "yellow", "green", "white")
 PRIORITY = CODES
 SERVICE_MIN = {"red": 90.0, "yellow": 60.0, "green": 40.0, "white": 25.0}
-SOGLIA_MODELLO = 50          # minuti: sotto questa soglia vince la persistenza
+SOGLIA_MODELLO = 75          # minuti: fra 60 e 90 il modello supera la persistenza
 
 _state: dict = {}
 

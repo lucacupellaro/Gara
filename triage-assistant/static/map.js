@@ -243,9 +243,21 @@ async function updateNearest() {
 
 /* --- caricamento dati -------------------------------------------------------- */
 
+/* Slider temporale: posizioni -> minuti nel futuro. 0 = adesso.
+   I valori oltre le 2 ore sono quelli su cui il modello batte davvero la
+   persistenza (+15% a 4h, +21% a 12h), quindi e' li' che lo slider mostra
+   qualcosa che una semplice fotografia non saprebbe dire. */
+const TIME_STEPS = [0, 30, 60, 120, 240, 360, 720];
+const TIME_LABELS = ["adesso", "+30 min", "+1 ora", "+2 ore", "+4 ore", "+6 ore", "+12 ore"];
+let forecastMinutes = 0;
+
 async function loadHospitals() {
-  const res = await fetch("/api/hospitals");
+  const url = forecastMinutes > 0
+    ? `/api/forecast?minutes=${forecastMinutes}&triage_code=verde`
+    : "/api/hospitals";
+  const res = await fetch(url);
   const data = await res.json();
+  updateTimePanel(data);
   hospitalsData = data.hospitals;
   hospitalLayer.clearLayers();
   // intensità relativa al PS più carico del momento (coda pesata per gravità)
@@ -354,3 +366,35 @@ window.getUserPosition = () => userPosition;
 
 loadHospitals();
 setInterval(loadHospitals, 60_000);
+
+
+/* ---------- slider temporale ---------- */
+function updateTimePanel(data) {
+  const lab = document.getElementById("tp-label");
+  const meta = document.getElementById("tp-meta");
+  const tot = document.getElementById("tp-tot");
+  if (!lab) return;
+  const i = TIME_STEPS.indexOf(forecastMinutes);
+  lab.textContent = TIME_LABELS[i < 0 ? 0 : i];
+  const somma = (data.hospitals || []).reduce((a, h) => a + (h.total_waiting || 0), 0);
+  tot.textContent = `${somma} persone in attesa nel Lazio`;
+  if (forecastMinutes === 0) {
+    meta.textContent = "stato osservato";
+    meta.className = "tp-meta obs";
+  } else {
+    const m = data.method === "modello" ? "modello ML" : "profilo orario";
+    meta.textContent = `previsione · ${m}`;
+    meta.className = "tp-meta pred";
+  }
+  document.getElementById("time-panel").classList.toggle("forecasting", forecastMinutes > 0);
+}
+
+const rngTime = document.getElementById("rng-time");
+if (rngTime) {
+  rngTime.addEventListener("input", () => {
+    forecastMinutes = TIME_STEPS[Number(rngTime.value)];
+    const i = TIME_STEPS.indexOf(forecastMinutes);
+    document.getElementById("tp-label").textContent = TIME_LABELS[i];
+    loadHospitals();
+  });
+}
