@@ -139,15 +139,23 @@ function ensurePosition() {
   });
 }
 
+function hideRouteBanner() {
+  document.getElementById("route-banner").hidden = true;
+  routeLayer.clearLayers();
+}
+
 function showRouteBanner(html) {
   const banner = document.getElementById("route-banner");
-  banner.innerHTML = `${html} <span class="close" title="chiudi">✕</span>`;
+  banner.innerHTML =
+    `<span class="route-text">${html}</span>` +
+    `<button type="button" class="close" title="chiudi (Esc)" aria-label="chiudi">✕</button>`;
   banner.hidden = false;
-  banner.querySelector(".close").addEventListener("click", () => {
-    banner.hidden = true;
-    routeLayer.clearLayers();
-  });
+  banner.querySelector(".close").addEventListener("click", hideRouteBanner);
 }
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && !document.getElementById("route-banner").hidden) hideRouteBanner();
+});
 
 function calcTravel(code) {
   return runTravel(`hospital=${code}`, `travel-${code}`);

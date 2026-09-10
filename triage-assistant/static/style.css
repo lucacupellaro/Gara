@@ -1,4 +1,6 @@
 * { box-sizing: border-box; margin: 0; }
+/* gli ID con display:flex battono [hidden] per specificità: forziamo qui */
+[hidden] { display: none !important; }
 body { font-family: system-ui, sans-serif; height: 100vh; display: flex; flex-direction: column; }
 
 #disclaimer {
@@ -59,12 +61,20 @@ body { font-family: system-ui, sans-serif; height: 100vh; display: flex; flex-di
 #route-banner {
   position: absolute; top: 10px; left: 50%; transform: translateX(-50%);
   z-index: 1000; background: #1971c2; color: #fff;
-  padding: 8px 14px; border-radius: 999px; font-size: .95rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,.35); display: flex; gap: 10px; align-items: center;
-  max-width: 90%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  padding: 8px 8px 8px 14px; border-radius: 999px; font-size: .95rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.35); display: flex; gap: 8px; align-items: center;
+  max-width: 90%;
 }
-#route-banner .close { cursor: pointer; font-weight: 700; opacity: .8; }
-#route-banner .close:hover { opacity: 1; }
+#route-banner .route-text {
+  min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+#route-banner .close {
+  flex: 0 0 auto; cursor: pointer; font-weight: 700; line-height: 1;
+  border: 0; background: rgba(255,255,255,.18); color: #fff;
+  width: 22px; height: 22px; border-radius: 50%; font-size: .8rem;
+  display: grid; place-items: center;
+}
+#route-banner .close:hover { background: rgba(255,255,255,.35); }
 .route-label {
   background: #1971c2; color: #fff; border: 0; border-radius: 999px;
   padding: 3px 10px; font-weight: 700; box-shadow: 0 1px 4px rgba(0,0,0,.4);
