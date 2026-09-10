@@ -10,7 +10,7 @@ Sito con **mappa del Lazio** (ospedali/PS, farmacie e altre strutture) colorata 
   URL diretto: `https://dati.lazio.it/dataset/144e577e-8a7e-4613-9830-48cbb1d7ee0f/resource/12c31624-f1a4-4874-a903-8954549ddb81/download/output_1627742164504.csv`
 - **Feed live: esiste ma va "sniffato".** Il nuovo salutelazio.it è una app Next.js (`/it/strutture?facilityTypeIds=009`) che mostra tempi d'attesa e triage (nel codice: chiavi `waitingTimes`, `triageCode`, path API `/external-services/facility/structures/...`); l'endpoint dati completo è iniettato a runtime → lo catturiamo con browser headless (Playwright) guardando le chiamate XHR. **Fallback pronto:** simulatore che ricampiona lo snapshot 2021 con pattern orari/settimanali realistici.
 - **Geocoding:** il CSV non ha lat/lon degli ospedali → passo una tantum con Nominatim (49 strutture, risultato salvato in JSON).
-- **ML: fattibile con onestà.** Non esistono serie storiche orarie open → doppia strategia: (a) da subito un **logger** che salva il feed ogni 10 minuti per costruire il dataset vero; (b) intanto training su serie sintetica ricampionata. La stima d'attesa usa la teoria delle code: pazienti davanti a te per codice × tempo medio di trattamento, con precedenza rossi>gialli>verdi>bianchi.
+- **ML: fattibile con onestà.** Non esistono serie storiche orarie open → doppia strategia: (a) da subito un **logger** che salva il feed ogni 10 minuti per costruire il dataset vero; (b) intanto training su **serie sintetica calibrata su dati reali**: scala/mix triage per struttura dallo snapshot Lazio + stagionalità (giorno settimana, mese, festivi) estratta dalla serie storica reale giornaliera **ASST Lariana 2021–2025** (dati.gov.it, `DATA;SEDE;TIPO PS;NUMERO ACCESSI`) + profilo orario parametrico da letteratura. La stima d'attesa usa la teoria delle code: pazienti davanti a te per codice × tempo medio di trattamento, con precedenza rossi>gialli>verdi>bianchi. **Specifica completa e lanciabile come task per un agente: `alex/task-ml-attese.md`.**
 
 **Scelte fatte:** stack **FastAPI + Leaflet vanilla** · progetto in **`ai2b/triage-assistant`** (nuova cartella) · **DeepSeek** con API key in `.env` (mai committata).
 
@@ -26,12 +26,17 @@ triage-assistant/
 │   ├── geocode.py            # geocoding ospedali (Nominatim, rate-limited) → hospitals.json
 │   ├── logger.py             # ogni 10 min salva lo stato PS in data/history.csv (per ML futuro)
 │   └── (raw/, hospitals.json, pharmacies.json, history.csv)
-├── ml/
-│   ├── simulate.py           # serie storica sintetica realistica dal CSV 2021
-│   │                         #   (picco 10-13, minimo notturno, lunedì +15%, moltiplicatore caldo)
-│   ├── train.py              # GradientBoosting sklearn: (ospedale, ora, giorno, festivo, temperatura)
-│   │                         #   → pazienti in attesa per codice · salva model.joblib
-│   └── predict.py            # predict(hospital, datetime) → coda prevista → stima attesa (teoria code)
+├── ml/                       # ⇨ specifica dettagliata in alex/task-ml-attese.md
+│   ├── download_data.py      # scarica snapshot Lazio + serie reale ASST Lariana 2021-2025
+│   ├── calibrate.py          # dalla serie Lariana estrae moltiplicatori (giorno sett., mese,
+│   │                         #   festivi) → calibration.json
+│   ├── simulate.py           # serie sintetica 15 min × 2 anni × 49 strutture: arrivi Poisson
+│   │                         #   (scala/mix triage dallo snapshot Lazio × calibrazione reale ×
+│   │                         #    profilo orario) + coda simulata con priorità · sanity check vs snapshot
+│   ├── train.py              # HistGradientBoosting sklearn, split temporale, target: coda a
+│   │                         #   +30/+60/+120 min · accettazione: MAE < baseline persistenza
+│   └── predict.py            # predict_queue(hospital, at, current_state) → coda + attesa stimata
+│                             #   compare_times(...): adesso vs all'arrivo vs orario migliore
 ├── app/
 │   ├── main.py               # FastAPI: monta static/, include routers
 │   ├── state.py              # stato PS corrente (live se disponibile, altrimenti simulato "now")
@@ -75,7 +80,7 @@ Il chatbot **non conosce i dati**: ha a disposizione degli *strumenti* (funzioni
 1. Scaffold progetto + requirements + `.env.example`
 2. `data/download.py` + `geocode.py` → `hospitals.json`, `pharmacies.json`
 3. `app/main.py` + `/api/hospitals` + mappa Leaflet con heatmap → **prima demo visiva funzionante**
-4. `ml/simulate.py` + `train.py` + `predict.py` + `/api/predict`
+4. Modulo ML completo (download → calibrate → simulate → train → predict) + `/api/predict` — **task delegabile a un agente: `alex/task-ml-attese.md`**
 5. `scoring.py` + `/api/recommend` (con OSRM)
 6. `agent.py` + `/api/chat` + UI chat (DeepSeek function calling)
 7. `data/logger.py` (da lanciare subito: ogni giorno di log = dati veri per il modello)
@@ -87,4 +92,4 @@ Il chatbot **non conosce i dati**: ha a disposizione degli *strumenti* (funzioni
 - `uvicorn app.main:app` → http://localhost:8000: mappa con 49 ospedali colorati + farmacie.
 - `POST /api/recommend` con lat/lon di Roma centro, codice verde, pref "tempo_totale" → top-3 strutture motivate.
 - Chat end-to-end: *"ho la febbre alta da due giorni"* → il bot fa domande, propone il codice, chiama i tool (visibili nei log), raccomanda struttura/farmacia. *"Ho un forte dolore al petto"* → risposta 112 immediata, senza tool.
-- `python ml/train.py` stampa l'errore (MAE) su validation; `/api/predict?...&at=+2h` mostra attesa ora vs tra 2 ore.
+- `python ml/train.py` stampa l'errore (MAE) su validation **e batte la baseline di persistenza**; `/api/predict?...&at=+2h` mostra attesa ora vs tra 2 ore (verifiche complete del modulo ML in `alex/task-ml-attese.md`).
