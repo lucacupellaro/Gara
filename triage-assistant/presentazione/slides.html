@@ -1,5 +1,5 @@
 <title>Triage Assistant Lazio</title>
-<meta name="description" content="Deck di 5 minuti: architettura, API, dataset e demo del prototipo di orientamento ai pronto soccorso del Lazio.">
+<meta name="description" content="Deck di 5 minuti: architettura web, l'LLM e i suoi tool, i due modelli locali e le fonti dati.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -14,6 +14,8 @@
     --accent:    #0b7d5a;
     --accent-ink:#08543d;
     --accent-soft:#e4efe9;
+    --violet:    #5b53c4;
+    --violet-soft:#e9e7f6;
 
     --rosso:     #cf3a33;
     --arancione: #e0872a;
@@ -21,36 +23,24 @@
     --verde:     #3f9d5a;
     --bianco:    #ced5dc;
 
-    --maxw: 62rem;
-    --step--1: clamp(.82rem, .78rem + .2vw, .95rem);
-    --step-0:  clamp(1rem, .93rem + .35vw, 1.2rem);
-    --step-1:  clamp(1.2rem, 1.05rem + .7vw, 1.6rem);
-    --step-2:  clamp(1.6rem, 1.3rem + 1.5vw, 2.6rem);
-    --step-3:  clamp(2.4rem, 1.7rem + 3.4vw, 4.6rem);
+    --maxw: 64rem;
+    --step--1: clamp(.8rem, .76rem + .2vw, .92rem);
+    --step-0:  clamp(1rem, .93rem + .35vw, 1.16rem);
+    --step-1:  clamp(1.15rem, 1.02rem + .65vw, 1.5rem);
+    --step-2:  clamp(1.55rem, 1.28rem + 1.4vw, 2.5rem);
+    --step-3:  clamp(2.3rem, 1.7rem + 3.1vw, 4.4rem);
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg:        #0e1216;
-      --surface:   #161c22;
-      --text:      #e7ebe4;
-      --muted:     #97a1ac;
-      --border:    #2a313a;
-      --accent:    #24a97c;
-      --accent-ink:#7fd8bd;
-      --accent-soft:#123027;
-      --bianco:    #47505a;
+      --bg:#0e1216; --surface:#161c22; --text:#e7ebe4; --muted:#97a1ac; --border:#2a313a;
+      --accent:#24a97c; --accent-ink:#7fd8bd; --accent-soft:#123027;
+      --violet:#9a92ef; --violet-soft:#20203a; --bianco:#47505a;
     }
   }
   :root[data-theme="dark"] {
-    --bg:        #0e1216;
-    --surface:   #161c22;
-    --text:      #e7ebe4;
-    --muted:     #97a1ac;
-    --border:    #2a313a;
-    --accent:    #24a97c;
-    --accent-ink:#7fd8bd;
-    --accent-soft:#123027;
-    --bianco:    #47505a;
+    --bg:#0e1216; --surface:#161c22; --text:#e7ebe4; --muted:#97a1ac; --border:#2a313a;
+    --accent:#24a97c; --accent-ink:#7fd8bd; --accent-soft:#123027;
+    --violet:#9a92ef; --violet-soft:#20203a; --bianco:#47505a;
   }
 
   * { box-sizing: border-box; }
@@ -58,24 +48,13 @@
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
   body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
+    margin: 0; background: var(--bg); color: var(--text);
     font-family: "Public Sans", system-ui, -apple-system, sans-serif;
-    font-size: var(--step-0);
-    line-height: 1.55;
-    -webkit-font-smoothing: antialiased;
+    font-size: var(--step-0); line-height: 1.55; -webkit-font-smoothing: antialiased;
   }
 
-  /* fixed chrome ------------------------------------------------------------ */
-  .rail {
-    position: fixed; inset: 0 0 auto 0; height: 3px; z-index: 20;
-    background: var(--border);
-  }
-  .rail > i {
-    display: block; height: 100%; width: 0;
-    background: var(--accent); transition: width .35s ease;
-  }
+  .rail { position: fixed; inset: 0 0 auto 0; height: 3px; z-index: 20; background: var(--border); }
+  .rail > i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .35s ease; }
   .counter {
     position: fixed; right: clamp(1rem, 3vw, 2.4rem); bottom: clamp(1rem, 3vw, 2.2rem);
     z-index: 20; font-family: "IBM Plex Mono", monospace; font-size: var(--step--1);
@@ -94,48 +73,33 @@
     display: grid; place-items: center; line-height: 1;
   }
   .nav button:hover { border-color: var(--accent); color: var(--accent-ink); }
-  .nav button:focus-visible, .slide a:focus-visible {
-    outline: 2px solid var(--accent); outline-offset: 2px;
-  }
+  .nav button:focus-visible, .slide a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-  /* slide frame ---------------------------------------------------------------- */
   .slide {
-    scroll-snap-align: start;
-    min-height: 100vh;
+    scroll-snap-align: start; min-height: 100vh;
     display: flex; flex-direction: column; justify-content: center;
-    padding: clamp(2.5rem, 7vh, 6rem) clamp(1.4rem, 8vw, 8rem);
-    gap: clamp(1rem, 3vh, 2rem);
-    border-bottom: 1px solid var(--border);
+    padding: clamp(2.2rem, 6vh, 5rem) clamp(1.4rem, 7vw, 7rem);
+    gap: clamp(.9rem, 2.5vh, 1.6rem); border-bottom: 1px solid var(--border);
   }
   .wrap { width: 100%; max-width: var(--maxw); margin: 0 auto; }
 
   .eyebrow {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: var(--step--1); font-weight: 500;
-    text-transform: uppercase; letter-spacing: .18em;
-    color: var(--accent-ink);
+    font-family: "IBM Plex Mono", monospace; font-size: var(--step--1); font-weight: 500;
+    text-transform: uppercase; letter-spacing: .18em; color: var(--accent-ink);
     display: flex; align-items: center; gap: .6rem;
   }
-  .eyebrow::before {
-    content: ""; width: 1.6rem; height: 2px; background: var(--accent);
-  }
+  .eyebrow::before { content: ""; width: 1.6rem; height: 2px; background: var(--accent); }
   h1, h2 {
-    font-family: "Fraunces", Georgia, serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    text-wrap: balance;
-    margin: .5rem 0 0;
-    line-height: 1.08;
-    letter-spacing: -.01em;
+    font-family: "Fraunces", Georgia, serif; font-optical-sizing: auto; font-weight: 500;
+    text-wrap: balance; margin: .4rem 0 0; line-height: 1.08; letter-spacing: -.01em;
   }
   h1 { font-size: var(--step-3); }
   h2 { font-size: var(--step-2); }
   h1 em, h2 em { font-style: italic; color: var(--accent-ink); }
-  .lead { font-size: var(--step-1); color: var(--text); max-width: 46ch; margin-top: 1rem; }
+  .lead { font-size: var(--step-1); max-width: 48ch; margin-top: .9rem; }
   .muted { color: var(--muted); }
 
-  /* triage strip ------------------------------------------------------------- */
-  .triage { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.6rem; }
+  .triage { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.4rem; }
   .chip {
     font-family: "IBM Plex Mono", monospace; font-size: var(--step--1);
     padding: .3rem .7rem; border-radius: 999px; border: 1px solid var(--border);
@@ -148,88 +112,102 @@
   .chip.v::before { background: var(--verde); }
   .chip.b::before { background: var(--bianco); }
 
-  .kicker { margin-top: 1.8rem; font-family: "IBM Plex Mono", monospace;
-    font-size: var(--step--1); color: var(--muted); }
+  .kicker { margin-top: 1.4rem; font-family: "IBM Plex Mono", monospace; font-size: var(--step--1); color: var(--muted); }
+  .kicker code, .lead code, li code, p code, td code { font-family: "IBM Plex Mono", monospace; font-size: .92em; }
 
-  /* generic lists / grids -------------------------------------------------- */
-  .points { list-style: none; padding: 0; margin: 1.4rem 0 0; display: grid; gap: 1.1rem; }
-  .points > li { display: grid; grid-template-columns: auto 1fr; gap: .9rem; align-items: start; }
+  .points { list-style: none; padding: 0; margin: 1.2rem 0 0; display: grid; gap: .95rem; }
+  .points > li { display: grid; grid-template-columns: auto 1fr; gap: .8rem; align-items: start; }
   .points b { font-weight: 700; }
-  .tick {
-    font-family: "Fraunces", serif; color: var(--accent); font-weight: 600;
-    font-size: var(--step-1); line-height: 1;
-  }
+  .tick { font-family: "Fraunces", serif; color: var(--accent); font-weight: 600; font-size: var(--step-1); line-height: 1; }
 
-  .grid { display: grid; gap: .9rem; margin-top: 1.5rem; }
-  @media (min-width: 40rem) { .grid.cols-2 { grid-template-columns: 1fr 1fr; } .grid.cols-3 { grid-template-columns: repeat(3, 1fr); } }
-
-  .card {
-    background: var(--surface); border: 1px solid var(--border);
-    border-radius: .6rem; padding: 1rem 1.1rem;
+  .grid { display: grid; gap: .8rem; margin-top: 1.3rem; }
+  @media (min-width: 42rem) {
+    .grid.cols-2 { grid-template-columns: 1fr 1fr; }
+    .grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
   }
-  .card h3 {
-    margin: 0; font-family: "IBM Plex Mono", monospace; font-weight: 500;
-    font-size: var(--step-0); letter-spacing: .01em;
-  }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: .6rem; padding: .95rem 1.05rem; }
+  .card h3 { margin: 0; font-family: "IBM Plex Mono", monospace; font-weight: 500; font-size: var(--step-0); }
   .card p { margin: .35rem 0 0; font-size: var(--step--1); color: var(--muted); line-height: 1.5; }
   .card.mandatory { border-color: var(--accent); box-shadow: inset 3px 0 0 var(--accent); }
+  .card.spot { border-color: var(--violet); box-shadow: inset 3px 0 0 var(--violet); }
   .tag {
-    display: inline-block; font-family: "IBM Plex Mono", monospace;
-    font-size: .7rem; text-transform: uppercase; letter-spacing: .12em;
-    color: var(--accent-ink); background: var(--accent-soft);
-    padding: .15rem .5rem; border-radius: .3rem; margin-bottom: .5rem;
+    display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: .7rem;
+    text-transform: uppercase; letter-spacing: .12em; color: var(--accent-ink);
+    background: var(--accent-soft); padding: .15rem .5rem; border-radius: .3rem; margin-bottom: .5rem;
   }
+  .tag.v { color: var(--violet); background: var(--violet-soft); }
 
   .callout {
-    margin-top: 1.5rem; border-left: 3px solid var(--arancione);
+    margin-top: 1.3rem; border-left: 3px solid var(--arancione);
     background: color-mix(in srgb, var(--arancione) 10%, var(--surface));
-    padding: .9rem 1.1rem; border-radius: 0 .5rem .5rem 0;
-    font-size: var(--step--1);
+    padding: .85rem 1.05rem; border-radius: 0 .5rem .5rem 0; font-size: var(--step--1);
   }
+  .callout.ok { border-left-color: var(--accent); background: var(--accent-soft); }
   .callout b { color: var(--text); }
 
-  /* architecture diagram ------------------------------------------------------ */
-  .arch { display: grid; gap: 0; margin-top: 1.4rem; }
+  /* architecture diagram --------------------------------------------------- */
+  .arch { display: grid; gap: 0; margin-top: 1.2rem; }
   .band {
-    border: 1px solid var(--border); background: var(--surface);
-    border-radius: .55rem; padding: .85rem 1rem;
-    display: grid; grid-template-columns: 7.5rem 1fr; gap: 1rem; align-items: center;
+    border: 1px solid var(--border); background: var(--surface); border-radius: .55rem;
+    padding: .8rem 1rem; display: grid; grid-template-columns: 7rem 1fr; gap: 1rem; align-items: center;
   }
-  .band + .band { margin-top: 1.4rem; position: relative; }
+  .band + .band { margin-top: 1.3rem; position: relative; }
   .band + .band::before {
-    content: ""; position: absolute; left: 50%; top: -1.4rem;
-    width: 2px; height: 1.4rem; background: var(--accent);
+    content: ""; position: absolute; left: 50%; top: -1.3rem; width: 2px; height: 1.3rem; background: var(--accent);
   }
   .band .who {
-    font-family: "IBM Plex Mono", monospace; font-size: .74rem;
-    text-transform: uppercase; letter-spacing: .1em; color: var(--muted);
+    font-family: "IBM Plex Mono", monospace; font-size: .72rem; text-transform: uppercase;
+    letter-spacing: .1em; color: var(--muted);
   }
-  .band .bits { display: flex; flex-wrap: wrap; gap: .4rem; }
+  .band .bits { display: flex; flex-wrap: wrap; gap: .38rem; }
   .band .bit {
-    font-family: "IBM Plex Mono", monospace; font-size: .78rem;
-    padding: .28rem .55rem; border-radius: .35rem;
-    background: var(--bg); border: 1px solid var(--border);
+    font-family: "IBM Plex Mono", monospace; font-size: .76rem;
+    padding: .26rem .5rem; border-radius: .35rem; background: var(--bg); border: 1px solid var(--border);
   }
   .band.accent { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent-soft); }
   .band.accent .bit.hot { background: var(--accent-soft); border-color: var(--accent); color: var(--accent-ink); }
+  .band .bit.ml { background: var(--violet-soft); border-color: var(--violet); color: var(--violet); }
 
-  /* demo steps ------------------------------------------------------------- */
-  ol.demo { margin: 1.3rem 0 0; padding: 0; list-style: none; counter-reset: d; display: grid; gap: .85rem; }
+  /* model spec table ----------------------------------------------------- */
+  .spec { width: 100%; border-collapse: collapse; margin-top: 1.1rem; font-size: var(--step--1); }
+  .spec td { padding: .5rem .2rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+  .spec td:first-child {
+    font-family: "IBM Plex Mono", monospace; color: var(--muted);
+    width: 12rem; padding-right: 1rem; white-space: nowrap;
+  }
+  .spec td:first-child + td b { font-weight: 700; }
+  .spec.num td:last-child { font-variant-numeric: tabular-nums; }
+
+  .badge {
+    display: inline-grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%;
+    font-family: "Fraunces", serif; font-weight: 600; font-size: 1.1rem;
+    background: var(--violet-soft); color: var(--violet); margin-right: .6rem; vertical-align: -.4rem;
+  }
+
+  .mini { margin-top: 1.1rem; border: 1px solid var(--border); border-radius: .5rem; overflow: hidden; }
+  .mini table { width: 100%; border-collapse: collapse; font-size: var(--step--1); }
+  .mini th, .mini td { padding: .45rem .8rem; text-align: right; font-variant-numeric: tabular-nums; }
+  .mini th { background: var(--bg); font-family: "IBM Plex Mono", monospace; font-weight: 500; color: var(--muted); }
+  .mini td:first-child, .mini th:first-child { text-align: left; }
+  .mini tr + tr td { border-top: 1px solid var(--border); }
+  .win { color: var(--accent-ink); font-weight: 700; }
+  .lose { color: var(--rosso); font-weight: 700; }
+
+  /* demo --------------------------------------------------------------- */
+  ol.demo { margin: 1.1rem 0 0; padding: 0; list-style: none; counter-reset: d; display: grid; gap: .8rem; }
   ol.demo > li {
-    counter-increment: d;
-    display: grid; grid-template-columns: 2rem 1fr; gap: .9rem; align-items: baseline;
-    font-size: var(--step--1);
+    counter-increment: d; display: grid; grid-template-columns: 1.9rem 1fr; gap: .85rem;
+    align-items: baseline; font-size: var(--step--1);
   }
   ol.demo > li::before {
-    content: counter(d);
-    font-family: "IBM Plex Mono", monospace; font-size: .85rem;
+    content: counter(d); font-family: "IBM Plex Mono", monospace; font-size: .82rem;
     color: var(--accent-ink); background: var(--accent-soft);
-    width: 1.7rem; height: 1.7rem; border-radius: 50%;
-    display: grid; place-items: center; font-weight: 500;
+    width: 1.6rem; height: 1.6rem; border-radius: 50%; display: grid; place-items: center;
   }
   ol.demo b { color: var(--text); font-weight: 700; }
   ol.demo .say { color: var(--muted); font-style: italic; }
-  .demo-note { margin-top: 1.2rem; font-size: var(--step--1); color: var(--muted); }
+  .demo-note { margin-top: 1rem; font-size: var(--step--1); color: var(--muted); }
   .stop {
     color: var(--rosso); font-weight: 700;
     border: 1px solid color-mix(in srgb, var(--rosso) 40%, var(--border));
@@ -237,17 +215,13 @@
     padding: 0 .35rem; border-radius: .25rem;
   }
 
-  .foot {
-    font-family: "IBM Plex Mono", monospace; font-size: var(--step--1);
-    color: var(--muted); margin-top: 2rem;
-  }
+  .foot { font-family: "IBM Plex Mono", monospace; font-size: var(--step--1); color: var(--muted); margin-top: 1.8rem; }
   .foot span { color: var(--accent-ink); }
 
-  /* print → one slide per page -------------------------------------------- */
   @media print {
     html { scroll-snap-type: none; }
     .rail, .counter, .nav { display: none; }
-    .slide { min-height: auto; page-break-after: always; border: 0; padding: 2.5rem; }
+    .slide { min-height: auto; page-break-after: always; border: 0; padding: 2.2rem; }
   }
 </style>
 
@@ -267,70 +241,52 @@
       <p class="lead">Una mappa viva dei pronto soccorso del Lazio e un assistente
         che aiuta il cittadino a capire <em>dove conviene andare</em>.</p>
       <div class="triage">
-        <span class="chip r">rosso</span>
-        <span class="chip o">arancione</span>
-        <span class="chip a">azzurro</span>
-        <span class="chip v">verde</span>
+        <span class="chip r">rosso</span><span class="chip o">arancione</span>
+        <span class="chip a">azzurro</span><span class="chip v">verde</span>
         <span class="chip b">bianco</span>
       </div>
-      <p class="foot">Python 3.13 · FastAPI · Leaflet · DeepSeek · modello locale MiniLM+kNN ·
-        <span>open data Regione Lazio</span></p>
+      <p class="foot">FastAPI · Leaflet (senza build) · DeepSeek ·
+        <span>encoder MiniLM + gradient boosting</span> · open data Regione Lazio</p>
     </div>
   </section>
 
-  <!-- 2 — COSA FA -->
+  <!-- 2 — ARCHITETTURA WEB -->
   <section class="slide">
     <div class="wrap">
-      <p class="eyebrow">In una frase</p>
-      <h2>Tre gesti, una schermata</h2>
-      <ul class="points">
-        <li><span class="tick">&rarr;</span><span><b>Vedi</b> — heatmap di saturazione dei 49 pronto
-          soccorso, farmacie entro un raggio, struttura e farmacia più vicine.</span></li>
-        <li><span class="tick">&rarr;</span><span><b>Chiedi</b> — un agente conversazionale parte dai
-          sintomi e <em>concorda con te</em> il codice colore, senza mai imporlo.</span></li>
-        <li><span class="tick">&rarr;</span><span><b>Scegli</b> — le strutture vengono ordinate per
-          attesa stimata <em>all'arrivo</em> e tempo di viaggio; per i casi lievi, la farmacia.</span></li>
-      </ul>
-      <p class="kicker">Red flag (dolore toracico, dispnea, emorragia…) &rarr; stop immediato, chiama il 112.</p>
-    </div>
-  </section>
-
-  <!-- 3 — ARCHITETTURA -->
-  <section class="slide">
-    <div class="wrap">
-      <p class="eyebrow">Come è fatto</p>
-      <h2>Architettura</h2>
+      <p class="eyebrow">Punto 1</p>
+      <h2>Architettura dell'applicazione web</h2>
       <div class="arch">
         <div class="band">
           <span class="who">Browser</span>
           <span class="bits">
             <span class="bit">Mappa Leaflet + heatmap</span>
-            <span class="bit">Basemap CARTO</span>
-            <span class="bit">Chat UI</span>
+            <span class="bit">Slider temporale</span>
+            <span class="bit">Chat</span>
           </span>
         </div>
         <div class="band accent">
           <span class="who">FastAPI · Python</span>
           <span class="bits">
             <span class="bit">/api/hospitals</span>
+            <span class="bit">/api/forecast</span>
             <span class="bit">/api/travel</span>
-            <span class="bit">/api/recommend</span>
             <span class="bit hot">/api/chat &rarr; agente DeepSeek · function calling (loop 8 turni)</span>
           </span>
         </div>
         <div class="band">
-          <span class="who">Logica</span>
+          <span class="who">Modelli &amp; logica</span>
           <span class="bits">
-            <span class="bit">Classificatore sintomi — MiniLM + kNN · red-flag regex</span>
-            <span class="bit">Stato PS: snapshot 2021 × profilo orario</span>
-            <span class="bit">Teoria delle code · OSRM</span>
-            <span class="bit">Gravità &rarr; colore: cache &rarr; ricerca web</span>
+            <span class="bit ml">Classificatore patologia — MiniLM + kNN</span>
+            <span class="bit ml">Predittore attese — gradient boosting</span>
+            <span class="bit">red-flag: regole</span>
+            <span class="bit">stato PS · teoria delle code · OSRM</span>
           </span>
         </div>
         <div class="band">
           <span class="who">Fonti</span>
           <span class="bits">
             <span class="bit">dati.lazio.it</span>
+            <span class="bit">ASST Lariana</span>
             <span class="bit">DeepSeek</span>
             <span class="bit">OSRM</span>
             <span class="bit">Nominatim</span>
@@ -339,90 +295,115 @@
           </span>
         </div>
       </div>
-      <p class="kicker">Nessuna build sul frontend. Il modello ML delle attese si innesta con un
-        <code>try / import</code>: mock finché non c'è quello reale.</p>
+      <p class="kicker">Frontend senza build (Leaflet servito da FastAPI). Backend in un comando.
+        Modalità <code>MOCK_LLM=1</code> per la demo offline.</p>
     </div>
   </section>
 
-  <!-- 4 — API -->
+  <!-- 3 — LLM E TOOL -->
   <section class="slide">
     <div class="wrap">
-      <p class="eyebrow">Servizi esterni</p>
-      <h2>API utilizzate</h2>
-      <div class="grid cols-3">
-        <div class="card"><h3>DeepSeek</h3><p>Agente conversazionale (<code>deepseek-chat</code>,
-          API compatibile OpenAI) + decisione del codice colore.</p></div>
-        <div class="card"><h3>OSRM</h3><p>Tempo e percorso in auto verso la struttura.
-          Fallback su distanza in linea d'aria a 35 km/h.</p></div>
-        <div class="card"><h3>Nominatim / OSM</h3><p>Geocoding una-tantum dei 49 pronto soccorso
-          dello snapshot open data.</p></div>
-        <div class="card"><h3>CARTO Basemaps</h3><p>Tile della mappa in stile chiaro / scuro / Voyager.</p></div>
-        <div class="card"><h3>DuckDuckGo Lite</h3><p>Ricerca della gravità di una patologia,
-          ristretta a fonti sanitarie italiane (salute.gov.it, iss.it, humanitas.it…).</p></div>
-        <div class="card"><h3>Hugging Face Hub</h3><p>Download una-tantum dell'encoder
-          multilingue MiniLM per il classificatore locale.</p></div>
+      <p class="eyebrow">Punto 2</p>
+      <h2>L'LLM e i tool a sua disposizione</h2>
+      <p class="lead">DeepSeek <em>non conosce i dati</em>: non sa quali ospedali esistono, né
+        quanta gente c'è in coda, né che gravità abbia una patologia. Dialoga, traduce, cerca,
+        decide il colore e spiega — chiedendo tutto il resto agli strumenti.</p>
+      <div class="grid cols-2">
+        <div class="card"><h3>classify_pathology</h3><p>regole red-flag + encoder MiniLM (locale)</p></div>
+        <div class="card"><h3>lookup / save_pathology_color</h3><p>cache su disco &rarr; ricerca web su fonti sanitarie italiane</p></div>
+        <div class="card spot"><h3>predict_hospital_state · forecast_hospital_wait</h3><p>gradient boosting: la coda fra N minuti</p></div>
+        <div class="card spot"><h3>rank_facilities</h3><p>gradient boosting + OSRM: le migliori strutture per il codice concordato</p></div>
+        <div class="card"><h3>list_hospitals</h3><p>ordina per distanza in linea d'aria · filtra per nome o per attesa massima</p></div>
+        <div class="card"><h3>travel_time · find_pharmacies_nearby · show_on_map</h3><p>dati e servizi di mappa</p></div>
       </div>
-      <p class="kicker">Internamente: 7 endpoint FastAPI · 10 tool esposti all'LLM
-        (<code>classify_pathology</code>, <code>list_hospitals</code>, <code>travel_time</code>,
-        <code>rank_facilities</code>, <code>show_on_map</code>…).</p>
+      <p class="kicker">Il testo delle pagine web è <b>dato, non istruzione</b> (difesa da prompt injection).
+        Red flag &rarr; 112 e stop, nessun tool.</p>
     </div>
   </section>
 
-  <!-- 5 — DATASET -->
+  <!-- 4 — MODELLO LOCALE 1 -->
   <section class="slide">
     <div class="wrap">
-      <p class="eyebrow">Dati</p>
-      <h2>Dataset utilizzati</h2>
+      <p class="eyebrow">Punto 3 · modello locale</p>
+      <h2><span class="badge">1</span>Classificatore di patologia</h2>
+      <p class="lead">Rete neurale <em>pre-addestrata da terzi</em>, usata come encoder:
+        nessun fine-tuning da parte nostra.</p>
+      <table class="spec num">
+        <tr><td>rete</td><td><b>MiniLM</b> multilingue — transformer BERT-like, 12 layer, attivazione GELU</td></tr>
+        <tr><td>parametri</td><td>117,7 M (96 M embedding · 21 M encoder) — vocabolario 250.037</td></tr>
+        <tr><td>come lo usiamo</td><td>frase &rarr; vettore 384 &rarr; kNN coseno su <b>5.634</b> descrizioni di sintomi &rarr; top-k patologie con punteggio</td></tr>
+        <tr><td>latenza</td><td>6–10 ms a query (indice pre-calcolato, <code>ml/index/index.npz</code>)</td></tr>
+        <tr><td>prima del modello</td><td>red-flag deterministiche (regex tolleranti) — 12 casi su 12, 0 falsi positivi &rarr; 112 e stop</td></tr>
+      </table>
+      <div class="callout ok"><b>Perché retrieval e non fine-tuning:</b> ~5 esempi per classe su
+        1.082 patologie. Un classificatore lì sopra non è addestrabile; il kNN capisce l'italiano
+        nativamente e dà i top-k con similarità — quello che serve all'LLM.
+        <b>Il modello dice quale patologia, l'LLM decide quale colore.</b></div>
+    </div>
+  </section>
+
+  <!-- 5 — MODELLO LOCALE 2 -->
+  <section class="slide">
+    <div class="wrap">
+      <p class="eyebrow">Punto 3 · modello locale</p>
+      <h2><span class="badge">2</span>Predittore delle attese</h2>
+      <p class="lead">Il modello <em>che abbiamo addestrato noi</em>. Non è una rete neurale:
+        è <b>gradient boosting su alberi decisionali</b> — niente layer, niente attivazioni.</p>
+      <table class="spec num">
+        <tr><td>modello</td><td><b>HistGradientBoostingRegressor</b> — 220 alberi, learning rate 0.08, profondità 7. Quattro modelli, uno per codice colore</td></tr>
+        <tr><td>12 feature</td><td>coda attuale per colore · in trattamento · capacità · ora/giorno/mese/festivo · <b>orizzonte</b> · id struttura</td></tr>
+        <tr><td>addestramento</td><td>serie <b>sintetica</b> 1,7 M righe &rarr; 9 M coppie (stato, +D) su 9 orizzonti · split <b>temporale</b> 80/20</td></tr>
+        <tr><td>simulatore</td><td>coda M/M/c a priorità · ρ da Erlang-C invertita sullo snapshot reale · validato entro il 24% del totale regionale (Spearman 0.85)</td></tr>
+      </table>
+      <div class="mini">
+        <table>
+          <tr><th>orizzonte</th><th>modello</th><th>persistenza</th><th>guadagno</th></tr>
+          <tr><td>15 min</td><td>0.41</td><td>0.30</td><td class="lose">−38%</td></tr>
+          <tr><td>60 min</td><td>0.67</td><td>0.66</td><td>≈ pari</td></tr>
+          <tr><td>120 min</td><td>0.93</td><td>1.02</td><td class="win">+8%</td></tr>
+          <tr><td>12 ore</td><td>2.00</td><td>2.52</td><td class="win">+21%</td></tr>
+        </table>
+      </div>
+      <p class="kicker">Conclusione onesta: perde sotto l'ora, vince sopra. Da qui la
+        <b>strategia ibrida</b> — sotto i ~75 min risponde la persistenza, oltre risponde il modello.</p>
+    </div>
+  </section>
+
+  <!-- 6 — FONTI DATI -->
+  <section class="slide">
+    <div class="wrap">
+      <p class="eyebrow">Punto 4</p>
+      <h2>Le fonti dati</h2>
       <div class="grid cols-2">
         <div class="card mandatory">
           <span class="tag">Regione Lazio · obbligatorio</span>
           <h3>Pronto Soccorso — Accessi in tempo reale</h3>
-          <p>dati.lazio.it · CC-BY. Pazienti in attesa e in trattamento per codice colore, 49 PS.
-            Alimenta heatmap, indice di saturazione e stima delle attese.</p>
+          <p>dati.lazio.it · CC-BY. 49 PS: scala e mix triage per struttura. Alimenta heatmap,
+            saturazione e il punto di partenza del simulatore.</p>
         </div>
         <div class="card mandatory">
           <span class="tag">Regione Lazio · obbligatorio</span>
           <h3>Farmacie della Regione Lazio</h3>
-          <p>dati.lazio.it · CC-BY. 1.546 farmacie &rarr; 1.427 valide con coordinate.
-            Livello farmacie sulla mappa e consiglio per i codici bianchi.</p>
+          <p>dati.lazio.it · CC-BY. 1.546 &rarr; 1.427 valide con coordinate. Livello farmacie
+            e consiglio per i codici bianchi.</p>
+        </div>
+        <div class="card spot">
+          <span class="tag v">Ultima fonte aggiunta</span>
+          <h3>ASST Lariana — accessi PS 2021–2025</h3>
+          <p><b>1.461 giorni reali</b> di accessi giornalieri. È ciò che dà al simulatore la
+            stagionalità vera (giorno della settimana, mese, festivi) — senza, il modello ②
+            addestrerebbe su una serie inventata anche nel ritmo.</p>
         </div>
         <div class="card">
-          <span class="tag">Arricchimento</span>
-          <h3>ASST Lariana — accessi PS 2021–2023</h3>
-          <p>Serie giornaliera reale, usata per calibrare la serie sintetica del modello di
-            previsione delle attese.</p>
-        </div>
-        <div class="card">
-          <span class="tag">Supporto ML</span>
-          <h3>Sintomi &rarr; patologia</h3>
-          <p>5.634 descrizioni di sintomi su 1.082 patologie: è la base dell'indice semantico
-            del classificatore locale.</p>
+          <span class="tag v">Supporto</span>
+          <h3>symptom-disease-dataset</h3>
+          <p>5.634 descrizioni di sintomi su 1.082 patologie: la base dell'indice semantico
+            del modello ①.</p>
         </div>
       </div>
-      <div class="callout"><b>Vincolo di gara rispettato:</b> il Portale Open Data Regione Lazio
-        è l'unica fonte dei dati core. Le fonti nazionali sono solo arricchimento —
-        nessuna funzione essenziale dipende da esse.</div>
-    </div>
-  </section>
-
-  <!-- 6 — MODELLO LOCALE -->
-  <section class="slide">
-    <div class="wrap">
-      <p class="eyebrow">Il pezzo di ML</p>
-      <h2>Il modello dice <em>quale patologia</em>,<br>l'LLM decide <em>quale colore</em></h2>
-      <ul class="points">
-        <li><span class="tick">&rarr;</span><span>Encoder multilingue <b>MiniLM + kNN</b> su 5.634
-          descrizioni di sintomi &rarr; patologie candidate con punteggio, in 6–10 ms.</span></li>
-        <li><span class="tick">&rarr;</span><span>Le <b>red flag sono regole</b> deterministiche, mai
-          bypassabili: quando scattano il modello non viene nemmeno interrogato.</span></li>
-        <li><span class="tick">&rarr;</span><span>Gravità &rarr; colore: <b>cache su disco</b> &rarr;
-          ricerca su fonti sanitarie italiane &rarr; l'LLM assegna, <em>arrotondando verso l'alto</em>.</span></li>
-      </ul>
-      <div class="callout" style="border-left-color: var(--accent); background: var(--accent-soft);">
-        <b>Perché retrieval e non fine-tuning:</b> ~5 esempi per classe su 1.082 patologie, e
-        nessun dato etichettato con i codici colore italiani. Un classificatore lì sopra non è
-        addestrabile; il kNN capisce l'italiano nativamente e restituisce i top-k con un punteggio.
-      </div>
+      <div class="callout ok"><b>Vincolo di gara rispettato:</b> il Portale Open Data Regione Lazio
+        è l'unica fonte dei dati core. Le altre sono arricchimento — nessuna funzione essenziale
+        dipende da esse.</div>
     </div>
   </section>
 
@@ -432,36 +413,37 @@
       <p class="eyebrow">≈ 90 secondi</p>
       <h2>Demo</h2>
       <ol class="demo">
-        <li><span><b>La mappa</b> — heatmap di saturazione dei PS, farmacie entro un raggio,
-          pannello "più vicini".</span></li>
+        <li><span><b>La mappa</b> — heatmap di saturazione, e lo <b>slider temporale</b> che
+          proietta lo stato dei PS in avanti (è il modello ② sull'intera regione).</span></li>
         <li><span><b>La chat</b> — <span class="say">«mal di gola e febbre da due giorni»</span> &rarr;
-          il modello locale propone la patologia, la ricerca web ne stima la gravità &rarr;
+          il modello ① propone la patologia, la ricerca web ne stima la gravità &rarr;
           si concorda il <b>codice verde</b>.</span></li>
         <li><span><b>Il vincolo</b> — <span class="say">«non voglio aspettare più di 40 minuti»</span> &rarr;
-          <code>list_hospitals</code> ordina i PS per distanza in linea d'aria e filtra per attesa.</span></li>
+          <code>list_hospitals</code> ordina per distanza in linea d'aria e filtra per attesa.</span></li>
         <li><span><b>Il viaggio</b> — click su un ospedale &rarr; percorso e tempo in auto (OSRM)
-          + attesa stimata <b>all'arrivo</b>.</span></li>
+          + attesa stimata <b>all'arrivo</b> (modello ② a t+viaggio).</span></li>
         <li><span><b>La sicurezza</b> — <span class="say">«fortissimo dolore al petto»</span> &rarr;
-          red flag &rarr; <span class="stop">STOP · chiama il 112</span>, nessun ranking.</span></li>
+          red flag &rarr; <span class="stop">STOP · chiama il 112</span>.</span></li>
         <li><span><b>La trasparenza</b> — toggle <b>🔍 debug</b>: chi ha risposto a ogni passo
-          (modello locale / cache / web / LLM).</span></li>
+          (regole / MiniLM / gradient boosting / cache / web / LLM).</span></li>
       </ol>
-      <p class="demo-note">Modalità <code>MOCK_LLM=1</code> come rete di sicurezza: la stessa demo
-        gira offline, senza chiamate API.</p>
     </div>
   </section>
 
   <!-- 8 — CHIUSURA -->
   <section class="slide">
     <div class="wrap">
-      <p class="eyebrow">In sintesi</p>
-      <h2>Un prototipo che <em>parte</em></h2>
-      <p class="lead">Frontend senza build, backend in un comando, demo eseguibile anche offline.
-        Le parti mockate hanno contratti fissi: lo swap col modello reale è indolore.</p>
-      <div class="grid cols-3" style="margin-top:1.8rem">
-        <div class="card"><h3>Prossimo</h3><p>Feed live da salutelazio.it al posto dello snapshot 2021.</p></div>
-        <div class="card"><h3>In corso</h3><p>Modello ML delle attese — task parallelo, stesso contratto.</p></div>
-        <div class="card"><h3>Rifinire</h3><p>Scala a 5 codici completa lungo tutto il ranking.</p></div>
+      <p class="eyebrow">In una riga</p>
+      <h2>Chi fa cosa</h2>
+      <ul class="points">
+        <li><span class="tick">&rarr;</span><span><b>MiniLM</b> (rete pre-addestrata) — dai sintomi alle patologie candidate.</span></li>
+        <li><span class="tick">&rarr;</span><span><b>Gradient boosting</b> (addestrato da noi) — dalla coda di adesso alla coda futura.</span></li>
+        <li><span class="tick">&rarr;</span><span><b>DeepSeek</b> — direttore d'orchestra: traduce, cerca, decide il colore, spiega. Non conosce i dati.</span></li>
+      </ul>
+      <div class="grid cols-3" style="margin-top:1.6rem">
+        <div class="card"><h3>Prossimo</h3><p>Feed live da salutelazio.it al posto dello snapshot.</p></div>
+        <div class="card"><h3>Rifinire</h3><p>Scala a 5 codici lungo tutto il ranking.</p></div>
+        <div class="card"><h3>Estendere</h3><p>Serie storica reale per riaddestrare il modello ②.</p></div>
       </div>
       <p class="foot">Grazie. &nbsp;·&nbsp; <span>github → triage-assistant</span></p>
     </div>
@@ -485,24 +467,17 @@
     slides[idx].scrollIntoView({ behavior: motionOK ? "smooth" : "auto", block: "start" });
     render();
   }
-
   document.getElementById("prev").addEventListener("click", () => go(idx - 1));
   document.getElementById("next").addEventListener("click", () => go(idx + 1));
-
   addEventListener("keydown", (e) => {
     if (["ArrowRight", "ArrowDown", "PageDown", " "].includes(e.key)) { e.preventDefault(); go(idx + 1); }
     else if (["ArrowLeft", "ArrowUp", "PageUp"].includes(e.key)) { e.preventDefault(); go(idx - 1); }
     else if (e.key === "Home") { e.preventDefault(); go(0); }
     else if (e.key === "End") { e.preventDefault(); go(slides.length - 1); }
   });
-
-  // keep the counter in sync with manual scroll / trackpad
   const io = new IntersectionObserver((entries) => {
-    for (const en of entries) {
-      if (en.isIntersecting) { idx = slides.indexOf(en.target); render(); }
-    }
+    for (const en of entries) if (en.isIntersecting) { idx = slides.indexOf(en.target); render(); }
   }, { threshold: 0.5 });
   slides.forEach((s) => io.observe(s));
-
   render();
 </script>
