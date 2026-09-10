@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emergency Triage Assistant — Lazio</title>
+<link rel="stylesheet" href="/vendor/leaflet.css">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="disclaimer">⚕️ Prototipo dimostrativo — non fornisce consigli medici. <strong>In emergenza chiama il 112</strong></div>
+<div id="layout">
+  <div id="map-pane">
+    <div id="map"></div>
+    <div id="map-controls">
+      <button id="btn-locate">📍 Usa la mia posizione</button>
+      <label><input type="checkbox" id="chk-pharmacies"> Farmacie</label>
+      <label><input type="checkbox" id="chk-heatmap" checked> Heatmap</label>
+    </div>
+    <div id="legend">
+      <b>Saturazione PS</b>
+      <div><span class="dot" style="background:#2e9e4f"></span> bassa</div>
+      <div><span class="dot" style="background:#e0b400"></span> media</div>
+      <div><span class="dot" style="background:#e07b00"></span> alta</div>
+      <div><span class="dot" style="background:#d1342f"></span> critica</div>
+    </div>
+  </div>
+  <div id="chat-pane">
+    <div id="chat-header">🤖 Assistente di orientamento</div>
+    <div id="chat-messages"></div>
+    <div id="quick-buttons">
+      <button class="quick">Ho la febbre</button>
+      <button class="quick">Mi sono tagliato</button>
+      <button class="quick">Dove conviene andare ora?</button>
+    </div>
+    <form id="chat-form">
+      <input id="chat-input" autocomplete="off" placeholder="Descrivi come ti senti…">
+      <button type="submit">Invia</button>
+    </form>
+  </div>
+</div>
+<script src="/vendor/leaflet.js"></script>
+<script src="/vendor/leaflet-heat.js"></script>
+<script src="/map.js"></script>
+<script src="/chat.js"></script>
+</body>
+</html>

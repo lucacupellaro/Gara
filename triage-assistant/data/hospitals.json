@@ -1,0 +1,443 @@
+[
+ {
+  "code": "29200",
+  "name": "Ospedale dei Castelli",
+  "type": "PS",
+  "comune": "Ariccia",
+  "asl": "RM6",
+  "lat": 41.6771329,
+  "lon": 12.6482579
+ },
+ {
+  "code": "04300",
+  "name": "Ospedali Riuniti",
+  "type": "DEA I",
+  "comune": "Anzio",
+  "asl": "RM6",
+  "lat": 41.4605404,
+  "lon": 12.6367566
+ },
+ {
+  "code": "92000",
+  "name": "Pol. Univ. Tor Vergata",
+  "type": "DEA I",
+  "comune": "Roma",
+  "asl": "RM2",
+  "lat": 41.86153,
+  "lon": 12.62462
+ },
+ {
+  "code": "91900",
+  "name": "Sant'Andrea",
+  "type": "DEA I",
+  "comune": "Roma",
+  "asl": "RM1",
+  "lat": 42.005,
+  "lon": 12.4641
+ },
+ {
+  "code": "91500",
+  "name": "Campus Biomedico",
+  "type": "DEA I",
+  "comune": "Roma",
+  "asl": "RM2",
+  "lat": 41.7987,
+  "lon": 12.5045
+ },
+ {
+  "code": "90600",
+  "name": "Pol. Univ. Umberto I",
+  "type": "DEA II",
+  "comune": "Roma",
+  "asl": "RM1",
+  "lat": 41.90616,
+  "lon": 12.50791
+ },
+ {
+  "code": "90501",
+  "name": "Pol. Univ. A. Gemelli",
+  "type": "DEA II",
+  "comune": "Roma",
+  "asl": "RM1",
+  "lat": 41.93261,
+  "lon": 12.42921
+ },
+ {
+  "code": "90402",
+  "name": "Bambino Gesu' Palidoro",
+  "type": "PS",
+  "comune": "Palidoro",
+  "asl": "RM3",
+  "lat": 41.9192319,
+  "lon": 12.1417199
+ },
+ {
+  "code": "90401",
+  "name": "Bambino Gesu'",
+  "type": "DEA II",
+  "comune": "Roma",
+  "asl": "RM1",
+  "lat": 41.8970772,
+  "lon": 12.4607003
+ },
+ {
+  "code": "90200",
+  "name": "San Giovanni Addolorata",
+  "type": "DEA II",
+  "comune": "Roma",
+  "asl": "RM1",
+  "lat": 41.8852718,
+  "lon": 12.4986193
+ },
+ {
+  "code": "90100",
+  "name": "San Camillo-Forlanini",
+  "type": "DEA II",
+  "comune": "Roma",
+  "asl": "RM3",
+  "lat": 41.8695994,
+  "lon": 12.4559991
+ },
+ {
+  "code": "29400",
+  "name": "Policlinico Casilino",
+  "type": "DEA I",
+  "comune": "Roma",
+  "asl": "RM2",
+  "lat": 41.8686656,
+  "lon": 12.5895908
+ },
+ {
+  "code": "28501",
+  "name": "San Filippo Neri",
+  "type": "DEA I",
+  "comune": "Roma",
+  "asl": "RM1",
+  "lat": 41.9448,
+  "lon": 12.4373
+ },
+ {
+  "code": "27100",
+  "name": "Belcolle",
+  "type": "DEA I",
+  "comune": "Viterbo",
+  "asl": "VT",
+  "lat": 42.3942071,
+  "lon": 12.1207055
+ },
+ {
+  "code": "26700",
+  "name": "Sandro Pertini",
+  "type": "DEA I",
+  "comune": "Roma",
+  "asl": "RM2",
+  "lat": 41.9139,
+  "lon": 12.5504
+ },
+ {
+  "code": "22800",
+  "name": "Santa Scolastica",
+  "type": "DEA I",
+  "comune": "Cassino",
+  "asl": "FR",
+  "lat": 41.4952249,
+  "lon": 13.8298994
+ },
+ {
+  "code": "22600",
+  "name": "Santissima Trinita'",
+  "type": "PS",
+  "comune": "Sora",
+  "asl": "FR",
+  "lat": 41.7296991,
+  "lon": 13.6362634
+ },
+ {
+  "code": "21602",
+  "name": "San Benedetto",
+  "type": "PS",
+  "comune": "Alatri",
+  "asl": "FR",
+  "lat": 41.7258809,
+  "lon": 13.3407046
+ },
+ {
+  "code": "21601",
+  "name": "F. Spaziani",
+  "type": "DEA I",
+  "comune": "Frosinone",
+  "asl": "FR",
+  "lat": 41.6688233,
+  "lon": 13.1468818
+ },
+ {
+  "code": "21500",
+  "name": "Citta' di Aprilia",
+  "type": "PS",
+  "comune": "Aprilia",
+  "asl": "LT",
+  "lat": 41.5876712,
+  "lon": 12.6484792
+ },
+ {
+  "code": "20600",
+  "name": "Dono Svizzero",
+  "type": "DEA I",
+  "comune": "Formia",
+  "asl": "LT",
+  "lat": 41.2617917,
+  "lon": 13.6182823
+ },
+ {
+  "code": "20402",
+  "name": "San Giovanni di Dio",
+  "type": "PS",
+  "comune": "Fondi",
+  "asl": "LT",
+  "lat": 41.3612577,
+  "lon": 13.4151986
+ },
+ {
+  "code": "20401",
+  "name": "A. Fiorini",
+  "type": "PS",
+  "comune": "Terracina",
+  "asl": "LT",
+  "lat": 41.2885307,
+  "lon": 13.2403379
+ },
+ {
+  "code": "20000",
+  "name": "Santa Maria Goretti",
+  "type": "DEA I",
+  "comune": "Latina",
+  "asl": "LT",
+  "lat": 41.4710229,
+  "lon": 12.9004976
+ },
+ {
+  "code": "18000",
+  "name": "Aurelia Hospital",
+  "type": "DEA I",
+  "comune": "Roma",
+  "asl": "RM1",
+  "lat": 41.8870757,
+  "lon": 12.3983943
+ },
+ {
+  "code": "07600",
+  "name": "Madre G. Vannini",
+  "type": "DEA I",
+  "comune": "Roma",
+  "asl": "RM2",
+  "lat": 41.8797,
+  "lon": 12.532
+ },
+ {
+  "code": "07400",
+  "name": "Cristo Re",
+  "type": "PS",
+  "comune": "Roma",
+  "asl": "RM1",
+  "lat": 41.9312,
+  "lon": 12.4321
+ },
+ {
+  "code": "07300",
+  "name": "San Carlo di Nancy",
+  "type": "PS",
+  "comune": "Roma",
+  "asl": "RM1",
+  "lat": 41.897578,
+  "lon": 12.4386999
+ },
+ {
+  "code": "07200",
+  "name": "San Giovanni Calibita-FBF",
+  "type": "DEA I",
+  "comune": "Roma",
+  "asl": "RM1",
+  "lat": 41.89042,
+  "lon": 12.47752
+ },
+ {
+  "code": "07100",
+  "name": "San Pietro-FBF",
+  "type": "DEA I",
+  "comune": "Roma",
+  "asl": "RM1",
+  "lat": 41.9647376,
+  "lon": 12.4523915
+ },
+ {
+  "code": "06602",
+  "name": "C.T.O. Andrea Alesini",
+  "type": "PS SPEC.",
+  "comune": "Roma",
+  "asl": "RM2",
+  "lat": 41.8563,
+  "lon": 12.4855
+ },
+ {
+  "code": "06601",
+  "name": "Sant'Eugenio",
+  "type": "DEA I",
+  "comune": "Roma",
+  "asl": "RM2",
+  "lat": 41.821253,
+  "lon": 12.4722581
+ },
+ {
+  "code": "06100",
+  "name": "G. Battista Grassi",
+  "type": "DEA I",
+  "comune": "Roma",
+  "asl": "RM3",
+  "lat": 41.7333,
+  "lon": 12.287
+ },
+ {
+  "code": "05900",
+  "name": "Padre Pio",
+  "type": "PS",
+  "comune": "Bracciano",
+  "asl": "RM4",
+  "lat": 42.0962534,
+  "lon": 12.1731973
+ },
+ {
+  "code": "05300",
+  "name": "San Giovanni Evangelista",
+  "type": "DEA I",
+  "comune": "Tivoli",
+  "asl": "RM5",
+  "lat": 41.9605572,
+  "lon": 12.8024289
+ },
+ {
+  "code": "05200",
+  "name": "A. Angelucci",
+  "type": "PS",
+  "comune": "Subiaco",
+  "asl": "RM5",
+  "lat": 41.9322074,
+  "lon": 13.0862927
+ },
+ {
+  "code": "05100",
+  "name": "Coniugi Bernardini",
+  "type": "PS",
+  "comune": "Palestrina",
+  "asl": "RM5",
+  "lat": 41.8364541,
+  "lon": 12.8863273
+ },
+ {
+  "code": "04900",
+  "name": "Santissimo Gonfalone",
+  "type": "PS",
+  "comune": "Monterotondo",
+  "asl": "RM5",
+  "lat": 42.0504267,
+  "lon": 12.6214304
+ },
+ {
+  "code": "04600",
+  "name": "L. Parodi Delfino",
+  "type": "PS",
+  "comune": "Colleferro",
+  "asl": "RM5",
+  "lat": 41.7379526,
+  "lon": 13.0105576
+ },
+ {
+  "code": "04500",
+  "name": "San Paolo",
+  "type": "DEA I",
+  "comune": "Civitavecchia",
+  "asl": "RM4",
+  "lat": 42.0981586,
+  "lon": 11.8097588
+ },
+ {
+  "code": "03000",
+  "name": "Oftalmico",
+  "type": "PS SPEC.",
+  "comune": "Roma",
+  "asl": "RM1",
+  "lat": 41.9081182,
+  "lon": 12.4484657
+ },
+ {
+  "code": "02601",
+  "name": "Santo Spirito",
+  "type": "DEA I",
+  "comune": "Roma",
+  "asl": "RM1",
+  "lat": 41.9010559,
+  "lon": 12.4625575
+ },
+ {
+  "code": "01901",
+  "name": "San Camillo De Lellis",
+  "type": "DEA I",
+  "comune": "Rieti",
+  "asl": "RI",
+  "lat": 42.421782,
+  "lon": 12.9063748
+ },
+ {
+  "code": "00700",
+  "name": "Ospedale Civile",
+  "type": "PS",
+  "comune": "Tarquinia",
+  "asl": "VT",
+  "lat": 42.2532394,
+  "lon": 11.7591747
+ },
+ {
+  "code": "13400",
+  "name": "Sant'Anna",
+  "type": "PS",
+  "comune": "Pomezia",
+  "asl": "RM6",
+  "lat": 41.6720582,
+  "lon": 12.4963055
+ },
+ {
+  "code": "05400",
+  "name": "P. Colombo",
+  "type": "DEA I",
+  "comune": "Velletri",
+  "asl": "RM6",
+  "lat": 41.6891901,
+  "lon": 12.7784762
+ },
+ {
+  "code": "04700",
+  "name": "San Sebastiano Martire",
+  "type": "PS",
+  "comune": "Frascati",
+  "asl": "RM6",
+  "lat": 41.8091805,
+  "lon": 12.6753309
+ },
+ {
+  "code": "00300",
+  "name": "Andosilla",
+  "type": "PS",
+  "comune": "Civitacastellana",
+  "asl": "VT",
+  "lat": 42.0579738,
+  "lon": 12.4890606
+ },
+ {
+  "code": "00200",
+  "name": "Ospedale Civile",
+  "type": "PS",
+  "comune": "Acquapendente",
+  "asl": "VT",
+  "lat": 42.7458734,
+  "lon": 11.8653758
+ }
+]
