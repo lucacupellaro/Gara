@@ -1,0 +1,32 @@
+{
+ "migraine": {
+  "codice": "verde",
+  "fonte": "cache: MSD Manuals - Emicrania",
+  "note": "Cefalea pulsante con fotofobia, nessuna red flag riferita. Codice verde, da confermare con anamnesi.",
+  "data": "2026-09-10"
+ },
+ "common cold": {
+  "codice": "verde",
+  "fonte": "cache",
+  "note": "Mal di gola e febbre lieve da 2 giorni, nessuna red flag. Codice provvisorio.",
+  "data": "2026-09-10"
+ },
+ "laceration": {
+  "codice": "azzurro",
+  "fonte": "fallback prudenziale (ricerca web senza estratti)",
+  "note": "Ferita da taglio non meglio specificata; codice provvisorio da confermare con anamnesi",
+  "data": "2026-09-10"
+ },
+ "fever (unspecified)": {
+  "codice": "verde",
+  "fonte": "classify_pathology + lookup_pathology_severity (Common Cold in cache: verde)",
+  "note": "Febbre isolata senza red flag. Candidata piu' plausibile in contesto ambulatoriale: raffreddore comune (verde). Malaria/typhoid/dengue plausibili solo con esposizione/viaggi: da escludere con anamnesi. Codice provvisorio.",
+  "data": "2026-09-10"
+ },
+ "fever of unknown origin": {
+  "codice": "azzurro",
+  "fonte": "ricerca web senza estratti attendibili; fallback prudenziale su febbre persistente >3 settimane",
+  "note": "Febbre da 23 giorni: urgenza differibile, da valutare con esami. Confidence bassa, codice provvisorio.",
+  "data": "2026-09-10"
+ }
+}

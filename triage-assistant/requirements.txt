@@ -4,3 +4,8 @@ httpx
 pandas
 openai
 python-dotenv
+
+# classificatore locale di patologia (ml/)
+torch
+transformers
+numpy
