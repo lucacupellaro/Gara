@@ -155,10 +155,14 @@ body { font-family: system-ui, sans-serif; height: 100vh; display: flex; flex-di
 
 /* --- pannello previsione temporale (destra della mappa) --- */
 #time-panel {
-  position: absolute; top: 12px; right: 12px; z-index: 500;
-  width: 178px; padding: 10px 12px 11px; border-radius: 10px;
-  background: rgba(255,255,255,.94); backdrop-filter: blur(6px);
-  box-shadow: 0 2px 12px rgba(0,0,0,.18); font-size: 12px;
+  /* centrato verticalmente sul lato sinistro della mappa: sopra c'e' gia'
+     #map-controls (top:10px left:10px) e sotto #legend (bottom:20px left:10px),
+     la fascia centrale e' libera. z-index sopra i controlli Leaflet. */
+  position: absolute; top: 50%; left: 12px; transform: translateY(-50%);
+  z-index: 1000;
+  width: 178px; padding: 11px 13px 12px; border-radius: 10px;
+  background: #ffffff;                     /* sempre bianco, anche in dark mode */
+  box-shadow: 0 2px 14px rgba(0,0,0,.22); font-size: 12px;
   border: 2px solid transparent; transition: border-color .2s;
 }
 #time-panel.forecasting { border-color: #6366f1; }
@@ -170,8 +174,3 @@ body { font-family: system-ui, sans-serif; height: 100vh; display: flex; flex-di
 .tp-meta.pred { color: #6366f1; font-weight: 600; }
 .tp-tot { font-size: 11px; color: #475569; margin-top: 6px;
           padding-top: 6px; border-top: 1px solid #e2e8f0; }
-@media (prefers-color-scheme: dark) {
-  #time-panel { background: rgba(15,23,42,.92); }
-  .tp-head { color: #cbd5e1; } .tp-now { color: #f1f5f9; }
-  .tp-tot { color: #94a3b8; border-top-color: #334155; }
-}

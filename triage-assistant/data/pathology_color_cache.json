@@ -34,5 +34,11 @@
   "fonte": "MSD Manuals - infezione non complicata confinata alla vescica, afebbrile",
   "note": "Cistite non complicata senza segni sistemici: non urgenza. Da rivalutare se febbre, dolore lombare, vomito.",
   "data": "2026-09-10"
+ },
+ "febbre isolata (sintomo aspecifico)": {
+  "codice": "verde",
+  "fonte": "classify_pathology + lookup_pathology_severity (polmonite, ISS/MSD)",
+  "note": "Febbre riferita senza altri sintomi: urgenza minore se stabile. Le candidate del modello (polmonite, tifo, varicella) sarebbero piu' gravi ma non supportate dalle parole dell'utente. Da rivalutare in presenza di dispnea, febbre alta persistente o fragilita'.",
+  "data": "2026-09-10"
  }
 }

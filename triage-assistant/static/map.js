@@ -66,10 +66,15 @@ function infoHtml(h) {
     .join("");
   return `<div class="hospital-popup">
     <h4>${h.name}</h4>
-    <div>${h.type} · ${h.comune} · ASL ${h.asl}</div>
+    <div>${h.type} · ${h.comune}${h.asl ? ' · ASL ' + h.asl : ''}</div>
     <table>${rows}</table>
-    <div>In trattamento: <b>${h.in_treatment}</b> · Saturazione: <b>${h.saturation}</b></div>
-    <div style="color:#777;font-size:.78rem">${h.source} · agg. ${h.updated_at.replace("T", " ")}</div>
+    <div>In trattamento: <b>${h.in_treatment ?? '—'}</b> · Saturazione: <b>${h.saturation}</b></div>
+    ${h.est_wait_minutes != null
+      ? `<div style="margin-top:5px;padding-top:5px;border-top:1px solid #e2e8f0">
+           ⏱️ Attesa stimata all'arrivo (codice verde): <b>~${h.est_wait_minutes} min</b></div>`
+      : ""}
+    <div style="color:#777;font-size:.78rem">${h.source || "—"}${
+      h.updated_at ? " · agg. " + h.updated_at.replace("T", " ") : ""}</div>
     <button class="btn-travel" data-code="${h.code}">🚗 Calcola viaggio</button>
     <div class="travel-result" id="travel-${h.code}"></div>
   </div>`;
@@ -171,7 +176,9 @@ async function runTravel(destQuery, outId) {
   if (out) out.textContent = "calcolo il percorso…";
   const pos = await ensurePosition();
   try {
-    const res = await fetch(`/api/travel?lat=${pos.lat}&lon=${pos.lon}&${destQuery}`);
+    const res = await fetch(
+      `/api/travel?lat=${pos.lat}&lon=${pos.lon}&${destQuery}` +
+      `&offset_minutes=${forecastMinutes}`);   // lo slider sposta anche la partenza
     if (!res.ok) throw new Error();
     const d = await res.json();
     routeLayer.clearLayers();
@@ -183,8 +190,11 @@ async function runTravel(destQuery, outId) {
     line.bindTooltip(`🚗 ${d.travel_minutes} min`, {
       permanent: true, direction: "center", className: "route-label",
     }).openTooltip(d.geometry[Math.floor(d.geometry.length / 2)]);
+    const partenza = d.offset_minutes
+      ? ` (partendo fra ${d.offset_minutes >= 60
+          ? (d.offset_minutes / 60) + "h" : d.offset_minutes + " min"})` : "";
     const waitTxt = d.est_wait_minutes
-      ? ` · attesa all'arrivo ~${d.est_wait_minutes.green} min` : "";
+      ? ` · attesa all'arrivo ~${d.est_wait_minutes.green} min${partenza}` : "";
     showRouteBanner(
       `🚗 <b>${d.travel_minutes} min</b> → ${d.destination}${waitTxt}`);
     map.fitBounds(L.latLngBounds(d.geometry).pad(0.2));
@@ -277,7 +287,14 @@ async function loadHospitals() {
     }).on("click", () => selectHospital(h)).addTo(hospitalLayer);
     markersByCode[h.code] = m;
   }
-  if (selectedCode) highlightMarker(selectedCode, true); // sopravvive al refresh 60s
+  // Il pannello aperto va RIDISEGNATO con i dati freschi, non solo
+  // ri-evidenziato: altrimenti muovendo lo slider i marker cambiano colore ma
+  // il popup continua a mostrare i numeri di quando lo si era aperto.
+  if (selectedCode) {
+    const fresh = hospitalsData.find((x) => x.code === selectedCode);
+    if (fresh) selectHospital(fresh);
+    else highlightMarker(selectedCode, true);
+  }
   updateNearest();
 }
 

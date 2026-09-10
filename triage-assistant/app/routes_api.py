@@ -46,15 +46,21 @@ def forecast(minutes: int = 0, triage_code: str = "verde"):
         # saturazione ricalcolata sulla coda PREVISTA, non su quella attuale:
         # altrimenti la mappa cambierebbe i numeri ma non i colori
         sat = round(tot / max(h.get("in_treatment", 1), 1), 2)
-        out.append({
-            "code": h["code"], "name": h["name"], "type": h["type"],
-            "comune": h["comune"], "lat": h["lat"], "lon": h["lon"],
-            "waiting_by_code": waiting, "total_waiting": tot,
-            "est_wait_minutes": wait_min,
-            "saturation": sat,
-            "saturation_band": ("green" if sat < 0.5 else "yellow" if sat < 1.0
-                                else "orange" if sat < 1.5 else "red"),
-        })
+        # Si parte da `h` e si sovrascrivono i campi previsti: cosi' la risposta
+        # ha ESATTAMENTE la stessa forma di /api/hospitals. Restituire un
+        # sottoinsieme rompeva il frontend, che su un campo assente (updated_at)
+        # sollevava un TypeError e non apriva piu' il pannello di dettaglio.
+        out.append({**h,
+                    "waiting_by_code": waiting,
+                    "total_waiting": tot,
+                    "est_wait_minutes": wait_min,
+                    "saturation": sat,
+                    "saturation_band": ("green" if sat < 0.5 else "yellow" if sat < 1.0
+                                        else "orange" if sat < 1.5 else "red"),
+                    "forecast_minutes": minutes,
+                    "source": (h.get("source") if minutes <= 0
+                               else f"previsione a +{minutes} min ({method})"),
+                    })
     return {"minutes": minutes, "triage_code": triage_code, "hospitals": out,
             "method": method if minutes > 0 else "attuale",
             "confidence": conf if minutes > 0 else "osservato",
@@ -73,9 +79,15 @@ def pharmacies(lat: float | None = None, lon: float | None = None,
 @router.get("/travel")
 def travel(lat: float, lon: float, hospital: str | None = None,
            dest_lat: float | None = None, dest_lon: float | None = None,
-           dest_name: str = "destinazione"):
+           dest_name: str = "destinazione", offset_minutes: int = 0):
     """Viaggio in auto verso un ospedale (con attesa stimata all'arrivo)
-    oppure verso coordinate libere (es. una farmacia)."""
+    oppure verso coordinate libere (es. una farmacia).
+
+    offset_minutes viene dallo slider temporale: e' fra quanto l'utente
+    PARTE. L'attesa va quindi predetta a offset + viaggio, non al solo
+    viaggio: se lo slider dice "+4 ore" e il tragitto dura 25 minuti,
+    l'arrivo e' fra 4h25, non fra 25 minuti.
+    """
     h = None
     if hospital:
         h = state.get_status(hospital)
@@ -85,9 +97,15 @@ def travel(lat: float, lon: float, hospital: str | None = None,
     elif dest_lat is None or dest_lon is None:
         raise HTTPException(422, "serve 'hospital' oppure 'dest_lat'+'dest_lon'")
     minutes, source, geometry = travel_route(lat, lon, dest_lat, dest_lon)
-    est_wait = predict_hospital_state(hospital, minutes, h)["est_wait_minutes"] if h else None
+    offset = max(int(offset_minutes), 0)
+    orizzonte = offset + minutes                 # partenza + tragitto = arrivo
+    pred = predict_hospital_state(hospital, orizzonte, h) if h else None
     return {"destination": dest_name, "travel_minutes": minutes, "source": source,
-            "geometry": geometry, "est_wait_minutes": est_wait}
+            "geometry": geometry,
+            "est_wait_minutes": pred["est_wait_minutes"] if pred else None,
+            "offset_minutes": offset,
+            "horizon_minutes": orizzonte,
+            "method": pred.get("method") if pred else None}
 
 
 @router.get("/predict")
