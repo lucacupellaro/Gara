@@ -38,11 +38,33 @@ def travel_minutes(lat: float, lon: float, dest_lat: float, dest_lon: float) -> 
     return max(1, round(km / 35 * 60)), "haversine"
 
 
-def find_pharmacies_nearby(lat: float, lon: float, limit: int = 5) -> list[dict]:
+def travel_route(lat: float, lon: float, dest_lat: float, dest_lon: float) -> tuple[int, str, list]:
+    """Come travel_minutes ma ritorna anche la polyline [[lat,lon],...] del percorso.
+    Fallback haversine: linea retta tratteggiata."""
+    try:
+        r = httpx.get(
+            f"{OSRM}/{lon},{lat};{dest_lon},{dest_lat}",
+            params={"overview": "full", "geometries": "geojson"}, timeout=4,
+        )
+        r.raise_for_status()
+        routes = r.json().get("routes")
+        if routes:
+            coords = [[c[1], c[0]] for c in routes[0]["geometry"]["coordinates"]]
+            return max(1, round(routes[0]["duration"] / 60)), "osrm", coords
+    except Exception:
+        pass
+    km = state.haversine_km(lat, lon, dest_lat, dest_lon)
+    return max(1, round(km / 35 * 60)), "haversine", [[lat, lon], [dest_lat, dest_lon]]
+
+
+def find_pharmacies_nearby(lat: float, lon: float, limit: int = 5,
+                           radius_km: float | None = None) -> list[dict]:
     pharmacies = json.loads((DATA / "pharmacies.json").read_text())
     for p in pharmacies:
         p["distance_km"] = round(state.haversine_km(lat, lon, p["lat"], p["lon"]), 2)
     pharmacies.sort(key=lambda p: p["distance_km"])
+    if radius_km is not None:
+        pharmacies = [p for p in pharmacies if p["distance_km"] <= radius_km]
     return pharmacies[:limit]
 
 

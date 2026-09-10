@@ -12,10 +12,15 @@ body { font-family: system-ui, sans-serif; height: 100vh; display: flex; flex-di
 #chat-pane { flex: 3; display: flex; flex-direction: column; border-left: 1px solid #ccc; min-width: 300px; }
 
 #map-controls {
-  position: absolute; top: 10px; right: 10px; z-index: 1000;
-  background: #fff; padding: 8px 10px; border-radius: 8px;
-  box-shadow: 0 1px 5px rgba(0,0,0,.3); display: flex; gap: 10px; align-items: center;
+  position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
+  z-index: 1000;
+  background: #fff; padding: 8px 14px; border-radius: 999px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.3); display: flex; gap: 14px; align-items: center;
+  flex-wrap: wrap; max-width: 92vw; justify-content: center;
 }
+#pharm-range { display: flex; gap: 6px; align-items: center; font-size: .85rem; }
+#pharm-range input[type=range] { width: 110px; }
+#rng-pharmacies-val { color: #555; min-width: 70px; }
 #legend {
   position: absolute; bottom: 20px; right: 10px; z-index: 1000;
   background: #fff; padding: 8px 12px; border-radius: 8px;
@@ -44,6 +49,49 @@ body { font-family: system-ui, sans-serif; height: 100vh; display: flex; flex-di
 .hospital-popup h4 { margin-bottom: 4px; }
 .hospital-popup table { font-size: .85rem; border-collapse: collapse; }
 .hospital-popup td { padding: 1px 6px 1px 0; }
+.btn-travel {
+  margin-top: 6px; padding: 5px 12px; border: 0; border-radius: 8px;
+  background: #1971c2; color: #fff; cursor: pointer; font-size: .85rem;
+}
+.btn-travel:hover { background: #155a9c; }
+.travel-result { margin-top: 5px; font-size: .85rem; line-height: 1.4; }
+
+#route-banner {
+  position: absolute; top: 10px; left: 50%; transform: translateX(-50%);
+  z-index: 1000; background: #1971c2; color: #fff;
+  padding: 8px 14px; border-radius: 999px; font-size: .95rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.35); display: flex; gap: 10px; align-items: center;
+  max-width: 90%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+#route-banner .close { cursor: pointer; font-weight: 700; opacity: .8; }
+#route-banner .close:hover { opacity: 1; }
+.route-label {
+  background: #1971c2; color: #fff; border: 0; border-radius: 999px;
+  padding: 3px 10px; font-weight: 700; box-shadow: 0 1px 4px rgba(0,0,0,.4);
+}
+.route-label::before { display: none; }
+
+#info-panel {
+  position: absolute; top: 10px; left: 10px; z-index: 1000;
+  background: #fff; padding: 10px 12px; border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.35); max-width: 290px; font-size: .9rem;
+}
+#info-panel .close {
+  float: right; cursor: pointer; font-weight: 700; color: #666; margin-left: 8px;
+}
+#info-panel .close:hover { color: #000; }
+
+#nearest-panel {
+  position: absolute; bottom: 20px; left: 10px; z-index: 1000;
+  background: #fff; padding: 8px 12px; border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.35); max-width: 270px; font-size: .85rem;
+}
+#nearest-panel .nearest-row {
+  margin-top: 6px; padding: 5px 7px; border-radius: 6px; cursor: pointer;
+  background: #f4f6f9; line-height: 1.3;
+}
+#nearest-panel .nearest-row:hover { background: #e5ebf2; }
+#nearest-panel small { color: #667; }
 
 @keyframes pulse { 0%,100% { stroke-width: 3; } 50% { stroke-width: 9; } }
 .highlighted { animation: pulse 1.2s infinite; }

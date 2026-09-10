@@ -12,10 +12,17 @@
 <div id="layout">
   <div id="map-pane">
     <div id="map"></div>
+    <div id="route-banner" hidden></div>
+    <div id="info-panel" hidden></div>
+    <div id="nearest-panel" hidden></div>
     <div id="map-controls">
       <button id="btn-locate">📍 Usa la mia posizione</button>
       <label><input type="checkbox" id="chk-pharmacies"> Farmacie</label>
       <label><input type="checkbox" id="chk-heatmap" checked> Heatmap</label>
+      <span id="pharm-range" hidden>
+        Raggio <input type="range" id="rng-pharmacies" min="0.5" max="15" step="0.5" value="2">
+        <span id="rng-pharmacies-val">2 km</span>
+      </span>
     </div>
     <div id="legend">
       <b>Saturazione PS</b>
